@@ -5,13 +5,19 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
+    [Header("Screen Bounds")]
+    public float topBound = 2.7f;
+    public float bottomBound = -2.7f;
+    public float leftBound = -6.5f;
+    public float rightBound = 0f;
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0f; // no gravity, floating in space
+        rb.gravityScale = 0f;
     }
 
     void Update()
@@ -30,5 +36,16 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = moveInput * moveSpeed;
+
+        ClampPosition();
+    }
+
+    void ClampPosition()
+    {
+        Vector2 clampedPos = rb.position;
+        clampedPos.x = Mathf.Clamp(clampedPos.x, leftBound, rightBound);
+        clampedPos.y = Mathf.Clamp(clampedPos.y, bottomBound, topBound);
+
+        rb.position = clampedPos;
     }
 }
