@@ -6,9 +6,9 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
 
     [Header("Screen Bounds")]
-    public float topBound = 2.7f;
-    public float bottomBound = -2.7f;
-    public float leftBound = -6.5f;
+    public float topBound = 4.7f;
+    public float bottomBound = -4.7f;
+    public float leftBound = -10f;
     public float rightBound = 0f;
 
     private Rigidbody2D rb;
