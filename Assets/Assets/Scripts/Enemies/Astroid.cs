@@ -9,7 +9,7 @@ public class Asteroid : MonoBehaviour
         transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime));
     }
 
-    void OnBecameInvisible()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
     }
