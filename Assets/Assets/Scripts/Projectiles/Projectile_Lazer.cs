@@ -21,5 +21,10 @@ public class Projectile_Lazer : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (collision.CompareTag("Astroid"))
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }
