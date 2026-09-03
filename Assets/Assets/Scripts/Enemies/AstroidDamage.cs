@@ -20,6 +20,10 @@ namespace Assets.Scripts.Enemies
 
                 Destroy(gameObject);
             }
+            else if (collision.CompareTag("Boundary"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
