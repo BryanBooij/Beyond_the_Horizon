@@ -3,9 +3,9 @@ using UnityEngine;
 public class AstroidSpawner : MonoBehaviour
 {
     public GameObject asteroidPrefab;
-    public float spawnInterval = 2f;
-    public float minY = -5f;
-    public float maxY = 5f;
+    public float spawnInterval = 1f;
+    public float minY = -4.1f;
+    public float maxY = 4.1f;
 
     void Start()
     {
