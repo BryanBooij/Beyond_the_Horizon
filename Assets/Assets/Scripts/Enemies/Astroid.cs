@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 
-public class Asteroid : MonoBehaviour
+namespace Assets.Scripts.Enemies
 {
-    public float moveSpeed = 3f;
-
-    void Update()
+    public class Asteroid : MonoBehaviour
     {
-        transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime));
-    }
+        public float moveSpeed = 3f;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Destroy(gameObject);
+        void Update()
+        {
+            transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime));
+        }
     }
 }
