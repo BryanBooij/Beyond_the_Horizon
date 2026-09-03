@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
@@ -11,6 +12,15 @@ public class Asteroid : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.CompareTag("Bullet"))
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+        else if (collision.CompareTag("Boundary"))
+        {
+            Destroy(gameObject);
+            
+        }
     }
 }
