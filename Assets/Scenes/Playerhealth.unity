@@ -862,7 +862,7 @@ Transform:
   m_GameObject: {fileID: 505584671}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 69.643166, y: 300.02988, z: 0}
+  m_LocalPosition: {x: 70, y: 281, z: 0}
   m_LocalScale: {x: 56.06166, y: 47.85524, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   asteroidPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
   spawnInterval: 1
-  minY: 0
+  minY: 50
   maxY: 500
 --- !u!61 &896050712
 BoxCollider2D:
@@ -1116,7 +1116,7 @@ Transform:
   m_GameObject: {fileID: 896050710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1125, y: 291.4873, z: 0}
+  m_LocalPosition: {x: 1162, y: 291.4873, z: 0}
   m_LocalScale: {x: 49, y: 49, z: 49}
   m_ConstrainProportionsScale: 0
   m_Children: []
