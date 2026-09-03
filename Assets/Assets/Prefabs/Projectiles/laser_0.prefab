@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354d6c5814094804ab7411c20b25a1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 5
+  moveSpeed: 500
 --- !u!50 &7421300046032775429
 Rigidbody2D:
   serializedVersion: 5
@@ -172,7 +172,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1966667, y: 0.20333333}
+    oldSize: {x: 71.8, y: 12.2}
     newSize: {x: 1.436, y: 0.244}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
