@@ -1,12 +1,11 @@
-using system.Collections.generic;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Tmpro;
+using TMPro;
 public class Healthbar : MonoBehaviour
 {
-    public Slider healthbar;
-
-    public TextMeshProGUI;
+    public Slider healthBarSlider;
+    public TextMeshProUGUI healtBarValueText;
     
     public int maxHealth;
     public int currentHealth;
@@ -19,9 +18,9 @@ public class Healthbar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healtBarValueText.text = currentHealth.ToString() + "/" + maxHealth.toStrubg();
+        healtBarValueText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
 
-        HealthBarSlider.value = currentHealth;
-        HealthBarSlider.maxValue = maxHealth;
+        healthBarSlider.value = currentHealth;
+        healthBarSlider.maxValue = maxHealth;
     }
 }
