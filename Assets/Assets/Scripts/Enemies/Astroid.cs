@@ -18,11 +18,6 @@ namespace Assets.Scripts.Enemies
                 Destroy(gameObject);
                 Destroy(collision.gameObject);
             }
-            else if (collision.CompareTag("Boundary"))
-            {
-                Destroy(gameObject);
-                
-            }
         }
     }
 }

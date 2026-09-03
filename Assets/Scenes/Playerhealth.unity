@@ -232,7 +232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 16.5, y: -22}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286389869
@@ -413,7 +413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -285.31265, y: 230.40738}
+  m_AnchoredPosition: {x: -265.1, y: 211.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &434810903
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 1.6694336, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -550,7 +550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 16.6, y: -22}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463753048
@@ -657,7 +657,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3084741376324701655, guid: 334f2a168676906479a45f4c29c344e9, type: 3}
+  m_Sprite: {fileID: -523616700972342152, guid: 58a21c2a8b0c79c4b9ef66698a495c74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -676,7 +676,7 @@ Transform:
   m_GameObject: {fileID: 503321963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 507.4733, y: 271.5267, z: 0}
+  m_LocalPosition: {x: 591, y: 271.5267, z: 0}
   m_LocalScale: {x: 197.46022, y: 157.96147, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 505584674}
   - component: {fileID: 505584673}
   - component: {fileID: 505584672}
+  - component: {fileID: 505584678}
   m_Layer: 0
   m_Name: Ship_test
   m_TagString: Player
@@ -789,10 +790,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 500
-  topBound: 1000
-  bottomBound: -1000
-  leftBound: -500
-  rightBound: 1000
+  topBound: 500
+  bottomBound: 50
+  leftBound: 50
+  rightBound: 500
 --- !u!212 &505584675
 SpriteRenderer:
   serializedVersion: 2
@@ -883,6 +884,21 @@ MonoBehaviour:
   healthBarValueText: {fileID: 434810903}
   maxHealth: 100
   currentHealth: 100
+--- !u!114 &505584678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505584671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b845a61e9332e1649a196d6ee09a6af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileShoot
+  projectilePrefab: {fileID: 5434020813485827992, guid: e819cf4f50e6f664997fe80bcac7f9e5, type: 3}
+  fireRate: 0.5
+  nextFireTime: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +960,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 274.4507
+  orthographic size: 259.17007
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1024,7 +1040,7 @@ GameObject:
   - component: {fileID: 896050711}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: Astroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1041,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5a8c5eb9e7e8244bb82ef403ca2da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  asteroidPrefab: {fileID: 5538733876104857514, guid: c0f50dbca0f9b2643891cce75439c5cb, type: 3}
+  asteroidPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
   spawnInterval: 1
   minY: 0
   maxY: 500
@@ -1100,7 +1116,7 @@ Transform:
   m_GameObject: {fileID: 896050710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 993.06, y: 291.4873, z: 0}
+  m_LocalPosition: {x: 1033, y: 291.4873, z: 0}
   m_LocalScale: {x: 49, y: 49, z: 49}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1259,7 +1275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.5, y: 0}
+  m_AnchoredPosition: {x: 24.3, y: -26}
   m_SizeDelta: {x: -11, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1704713056
@@ -1386,7 +1402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -474.30627, y: 235.91614}
+  m_AnchoredPosition: {x: -456.6, y: 209.3}
   m_SizeDelta: {x: 52, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1782590131
