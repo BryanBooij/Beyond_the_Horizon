@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileShoot
   projectilePrefab: {fileID: 5434020813485827992, guid: e819cf4f50e6f664997fe80bcac7f9e5, type: 3}
-  fireRate: 0.5
+  fireRate: 0
   nextFireTime: 0
 --- !u!1 &519420028
 GameObject:
@@ -1122,7 +1122,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 523, y: 270.02988, z: -10}
+  m_LocalPosition: {x: 564, y: 270.02988, z: -10}
   m_LocalScale: {x: 47.85524, y: 56.06166, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1194,7 +1194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5a8c5eb9e7e8244bb82ef403ca2da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  asteroidPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
+  asteroidPrefabs:
+  - {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
+  - {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
   spawnInterval: 1
   minY: 50
   maxY: 500
@@ -1391,10 +1393,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172252150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be5544dc20d1a1e44be2ceaaebf45374, type: 3}
+  m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  scoreText: {fileID: 0}
+  healthBarSlider: {fileID: 1704713058}
+  healthBarValueText: {fileID: 434810903}
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &1492488568
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4141846265962416999}
   - component: {fileID: 6573469554689781549}
-  - component: {fileID: 1940252773601469783}
+  - component: {fileID: 5090564533037735480}
   - component: {fileID: 6497673296510761101}
   - component: {fileID: 1575907519463561075}
   - component: {fileID: -2902998734445394129}
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1940252773601469783
+--- !u!114 &5090564533037735480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,7 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df6eab4ceda410e9eb54220d13eb896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.Asteroid
-  moveSpeed: 500
+  moveSpeed: 300
+  maxHP: 5
 --- !u!114 &6497673296510761101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +183,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

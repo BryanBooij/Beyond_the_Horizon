@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
-    public class Asteroid : MonoBehaviour
+    public class LargeAstroid : MonoBehaviour
     {
-        public float moveSpeed = 300f;
-        public float maxHP = 5;
+        public float moveSpeed = 200f;
+        public float maxHP = 10;
         private float currentHP;
 
         void Start()
