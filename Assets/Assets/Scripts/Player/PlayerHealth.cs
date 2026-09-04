@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,13 +24,16 @@ namespace Assets.Scripts.Player
             healthBarSlider.maxValue = maxHealth;
         }
 
-        public void TakeDamage(int damage)
-        {
+        public void TakeDamage(int damage) 
+        { 
             currentHealth -= damage;
-            if (currentHealth <= 0)
-            {
-                Destroy(gameObject);
-            }
+            
+            if (currentHealth <= 0) 
+            { 
+                currentHealth = 0;
+                
+                Destroy(gameObject); 
+            } 
         }
     }
 }

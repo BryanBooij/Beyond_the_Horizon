@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.Scripts.Game;
 using UnityEngine;
 
 namespace Assets.Scripts.Enemies
@@ -15,6 +16,7 @@ namespace Assets.Scripts.Enemies
         {
             if (collision.CompareTag("Bullet"))
             {
+                ScoreManager.Instance.AddPoints();
                 Destroy(gameObject);
                 Destroy(collision.gameObject);
             }
