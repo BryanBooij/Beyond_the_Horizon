@@ -1134,7 +1134,6 @@ GameObject:
   - component: {fileID: 1172252153}
   - component: {fileID: 1172252152}
   - component: {fileID: 1172252151}
-  - component: {fileID: 1172252155}
   - component: {fileID: 1172252156}
   m_Layer: 5
   m_Name: Canvas
@@ -1229,22 +1228,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1172252155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172252150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Player.PlayerHealth
-  healthBarSlider: {fileID: 0}
-  healthBarValueText: {fileID: 0}
-  maxHealth: 100
-  currentHealth: 100
 --- !u!114 &1172252156
 MonoBehaviour:
   m_ObjectHideFlags: 0
