@@ -109,6 +109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.LargeAstroid
   moveSpeed: 200
   maxHP: 10
+  rotationSpeed: 45
+  randomDirection: 1
 --- !u!114 &7149267645294800829
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,17 +5,28 @@ namespace Assets.Scripts.Enemies
 {
     public class Asteroid : MonoBehaviour
     {
+        [Header("Astroid HP and speed")]
         public float moveSpeed = 300f;
-        public float maxHP = 5;
+        public float maxHP = 50;
         private float currentHP;
+        
+        [Header("Astroid Rotation")]
+        public float rotationSpeed = 90f; 
+        public bool randomDirection = true;
 
         void Start()
         {
             currentHP = maxHP; // set HP on first iteration
+            
+            if (randomDirection && UnityEngine.Random.value > 0.5f)
+            {
+                rotationSpeed *= -1f; // spin the other way
+            }
         }
         void Update()
         {
-            transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime)); // projectile goes from spawn position to the left times movementspeed
+            transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime), Space.World); // projectile goes from spawn position to the left times movementspeed
+            transform.Rotate(Vector3.forward * (rotationSpeed * Time.deltaTime)); // rotate png
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
