@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.Scripts.Game;
 using UnityEngine;
 
 namespace Assets.Scripts.Enemies
@@ -41,6 +42,7 @@ namespace Assets.Scripts.Enemies
                 }
                 else // else destroy astroid and lazer
                 {
+                    ScoreManager.Instance.AddPoints();
                     Destroy(gameObject);
                     Destroy(collision.gameObject);
                 }
