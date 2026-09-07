@@ -20,9 +20,9 @@ namespace Assets.Scripts.Game
         }
 
         // Update is called once per frame
-        public void AddPoints()
+        public void AddPoints(float amount)
         {
-            _score += 1;
+            _score += (int)amount;
             scoreText.text = _score.ToString() +" POINTS";
         }
     }
