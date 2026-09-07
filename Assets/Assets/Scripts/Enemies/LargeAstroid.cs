@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
-    public class Asteroid : MonoBehaviour
+    public class LargeAstroid : MonoBehaviour
     {
         [Header("Astroid HP and speed")]
-        public float moveSpeed = 300f;
-        public float maxHP = 50;
+        public float moveSpeed = 200f;
+        public float maxHP = 10;
         private float currentHP;
         
         [Header("Astroid Rotation")]
-        public float rotationSpeed = 90f; 
+        public float rotationSpeed = 45f; 
         public bool randomDirection = true;
 
         void Start()

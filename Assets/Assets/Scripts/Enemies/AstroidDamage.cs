@@ -11,8 +11,7 @@ namespace Assets.Scripts.Enemies
         {
             if (collision.CompareTag("Player"))
             {
-                PlayerHealth playerHealth =
-                    collision.GetComponent<PlayerHealth>();
+                PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
                     playerHealth.TakeDamage(damage);

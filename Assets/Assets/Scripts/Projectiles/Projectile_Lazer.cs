@@ -3,6 +3,7 @@ using UnityEngine;
 public class Projectile_Lazer : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float Damage = 5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,11 +21,6 @@ public class Projectile_Lazer : MonoBehaviour
         if (collision.CompareTag("BulletBoundary"))
         {
             Destroy(gameObject);
-        }
-        else if (collision.CompareTag("Astroid"))
-        {
-            Destroy(gameObject);
-            Destroy(collision.gameObject);
         }
     }
 }

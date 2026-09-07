@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5845376670765432817}
   - component: {fileID: 7446313183700263518}
-  - component: {fileID: 2084108275109578315}
+  - component: {fileID: -8222967928075572593}
   - component: {fileID: 7149267645294800829}
   - component: {fileID: -3061705294339516638}
   - component: {fileID: 6533459585382105209}
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &2084108275109578315
+--- !u!114 &-8222967928075572593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,10 +104,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3764604186118443629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df6eab4ceda410e9eb54220d13eb896, type: 3}
+  m_Script: {fileID: 11500000, guid: 599d59ccfc784aa791fe65588c73d627, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.Asteroid
-  moveSpeed: 500
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.LargeAstroid
+  moveSpeed: 200
+  maxHP: 10
+  rotationSpeed: 45
+  randomDirection: 1
 --- !u!114 &7149267645294800829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c00be238bc4ee28dee9e3e838c39ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.AstroidDamage
-  damage: 5
+  damage: 10
 --- !u!61 &-3061705294339516638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +162,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 72, y: 71.55}
+    oldSize: {x: 96, y: 95.4}
     newSize: {x: 14.4, y: 14.31}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -182,7 +185,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
