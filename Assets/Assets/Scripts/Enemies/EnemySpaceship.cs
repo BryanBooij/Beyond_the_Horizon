@@ -25,40 +25,33 @@ public class EnemySpaceship : MonoBehaviour
         if (isWaiting)
         {
             waitTimer -= Time.deltaTime;
-
             if (waitTimer <= 0f)
             {
                 isWaiting = false;
                 ChooseRandomDestination();
             }
-
             return;
         }
-
         transform.position = Vector2.MoveTowards(
             transform.position,
             destination,
             speed * Time.deltaTime
         );
-
         if (Vector2.Distance(transform.position, destination) < 0.1f)
         {
             isWaiting = true;
             waitTimer = waitTime;
         }
     }
-
     void ChooseRandomDestination()
     {
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
-
         destination = new Vector2(randomX, randomY);
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
-
         if (health <= 0)
         {
             ScoreManager.Instance.AddPoints(Points);
