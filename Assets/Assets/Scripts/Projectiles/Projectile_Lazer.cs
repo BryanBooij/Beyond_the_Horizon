@@ -22,5 +22,16 @@ public class Projectile_Lazer : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (collision.CompareTag("Enemyspaceship"))
+        {
+            EnemySpaceship enemy = collision.GetComponent<EnemySpaceship>();
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage((int)Damage);
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
