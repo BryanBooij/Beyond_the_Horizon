@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6447397966138318822}
   - component: {fileID: 6811634445515960095}
-  - component: {fileID: 6861198704159839473}
+  - component: {fileID: 2275035166355359949}
   - component: {fileID: 7421300046032775429}
   - component: {fileID: 1654862989927246316}
   m_Layer: 0
@@ -94,7 +94,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6861198704159839473
+--- !u!114 &2275035166355359949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,10 +103,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5434020813485827992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354d6c5814094804ab7411c20b25a1d7, type: 3}
+  m_Script: {fileID: 11500000, guid: d237d1e1e1e0e654ba881bd8d20d6c60, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Projectiles.EnemyLaser
   moveSpeed: 500
+  damage: 5
 --- !u!50 &7421300046032775429
 Rigidbody2D:
   serializedVersion: 5
