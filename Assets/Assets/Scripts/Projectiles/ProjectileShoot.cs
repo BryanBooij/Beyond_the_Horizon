@@ -15,7 +15,7 @@ public class ProjectileShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && Time.time >= nextFireTime)
+        if (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame && Time.time >= nextFireTime)
         {
             GameObject prefabToSpawnProjectile = projectilePrefab[Random.Range(0, projectilePrefab.Length)];
             Instantiate(prefabToSpawnProjectile, transform.position, Quaternion.identity);
