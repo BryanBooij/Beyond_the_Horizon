@@ -1,3 +1,4 @@
+using Assets.Scripts.Game;
 using UnityEngine;
 
 public class EnemySpaceship : MonoBehaviour
@@ -9,7 +10,7 @@ public class EnemySpaceship : MonoBehaviour
     public float minY = 0f;
     public float maxY = 440f;
     public int health = 20;
-    
+    public float Points = 50f;
     private Vector2 destination;
     private float waitTimer;
     private bool isWaiting;
@@ -60,6 +61,7 @@ public class EnemySpaceship : MonoBehaviour
 
         if (health <= 0)
         {
+            ScoreManager.Instance.AddPoints(Points);
             Destroy(gameObject);
         }
     }

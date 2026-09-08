@@ -184,9 +184,10 @@ MonoBehaviour:
   waitTime: 2
   minX: 650
   maxX: 940
-  minY: 0
-  maxY: 350
+  minY: 50
+  maxY: 400
   health: 20
+  Points: 10
 --- !u!114 &448331993007553192
 MonoBehaviour:
   m_ObjectHideFlags: 0
