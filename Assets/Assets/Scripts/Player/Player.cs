@@ -5,17 +5,28 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    [Header("Screen Bounds")]
-    public float topBound = 4.7f;
-    public float bottomBound = -4.7f;
-    public float leftBound = -10f;
-    public float rightBound = 0f;
+    private float topBound;
+    private float bottomBound;
+    private float leftBound;
+    private float rightBound;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
     void Start()
     {
+        // screen boundaries for player ship so it cannot move outside the screen
+        Camera cam = Camera.main;
+        float cameraHeight = cam.orthographicSize;
+        float cameraWidth = cameraHeight * cam.aspect;
+        Collider2D playerCollider = GetComponent<Collider2D>();
+        float halfWidth = playerCollider.bounds.extents.x;
+        float halfHeight = playerCollider.bounds.extents.y;
+        topBound = cam.transform.position.y + cameraHeight - halfHeight;
+        bottomBound = cam.transform.position.y - cameraHeight + halfHeight;
+        leftBound = cam.transform.position.x - cameraWidth + halfWidth;
+        rightBound = cam.transform.position.x - halfWidth;
+        
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
     }
