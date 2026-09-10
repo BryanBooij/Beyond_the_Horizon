@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c444b504ef4d0a54087187673aa42185
+guid: c6807bda63937c44baca576763a99b73
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6523292493432642450
-    second: Shootbutton_0
+      213: 7211533745211092228
+    second: Backgroundpurple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shootbutton_0
+      name: Backgroundpurple_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 340
-        height: 340
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29b560df5f3678a50800000000000000
-      internalID: 6523292493432642450
+      spriteID: 40dac01abb3841460800000000000000
+      internalID: 7211533745211092228
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shootbutton_0: 6523292493432642450
+      Backgroundpurple_0: 7211533745211092228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
