@@ -16,7 +16,7 @@ public class Deathscreen : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadSceneAsync("Playerhealth");
+        SceneManager.LoadSceneAsync("Demo");
     }
 
     public void MainMenu()

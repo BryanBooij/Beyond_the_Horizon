@@ -24,6 +24,7 @@ public class Pausemenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Playerhealth");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Demo");
     }
 }
