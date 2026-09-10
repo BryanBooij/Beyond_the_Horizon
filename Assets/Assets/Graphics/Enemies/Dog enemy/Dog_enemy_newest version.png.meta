@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 89d3d3072afd780429940596c92ac8cd
+guid: 97525562154fa9a4c8f2c0fa12b0574c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5654264939757741270
-    second: Dog_enemy_0
+      213: 7263151794276964553
+    second: Dog_enemy_newest version_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dog_enemy_0
+      name: Dog_enemy_newest version_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 312
-        width: 1860
-        height: 698
+        x: 319
+        y: 485
+        width: 1253
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d4a430510cf77e40800000000000000
-      internalID: 5654264939757741270
+      spriteID: 9c89e973316ebc460800000000000000
+      internalID: 7263151794276964553
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dog_enemy_0: 5654264939757741270
+      Dog_enemy_newest version_0: 7263151794276964553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

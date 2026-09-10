@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 89d3d3072afd780429940596c92ac8cd
+guid: 20f88be2c860fe94dbe327ec53ae0df5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5654264939757741270
-    second: Dog_enemy_0
+      213: 7851470227991654557
+    second: Spaceship_0
+  - first:
+      213: 5680876330281301099
+    second: Spaceship_1
+  - first:
+      213: -5200398357143456989
+    second: Spaceship_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 1200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dog_enemy_0
+      name: Spaceship_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 312
-        width: 1860
-        height: 698
+        x: 1819
+        y: 2021
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d4a430510cf77e40800000000000000
-      internalID: 5654264939757741270
+      spriteID: d907fffc29606fc60800000000000000
+      internalID: 7851470227991654557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 593
+        width: 3196
+        height: 1377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64775f7ce686de40800000000000000
+      internalID: 5680876330281301099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship_2
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 483
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32370ff3f3974d7b0800000000000000
+      internalID: -5200398357143456989
       vertices: []
       indices: 
       edges: []
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dog_enemy_0: 5654264939757741270
+      Spaceship_0: 7851470227991654557
+      Spaceship_1: 5680876330281301099
+      Spaceship_2: -5200398357143456989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
