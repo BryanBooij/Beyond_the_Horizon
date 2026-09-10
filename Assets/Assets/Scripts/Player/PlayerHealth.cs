@@ -8,13 +8,14 @@ namespace Assets.Scripts.Player
     {
         public Slider healthBarSlider;
         public TextMeshProUGUI healthBarValueText;
-
+        public GameObject deathScreen;
         public int maxHealth = 100;
         public int currentHealth;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             currentHealth = maxHealth;
+            deathScreen.SetActive(false);
         }
 
         private void Update()
@@ -34,8 +35,8 @@ namespace Assets.Scripts.Player
 
                 healthBarValueText.text = currentHealth + "/" + maxHealth;
                 healthBarSlider.value = currentHealth;
-
                 Destroy(gameObject);
+                deathScreen.SetActive(true);
             }
         }
     }
