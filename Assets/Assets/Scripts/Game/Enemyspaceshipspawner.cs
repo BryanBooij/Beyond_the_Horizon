@@ -6,8 +6,8 @@ public class Enemyspaceshipspawner : MonoBehaviour
     private float maxY;
 
     public GameObject Enemyspaceship;
-    public float spawnInterval = 5f;
-    public float startDelay = 3f;
+    public float spawnInterval = 15f;
+    public float startDelay = 5f;
     public int spawnAmount = 10;
 
     private int spawnedAmount = 0;

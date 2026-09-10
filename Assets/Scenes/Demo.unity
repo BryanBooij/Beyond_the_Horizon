@@ -2943,9 +2943,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Enemyspaceship: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
-  spawnInterval: 5
-  startDelay: 3
-  spawnAmount: 10
+  spawnInterval: 15
+  startDelay: 5
+  spawnAmount: 10000
 --- !u!61 &1597761364
 BoxCollider2D:
   m_ObjectHideFlags: 0
