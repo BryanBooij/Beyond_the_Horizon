@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,8 +27,14 @@ namespace Assets.Scripts.Player
         public void TakeDamage(int damage)
         {
             currentHealth -= damage;
+
             if (currentHealth <= 0)
             {
+                currentHealth = 0;
+
+                healthBarValueText.text = currentHealth + "/" + maxHealth;
+                healthBarSlider.value = currentHealth;
+
                 Destroy(gameObject);
             }
         }

@@ -1,14 +1,16 @@
 ﻿using System;
+using Assets.Scripts.Game;
 using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
     public class LargeAstroid : MonoBehaviour
     {
-        [Header("Astroid HP and speed")]
+        [Header("Astroid HP, speed and Damage")]
         public float moveSpeed = 200f;
         public float maxHP = 10;
         private float currentHP;
+        public float Points = 20f;
         
         [Header("Astroid Rotation")]
         public float rotationSpeed = 45f; 
@@ -41,6 +43,7 @@ namespace Assets.Scripts.Enemies
                 }
                 else // else destroy astroid and lazer
                 {
+                    ScoreManager.Instance.AddPoints(Points);
                     Destroy(gameObject);
                     Destroy(collision.gameObject);
                 }

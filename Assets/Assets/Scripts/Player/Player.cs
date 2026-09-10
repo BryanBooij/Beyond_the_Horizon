@@ -22,15 +22,24 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        float moveX = 0f;
-        float moveY = 0f;
+        Vector2 keyboardInput = Vector2.zero;
 
-        if (Keyboard.current.wKey.isPressed) moveY = 1f;
-        if (Keyboard.current.sKey.isPressed) moveY = -1f;
-        if (Keyboard.current.dKey.isPressed) moveX = 1f;
-        if (Keyboard.current.aKey.isPressed) moveX = -1f;
+        if (Keyboard.current != null)
+        {
+            if (Keyboard.current.wKey.isPressed) keyboardInput.y = 1f;
+            if (Keyboard.current.sKey.isPressed) keyboardInput.y = -1f;
+            if (Keyboard.current.dKey.isPressed) keyboardInput.x = 1f;
+            if (Keyboard.current.aKey.isPressed) keyboardInput.x = -1f;
+        }
 
-        moveInput = new Vector2(moveX, moveY).normalized;
+        Vector2 stickInput = Vector2.zero;
+        if (Gamepad.current != null)
+        {
+            stickInput = Gamepad.current.leftStick.ReadValue();
+        }
+
+        Vector2 combined = keyboardInput + stickInput;
+        moveInput = combined.magnitude > 1f ? combined.normalized : combined;
     }
 
     void FixedUpdate()

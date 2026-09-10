@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Boundary
   - Bullet
+  - BulletBoundary
+  - Astroid
+  - Enemyspaceship
+  - Shipboundary
+  - Enemybullet
   layers:
   - Default
   - TransparentFX
