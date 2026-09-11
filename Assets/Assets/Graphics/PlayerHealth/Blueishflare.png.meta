@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: cbadf81a810384d4b94ed370d7c2db89
+guid: ba4d995c7ebb3eb48a2b209e35cd6257
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3875407854014120374
-    second: MainMenu_Background_0
+      213: 1675431747294053996
+    second: Blueishflare_0
+  - first:
+      213: -6639121236977397760
+    second: Blueishflare_1
+  - first:
+      213: 2360625306721677293
+    second: Blueishflare_2
+  - first:
+      213: 5561386351481373761
+    second: Blueishflare_3
+  - first:
+      213: 3492810036250324437
+    second: Blueishflare_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainMenu_Background_0
+      name: Blueishflare_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1763
-        height: 1080
+        x: 20
+        y: 146
+        width: 1900
+        height: 813
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4ebabde619c73ac0800000000000000
-      internalID: -3875407854014120374
+      spriteID: c66cfde1c44504710800000000000000
+      internalID: 1675431747294053996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueishflare_1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 946
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000d539196a1dd3a0800000000000000
+      internalID: -6639121236977397760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueishflare_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 949
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def61f69530a2c020800000000000000
+      internalID: 2360625306721677293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueishflare_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 936
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144c0c2db630e2d40800000000000000
+      internalID: 5561386351481373761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueishflare_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 138
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddae96e834f87030800000000000000
+      internalID: 3492810036250324437
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MainMenu_Background_0: -3875407854014120374
+      Blueishflare_0: 1675431747294053996
+      Blueishflare_1: -6639121236977397760
+      Blueishflare_2: 2360625306721677293
+      Blueishflare_3: 5561386351481373761
+      Blueishflare_4: 3492810036250324437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

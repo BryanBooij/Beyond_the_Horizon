@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cbadf81a810384d4b94ed370d7c2db89
+guid: 340046253c9d07b448cbcab2dfd9648f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3875407854014120374
-    second: MainMenu_Background_0
+      213: -5708398305696385618
+    second: blueishflare_withlight_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainMenu_Background_0
+      name: blueishflare_withlight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1763
-        height: 1080
+        x: 20
+        y: 80
+        width: 1900
+        height: 895
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4ebabde619c73ac0800000000000000
-      internalID: -3875407854014120374
+      spriteID: ea576804cf1b7c0b0800000000000000
+      internalID: -5708398305696385618
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MainMenu_Background_0: -3875407854014120374
+      blueishflare_withlight_0: -5708398305696385618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

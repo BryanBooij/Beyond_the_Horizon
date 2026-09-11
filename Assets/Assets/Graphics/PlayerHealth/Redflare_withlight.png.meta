@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: cbadf81a810384d4b94ed370d7c2db89
+guid: daae8856f4c163f46838fd337faaf248
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3875407854014120374
-    second: MainMenu_Background_0
+      213: 1138591950694615543
+    second: Redflare_withlight_0
+  - first:
+      213: -532537635536918101
+    second: Redflare_withlight_1
+  - first:
+      213: -7895525265167223738
+    second: Redflare_withlight_2
+  - first:
+      213: 4507908745842833639
+    second: Redflare_withlight_3
+  - first:
+      213: 8371592381037710019
+    second: Redflare_withlight_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainMenu_Background_0
+      name: Redflare_withlight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1763
-        height: 1080
+        x: 20
+        y: 146
+        width: 1900
+        height: 813
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4ebabde619c73ac0800000000000000
-      internalID: -3875407854014120374
+      spriteID: 7f9854db8571dcf00800000000000000
+      internalID: 1138591950694615543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redflare_withlight_1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 946
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9ab4c87db0c98f0800000000000000
+      internalID: -532537635536918101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redflare_withlight_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 949
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644f5968a957d6290800000000000000
+      internalID: -7895525265167223738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redflare_withlight_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 936
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8b6d3de1f4f8e30800000000000000
+      internalID: 4507908745842833639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redflare_withlight_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 138
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca8e1c7aeedd2470800000000000000
+      internalID: 8371592381037710019
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MainMenu_Background_0: -3875407854014120374
+      Redflare_withlight_0: 1138591950694615543
+      Redflare_withlight_1: -532537635536918101
+      Redflare_withlight_2: -7895525265167223738
+      Redflare_withlight_3: 4507908745842833639
+      Redflare_withlight_4: 8371592381037710019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
