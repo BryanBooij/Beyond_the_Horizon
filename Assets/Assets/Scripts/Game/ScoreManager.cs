@@ -7,6 +7,7 @@ namespace Assets.Scripts.Game
     {
         public static ScoreManager Instance;
         public TextMeshProUGUI scoreText;
+        public TextMeshProUGUI finalScoreText;
         private int _score;
 
         private void Awake()
@@ -15,7 +16,7 @@ namespace Assets.Scripts.Game
         }
         void Start()
         {
-            scoreText.text = _score.ToString() + " POINTS";
+            scoreText.text = "Score: " + _score.ToString();
         
         }
 
@@ -23,7 +24,8 @@ namespace Assets.Scripts.Game
         public void AddPoints(float amount)
         {
             _score += (int)amount;
-            scoreText.text = _score.ToString() +" POINTS";
+            scoreText.text = "Score: " + _score.ToString();
+            finalScoreText.text = "Finalscore: " + _score.ToString();
         }
     }
 }
