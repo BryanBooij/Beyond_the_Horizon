@@ -6,7 +6,7 @@ public class EnemySpaceship : MonoBehaviour
     public float speed = 200f;
     public float waitTime = 2f;
     public int health = 20;
-    public float Points = 50f;
+    public float Points = 100f;
 
     private Vector2 destination;
     private float waitTimer;

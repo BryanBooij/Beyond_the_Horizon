@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: c8812a50091afde4f8acc61f3e74252d
+guid: 91736f8de12e9054b97fbe9727cb6421
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5854771608185497034
-    second: Lasers1_0
+      213: -4888059213481347189
+    second: Greenflare_0
+  - first:
+      213: 4924885261507618278
+    second: Greenflare_1
+  - first:
+      213: 2951680582187444272
+    second: Greenflare_2
+  - first:
+      213: -4613346097996931948
+    second: Greenflare_3
+  - first:
+      213: -917160528741326243
+    second: Greenflare_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 4
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lasers1_0
+      name: Greenflare_0
       rect:
         serializedVersion: 2
-        x: 319
-        y: 755
-        width: 276
-        height: 28
+        x: 20
+        y: 146
+        width: 1900
+        height: 813
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac560faf1c3504150800000000000000
-      internalID: 5854771608185497034
+      spriteID: b877e5b1b002a2cb0800000000000000
+      internalID: -4888059213481347189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenflare_1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 946
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5e7bb5d05b85440800000000000000
+      internalID: 4924885261507618278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenflare_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 949
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03863bfc9d976f820800000000000000
+      internalID: 2951680582187444272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenflare_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 936
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c55fa9a2a1affb0800000000000000
+      internalID: -4613346097996931948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenflare_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 138
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d522d52cb579543f0800000000000000
+      internalID: -917160528741326243
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lasers1_0: 5854771608185497034
+      Greenflare_0: -4888059213481347189
+      Greenflare_1: 4924885261507618278
+      Greenflare_2: 2951680582187444272
+      Greenflare_3: -4613346097996931948
+      Greenflare_4: -917160528741326243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

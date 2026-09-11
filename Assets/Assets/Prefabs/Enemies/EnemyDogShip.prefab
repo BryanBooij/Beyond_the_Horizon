@@ -182,12 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 200
   waitTime: 2
-  minX: 650
-  maxX: 940
-  minY: 50
-  maxY: 400
   health: 20
-  Points: 10
+  Points: 100
 --- !u!114 &2028778887681242236
 MonoBehaviour:
   m_ObjectHideFlags: 0
