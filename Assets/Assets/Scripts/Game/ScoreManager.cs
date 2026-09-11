@@ -25,7 +25,7 @@ namespace Assets.Scripts.Game
         {
             _score += (int)amount;
             scoreText.text = "Score: " + _score.ToString();
-            finalScoreText.text = "Finalscore: " + _score.ToString();
+            finalScoreText.text = "Final Score: " + _score.ToString();
         }
     }
 }
