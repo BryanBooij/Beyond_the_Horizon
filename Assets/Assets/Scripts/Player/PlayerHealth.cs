@@ -37,6 +37,7 @@ namespace Assets.Scripts.Player
                 healthBarSlider.value = currentHealth;
                 Destroy(gameObject);
                 deathScreen.SetActive(true);
+                Time.timeScale = 0f;
             }
         }
     }
