@@ -179,5 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354d6c5814094804ab7411c20b25a1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile_Lazer
-  moveSpeed: 5
+  moveSpeed: 10
   Damage: 5
