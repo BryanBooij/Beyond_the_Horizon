@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &216289587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &269374224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -342,8 +342,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -463,9 +463,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 9114592947254061788, guid: 962fbec369023ff40816122813c86d2a, type: 3}
-    m_PressedSprite: {fileID: 9114592947254061788, guid: 962fbec369023ff40816122813c86d2a, type: 3}
-    m_SelectedSprite: {fileID: 9114592947254061788, guid: 962fbec369023ff40816122813c86d2a, type: 3}
+    m_HighlightedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
+    m_PressedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
+    m_SelectedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5400878772334970634, guid: b82b2e3ef7e1e7148bce7fbb7b4f140e, type: 3}
+  m_Sprite: {fileID: 5029488754493684821, guid: d7f5b89a0795d544685cbf91a9b9968d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -882,9 +882,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 243240737974052760, guid: 1eda2bf95dcefe74c9e96c7b03c27759, type: 3}
-    m_SelectedSprite: {fileID: 243240737974052760, guid: 1eda2bf95dcefe74c9e96c7b03c27759, type: 3}
+    m_HighlightedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
+    m_PressedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
+    m_SelectedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7540231731931389959, guid: 032c74c4a7910f743b9cf50fdf0b5ddb, type: 3}
+  m_Sprite: {fileID: 5029488754493684821, guid: d7f5b89a0795d544685cbf91a9b9968d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1172,9 +1172,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: -7565035269377992224, guid: 137fb3b381bde9042b57474f5345421e, type: 3}
-    m_SelectedSprite: {fileID: -7565035269377992224, guid: 137fb3b381bde9042b57474f5345421e, type: 3}
+    m_HighlightedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
+    m_PressedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
+    m_SelectedSprite: {fileID: 283381804477603548, guid: f528e04eeae3aaa4999a48fbcb7515dc, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -9107819558717482692, guid: cc0cfa20adc19be449fd50fbe577d17d, type: 3}
+  m_Sprite: {fileID: 5029488754493684821, guid: d7f5b89a0795d544685cbf91a9b9968d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1254,7 +1254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2061616677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1321,8 +1321,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
