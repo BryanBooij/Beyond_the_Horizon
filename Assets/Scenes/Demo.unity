@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 118420848}
   - component: {fileID: 118420847}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -556,7 +556,7 @@ Transform:
   m_GameObject: {fileID: 191341828}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 515.751, y: 349.02988, z: 0}
+  m_LocalPosition: {x: -503, y: 347, z: 0}
   m_LocalScale: {x: 47.85524, y: 56.06166, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 415068161}
   - component: {fileID: 415068160}
   m_Layer: 0
-  m_Name: BulletBoundary
+  m_Name: PlayerBulletBoundary
   m_TagString: BulletBoundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1160,7 +1160,7 @@ GameObject:
   - component: {fileID: 434810904}
   - component: {fileID: 434810903}
   m_Layer: 5
-  m_Name: 100/100
+  m_Name: CurrentHP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1508,7 +1508,7 @@ GameObject:
   - component: {fileID: 503321965}
   - component: {fileID: 503321964}
   m_Layer: 0
-  m_Name: spacebackground_0
+  m_Name: MainBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1604,7 +1604,7 @@ GameObject:
   - component: {fileID: 505584672}
   - component: {fileID: 505584678}
   m_Layer: 0
-  m_Name: Ship_test
+  m_Name: PlayerShip
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2700,7 +2700,7 @@ GameObject:
   - component: {fileID: 1360403086}
   - component: {fileID: 1360403085}
   m_Layer: 5
-  m_Name: Shoot
+  m_Name: ShootButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3141,7 +3141,7 @@ GameObject:
   - component: {fileID: 1597761364}
   - component: {fileID: 1597761363}
   m_Layer: 0
-  m_Name: spaceshipspawner
+  m_Name: Enemyspawner
   m_TagString: Enemyspaceship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3372,7 +3372,7 @@ GameObject:
   - component: {fileID: 1704713057}
   - component: {fileID: 1704713058}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: HPBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3735,7 +3735,7 @@ GameObject:
   - component: {fileID: 1782590132}
   - component: {fileID: 1782590131}
   m_Layer: 5
-  m_Name: HP (TMP)
+  m_Name: HP (TXT)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3872,7 +3872,7 @@ GameObject:
   - component: {fileID: 1858885479}
   - component: {fileID: 1858885478}
   m_Layer: 0
-  m_Name: shipboundary
+  m_Name: PlayerBoundaryMiddle
   m_TagString: Shipboundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4248,7 +4248,7 @@ GameObject:
   - component: {fileID: 1934593717}
   - component: {fileID: 1934593716}
   m_Layer: 0
-  m_Name: BulletBoundary 2
+  m_Name: EnemyBulletBoundary
   m_TagString: BulletBoundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4354,7 +4354,7 @@ GameObject:
   - component: {fileID: 2005365036}
   - component: {fileID: 2005365038}
   m_Layer: 0
-  m_Name: Boundary
+  m_Name: PlayerBoundary
   m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
