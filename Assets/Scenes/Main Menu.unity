@@ -463,7 +463,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 9114592947254061788, guid: 962fbec369023ff40816122813c86d2a, type: 3}
     m_PressedSprite: {fileID: 9114592947254061788, guid: 962fbec369023ff40816122813c86d2a, type: 3}
     m_SelectedSprite: {fileID: 9114592947254061788, guid: 962fbec369023ff40816122813c86d2a, type: 3}
     m_DisabledSprite: {fileID: 0}
@@ -883,8 +883,8 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 243240737974052760, guid: 1eda2bf95dcefe74c9e96c7b03c27759, type: 3}
+    m_SelectedSprite: {fileID: 243240737974052760, guid: 1eda2bf95dcefe74c9e96c7b03c27759, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -1020,8 +1020,8 @@ Transform:
   m_GameObject: {fileID: 1127117168}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0506, y: -0.0583, z: 0}
-  m_LocalScale: {x: 0.9895379, y: 0.7537694, z: 1}
+  m_LocalPosition: {x: 0.1227, y: -0.0606, z: 0}
+  m_LocalScale: {x: 1.0092297, y: 0.7533567, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1173,8 +1173,8 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: -7565035269377992224, guid: 137fb3b381bde9042b57474f5345421e, type: 3}
+    m_SelectedSprite: {fileID: -7565035269377992224, guid: 137fb3b381bde9042b57474f5345421e, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
