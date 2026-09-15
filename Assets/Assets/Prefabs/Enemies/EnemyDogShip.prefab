@@ -184,6 +184,7 @@ MonoBehaviour:
   waitTime: 2
   health: 20
   Points: 100
+  explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}
 --- !u!114 &2028778887681242236
 MonoBehaviour:
   m_ObjectHideFlags: 0
