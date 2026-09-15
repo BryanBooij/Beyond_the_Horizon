@@ -112,6 +112,7 @@ MonoBehaviour:
   Points: 10
   rotationSpeed: 90
   randomDirection: 1
+  explosionPrefab: {fileID: 3004545701970222803, guid: 929cfe117f46f3d4680b46d7beaee8b3, type: 3}
 --- !u!114 &6497673296510761101
 MonoBehaviour:
   m_ObjectHideFlags: 0

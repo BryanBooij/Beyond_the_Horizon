@@ -15,6 +15,9 @@ namespace Assets.Scripts.Enemies
         [Header("Astroid Rotation")]
         public float rotationSpeed = 90f; 
         public bool randomDirection = true;
+        
+        [Header("Explosion")]
+        public GameObject explosionPrefab;
 
         void Start()
         {
@@ -44,6 +47,14 @@ namespace Assets.Scripts.Enemies
                 else // else destroy astroid and lazer
                 {
                     ScoreManager.Instance.AddPoints(Points);
+                    if (explosionPrefab != null)
+                    {
+                        Instantiate(
+                            explosionPrefab,
+                            transform.position,
+                            Quaternion.identity
+                        );
+                    }
                     Destroy(gameObject);
                     Destroy(collision.gameObject);
                 }

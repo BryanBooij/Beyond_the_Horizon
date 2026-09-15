@@ -3,20 +3,13 @@ using UnityEngine;
 
 namespace Assets.Scripts.Game
 {
-    public class setfps : MonoBehaviour
+    public class SetFPS : MonoBehaviour
     {
-        private void Start()
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        static void InitFrameRate()
         {
-            [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-            static void InitFrameRate()
-            {
-                QualitySettings.vSyncCount = 0;
-                Application.targetFrameRate = 60;
-            }
-        }
-        void update()
-        {
-        
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = 60;
         }
     }
 }

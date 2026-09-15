@@ -11,41 +11,80 @@ namespace Assets.Scripts.Enemies
         public float maxHP = 10;
         private float currentHP;
         public float Points = 20f;
-        
+
+        [Header("Astroid Sprites")]
+        public Sprite Astroid1;
+        public Sprite Astroid_Crack;
+
+        [Header("Explosion")]
+        public GameObject explosionPrefab;
+
         [Header("Astroid Rotation")]
-        public float rotationSpeed = 45f; 
+        public float rotationSpeed = 45f;
         public bool randomDirection = true;
+
+        private SpriteRenderer _spriteRenderer;
 
         void Start()
         {
-            currentHP = maxHP; // set HP on first iteration
-            
+            currentHP = maxHP;
+
+            // Get the SpriteRenderer from the asteroid
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+
+            // Start with the normal asteroid
+            _spriteRenderer.sprite = Astroid1;
+
             if (randomDirection && UnityEngine.Random.value > 0.5f)
             {
-                rotationSpeed *= -1f; // spin the other way
+                rotationSpeed *= -1f;
             }
         }
+
         void Update()
         {
-            transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime), Space.World); // projectile goes from spawn position to the left times movementspeed
-            transform.Rotate(Vector3.forward * (rotationSpeed * Time.deltaTime)); // rotate png
+            transform.Translate(
+                Vector2.left * (moveSpeed * Time.deltaTime),
+                Space.World
+            );
+
+            transform.Rotate(
+                Vector3.forward * (rotationSpeed * Time.deltaTime)
+            );
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             Projectile_Lazer lazer = collision.GetComponent<Projectile_Lazer>();
+
             if (collision.CompareTag("Bullet"))
             {
-                if (currentHP > lazer.Damage) // check if the current hp is higher then the damage a projectile lazer does
+                currentHP -= lazer.Damage;
+
+                Destroy(collision.gameObject);
+
+                // Asteroid still has HP left
+                if (currentHP > 0)
                 {
-                    currentHP -= lazer.Damage;
-                    Destroy(collision.gameObject);
+                    // Change to broken sprite at 5 HP
+                    if (currentHP <= 5)
+                    {
+                        _spriteRenderer.sprite = Astroid_Crack;
+                    }
                 }
-                else // else destroy astroid and lazer
+                // Asteroid has 0 HP
+                else
                 {
                     ScoreManager.Instance.AddPoints(Points);
+                    if (explosionPrefab != null)
+                    {
+                        Instantiate(
+                            explosionPrefab,
+                            transform.position,
+                            Quaternion.identity
+                        );
+                    }
                     Destroy(gameObject);
-                    Destroy(collision.gameObject);
                 }
             }
         }
