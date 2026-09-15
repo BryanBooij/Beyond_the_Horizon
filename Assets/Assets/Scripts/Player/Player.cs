@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
-
+    public MovementJoystick movementJoystick;
     private float topBound;
     private float bottomBound;
     private float leftBound;
@@ -44,9 +44,10 @@ public class Player : MonoBehaviour
         }
 
         Vector2 stickInput = Vector2.zero;
-        if (Gamepad.current != null)
+
+        if (movementJoystick != null)
         {
-            stickInput = Gamepad.current.leftStick.ReadValue();
+            stickInput = movementJoystick.JoystickVec;
         }
 
         Vector2 combined = keyboardInput + stickInput;
