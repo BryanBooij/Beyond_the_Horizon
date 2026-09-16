@@ -4,8 +4,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
+    
     public class Asteroid : MonoBehaviour
     {
+        [SerializeField] private Powerupdropper powerupDropper;
         [Header("Astroid HP, speed and Damage")]
         public float moveSpeed = 300f;
         public float maxHP = 50;
@@ -57,6 +59,7 @@ namespace Assets.Scripts.Enemies
                     }
                     Destroy(gameObject);
                     Destroy(collision.gameObject);
+                    powerupDropper.DropPowerUp();
                 }
             }
         }

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemySpaceship : MonoBehaviour
 {
+    [SerializeField] private Powerupdropper powerupDropper;
     public float speed = 200f;
     public float waitTime = 2f;
     public int health = 20;
@@ -93,6 +94,7 @@ public class EnemySpaceship : MonoBehaviour
                 );
             }
             Destroy(gameObject);
+            powerupDropper.DropPowerUp();
         }
     }
 }

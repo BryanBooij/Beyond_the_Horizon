@@ -1852,7 +1852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 10
   movementJoystick: {fileID: 111889506}
-  flashDuration: 0.3
 --- !u!212 &505584675
 SpriteRenderer:
   serializedVersion: 2
@@ -1944,6 +1943,9 @@ MonoBehaviour:
   deathScreen: {fileID: 101984607}
   maxHealth: 100
   currentHealth: 100
+  flashDuration: 0.1
+  shakeAmount: 0.1
+  shakeDuration: 0.1
 --- !u!114 &505584678
 MonoBehaviour:
   m_ObjectHideFlags: 0

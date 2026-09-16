@@ -6,6 +6,7 @@ namespace Assets.Scripts.Enemies
 {
     public class LargeAstroid : MonoBehaviour
     {
+        [SerializeField] private Powerupdropper powerupDropper;
         [Header("Astroid HP, speed and Damage")]
         public float moveSpeed = 200f;
         public float maxHP = 10;
@@ -85,6 +86,7 @@ namespace Assets.Scripts.Enemies
                         );
                     }
                     Destroy(gameObject);
+                    powerupDropper.DropPowerUp();
                 }
             }
         }
