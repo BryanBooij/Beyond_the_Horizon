@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemySpaceship : MonoBehaviour
 {
-    [SerializeField] private Powerupdropper powerupDropper;
+    private Powerupdropper powerupDropper;
     public float speed = 200f;
     public float waitTime = 2f;
     public int health = 20;
@@ -25,6 +25,10 @@ public class EnemySpaceship : MonoBehaviour
     {
         CalculateScreenBounds();
         ChooseRandomDestination();
+    }
+    private void Awake()
+    {
+        powerupDropper = GetComponent<Powerupdropper>();
     }
 
     void Update()
