@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 446.61917, y: 215.31175, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,8 +107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df6eab4ceda410e9eb54220d13eb896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.Asteroid
-  moveSpeed: 300
+  moveSpeed: 5
   maxHP: 5
+  Points: 10
+  rotationSpeed: 90
+  randomDirection: 1
+  explosionPrefab: {fileID: 3004545701970222803, guid: 929cfe117f46f3d4680b46d7beaee8b3, type: 3}
 --- !u!114 &6497673296510761101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +160,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.108284, y: 0.00005054474}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -166,7 +170,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 62.95, y: 58.8}
+  m_Size: {x: 65.75737, y: 61.20922}
   m_EdgeRadius: 0
 --- !u!50 &-2902998734445394129
 Rigidbody2D:

@@ -17,10 +17,12 @@ public class Deathscreen : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadSceneAsync("Demo");
+        Time.timeScale = 1f;
     }
 
     public void MainMenu()
     {
         SceneManager.LoadSceneAsync("Main Menu");
+        Time.timeScale = 1f;
     }
 }

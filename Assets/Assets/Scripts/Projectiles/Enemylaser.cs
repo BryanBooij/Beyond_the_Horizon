@@ -1,6 +1,5 @@
 using Assets.Scripts.Player;
 using UnityEngine;
-
 namespace Assets.Scripts.Projectiles
 {
     public class EnemyLaser : MonoBehaviour
@@ -20,11 +19,13 @@ namespace Assets.Scripts.Projectiles
             if (collision.CompareTag("Player"))
             {
                 PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-
+                
                 if (playerHealth != null)
                 {
                     playerHealth.TakeDamage(damage);
+                    playerHealth.FlashRed();
                 }
+                
 
                 Destroy(gameObject);
             }

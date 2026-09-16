@@ -16,6 +16,9 @@ public class EnemySpaceship : MonoBehaviour
     private float maxX;
     private float minY;
     private float maxY;
+    
+    [Header("Explosion")]
+    public GameObject explosionPrefab;
 
     void Start()
     {
@@ -81,6 +84,14 @@ public class EnemySpaceship : MonoBehaviour
         if (health <= 0)
         {
             ScoreManager.Instance.AddPoints(Points);
+            if (explosionPrefab != null)
+            {
+                Instantiate(
+                    explosionPrefab,
+                    transform.position,
+                    Quaternion.identity
+                );
+            }
             Destroy(gameObject);
         }
     }

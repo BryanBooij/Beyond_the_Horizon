@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 555, y: 275.0485, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -155,17 +155,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0053954124, y: 0.013488848}
+  m_Offset: {x: -0.2123146, y: 0.4272542}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 59.2, y: 10}
+    oldSize: {x: 74, y: 12.5}
     newSize: {x: 1.436, y: 0.244}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1247253, y: 0.12599707}
+  m_Size: {x: 73.53828, y: 13.367373}
   m_EdgeRadius: 0
 --- !u!114 &6304392550668213238
 MonoBehaviour:
@@ -179,5 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354d6c5814094804ab7411c20b25a1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile_Lazer
-  moveSpeed: 500
+  moveSpeed: 10
   Damage: 5
