@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69105e534f78fc5458c34fcc5f11be70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Powerupdropper
-  powerUpPrefab: {fileID: 8709019204041469892, guid: ef2f00e9c9eddf8449d4651d1d4678a6, type: 3}
   possiblePowerUps:
   - {fileID: 11400000, guid: ad2ad0e82b5675e4c8acdabfa9097167, type: 2}
   - {fileID: 11400000, guid: 7304dd3b174a9ad40b0d6ed11a523607, type: 2}
+  - {fileID: 11400000, guid: 1edd8a7c5f113c7459b4a6db3b6ebc30, type: 2}
   dropChance: 1

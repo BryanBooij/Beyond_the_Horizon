@@ -1960,6 +1960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileShoot
   projectilePrefab:
   - {fileID: 7224285065701567356, guid: ee50d8ac9c11f9a499461d3fda0c95d9, type: 3}
+  doubleDamageProjectilePrefab: {fileID: 5689603847190956102, guid: 22fca87faadaa494e99c8320f96ee1ab, type: 3}
   fireRate: 0.4
   nextFireTime: 0
 --- !u!1 &510102243

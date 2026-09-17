@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ab976d22ae8c84b809e33d5c543377, type: 3}
+  m_Name: DoubleDamage
+  m_EditorClassIdentifier: Assembly-CSharp::DoubleDamage
+  icon: {fileID: -8385158955263067471, guid: ad640c6e1fc2f84498fdf63ab6307c3d, type: 3}
+  powerupPrefab: {fileID: 3249191102124292193, guid: e7fdb4b9b3b653b479a4425882a9dbd8, type: 3}
+  duration: 5

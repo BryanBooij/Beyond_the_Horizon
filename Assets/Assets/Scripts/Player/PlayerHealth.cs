@@ -16,6 +16,8 @@ namespace Assets.Scripts.Player
         public int currentHealth;
         private SpriteRenderer spriteRenderer;
         private Color originalColor;
+        private bool doubleDamage = false;
+        public bool DoubleDamageActive => doubleDamage;
         [SerializeField] private float flashDuration = 0.1f;
         [SerializeField] private float shakeAmount = 0.1f;
         [SerializeField] private float shakeDuration = 0.1f;
@@ -47,6 +49,10 @@ namespace Assets.Scripts.Player
             {
                 spriteRenderer.color = originalColor;
             }
+        }
+        public void SetDoubleDamage(bool value)
+        {
+            doubleDamage = value;
         }
 
         public void TakeDamage(int damage)
