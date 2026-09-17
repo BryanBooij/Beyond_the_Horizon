@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Powerupdropper : MonoBehaviour
 {
-    [SerializeField] private GameObject powerUpPrefab;
     [SerializeField] private PowerupEffect[] possiblePowerUps;
     [SerializeField] private float dropChance = 0.2f;
 
@@ -11,12 +10,15 @@ public class Powerupdropper : MonoBehaviour
         if (Random.value > dropChance)
             return;
 
+        if (possiblePowerUps == null || possiblePowerUps.Length == 0)
+            return;
+
         PowerupEffect powerupEffect = possiblePowerUps[
             Random.Range(0, possiblePowerUps.Length)
         ];
 
         GameObject droppedPowerUp = Instantiate(
-            powerUpPrefab,
+            powerupEffect.powerupPrefab,
             transform.position,
             Quaternion.identity
         );

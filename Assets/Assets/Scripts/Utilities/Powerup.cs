@@ -5,7 +5,17 @@ public class Powerup : MonoBehaviour
 {
     public PowerupEffect powerup;
     public float moveSpeed = 5f;
+    private SpriteRenderer spriteRenderer;
+    
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
+        if (powerup != null)
+        {
+            spriteRenderer.sprite = powerup.icon;
+        }
+    }
     private void Update()
     {
         transform.Translate(

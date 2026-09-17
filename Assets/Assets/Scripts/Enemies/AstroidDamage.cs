@@ -14,7 +14,6 @@ namespace Assets.Scripts.Enemies
                 PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
-                    playerHealth.FlashRed();
                     playerHealth.TakeDamage(damage);
                 }
 

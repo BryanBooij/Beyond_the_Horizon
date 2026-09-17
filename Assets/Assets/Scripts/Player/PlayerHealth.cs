@@ -7,6 +7,8 @@ namespace Assets.Scripts.Player
 {
     public class PlayerHealth : MonoBehaviour
     {
+        private bool isImmune = false;
+        public bool IsImmune => isImmune;
         public Slider healthBarSlider;
         public TextMeshProUGUI healthBarValueText;
         public GameObject deathScreen;
@@ -14,7 +16,6 @@ namespace Assets.Scripts.Player
         public int currentHealth;
         private SpriteRenderer spriteRenderer;
         private Color originalColor;
-
         [SerializeField] private float flashDuration = 0.1f;
         [SerializeField] private float shakeAmount = 0.1f;
         [SerializeField] private float shakeDuration = 0.1f;
@@ -34,9 +35,27 @@ namespace Assets.Scripts.Player
             healthBarSlider.value = currentHealth;
             healthBarSlider.maxValue = maxHealth;
         }
+        public void SetImmunity(bool value)
+        {
+            isImmune = value;
+
+            if (value)
+            {
+                spriteRenderer.color = Color.blue;
+            }
+            else
+            {
+                spriteRenderer.color = originalColor;
+            }
+        }
 
         public void TakeDamage(int damage)
         {
+            if (isImmune)
+                return;
+            
+            FlashRed();
+            StartCoroutine(Shake());
             currentHealth -= damage;
 
             if (currentHealth <= 0)
