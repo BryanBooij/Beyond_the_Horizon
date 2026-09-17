@@ -7,6 +7,8 @@ namespace Assets.Scripts.Player
 {
     public class PlayerHealth : MonoBehaviour
     {
+        [SerializeField] private Sprite normalSprite;
+        [SerializeField] private Sprite shieldSprite;
         private bool isImmune = false;
         public bool IsImmune => isImmune;
         public Slider healthBarSlider;
@@ -43,11 +45,11 @@ namespace Assets.Scripts.Player
 
             if (value)
             {
-                spriteRenderer.color = Color.blue;
+                spriteRenderer.sprite = shieldSprite;
             }
             else
             {
-                spriteRenderer.color = originalColor;
+                spriteRenderer.sprite = normalSprite;
             }
         }
         public void SetDoubleDamage(bool value)

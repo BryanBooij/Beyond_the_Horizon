@@ -1938,6 +1938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
+  shieldSprite: {fileID: -1956304482393881273, guid: 45f2449db7f2f304d9175f66d4f36152, type: 3}
   healthBarSlider: {fileID: 1704713058}
   healthBarValueText: {fileID: 434810903}
   deathScreen: {fileID: 101984607}
