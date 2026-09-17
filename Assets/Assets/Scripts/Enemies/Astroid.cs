@@ -55,6 +55,7 @@ namespace Assets.Scripts.Enemies
                             Quaternion.identity
                         );
                     }
+                    
                     Destroy(gameObject);
                     Destroy(collision.gameObject);
                 }

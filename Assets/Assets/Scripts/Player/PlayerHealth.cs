@@ -14,6 +14,10 @@ namespace Assets.Scripts.Player
         public int currentHealth;
         private SpriteRenderer spriteRenderer;
         private Color originalColor;
+        
+        [Header("Audio")]
+        public AudioSource audioSource;
+        public AudioClip hitSound;
 
         [SerializeField] private float flashDuration = 0.1f;
         [SerializeField] private float shakeAmount = 0.1f;
@@ -37,7 +41,9 @@ namespace Assets.Scripts.Player
 
         public void TakeDamage(int damage)
         {
-            currentHealth -= damage;
+            currentHealth -= damage;    
+            // Getting hit sound
+            audioSource.PlayOneShot(hitSound);
 
             if (currentHealth <= 0)
             {
