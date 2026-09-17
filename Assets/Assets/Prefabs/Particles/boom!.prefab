@@ -5007,4 +5007,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoomScript
   lifetime: 2
   audioSource: {fileID: 1443843533140415764}
-  explosionSound: {fileID: 8300000, guid: ea0acb9415f2cff43a1436b96476e68f, type: 3}
+  explosionSound: {fileID: 8300000, guid: 41aa7b61fdc6af74fa976dc5eb8b0069, type: 3}
