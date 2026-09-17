@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f48a427b097c57a48b9f390b19ada7de
+guid: 74a61d0f29a16164db5e3fa08b04ca77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3268578523331446355
-    second: Backgroundblue_0
+      213: 6763739801036390775
+    second: BeyondHorizon_Title_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Backgroundblue_0
+      name: BeyondHorizon_Title_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 76
         y: 0
-        width: 1920
-        height: 1080
+        width: 1631
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da9bb54962da3a2d0800000000000000
-      internalID: -3268578523331446355
+      spriteID: 77102f16381addd50800000000000000
+      internalID: 6763739801036390775
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Backgroundblue_0: -3268578523331446355
+      BeyondHorizon_Title_0: 6763739801036390775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

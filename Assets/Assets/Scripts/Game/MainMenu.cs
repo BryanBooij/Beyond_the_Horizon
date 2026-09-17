@@ -9,6 +9,12 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadSceneAsync("Demo");
     }
+    
+    public void PlayLevel1()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync("Template");
+    }
 
     public void QuitGame()
     {

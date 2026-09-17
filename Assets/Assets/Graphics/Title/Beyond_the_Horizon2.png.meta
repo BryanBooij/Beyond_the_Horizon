@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f22a3d183b9aac249a4f9c2951109b34
+guid: 3f66db190a160e04eb124f8ab08599bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3431023092614127800
-    second: Backgroundwhite_0
+      213: 7168513405731924133
+    second: Beyond_the_Horizon2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Backgroundwhite_0
+      name: Beyond_the_Horizon2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 152
+        y: 19
+        width: 1498
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84f9294fcae8260d0800000000000000
-      internalID: -3431023092614127800
+      spriteID: 5a8e64c46fcab7360800000000000000
+      internalID: 7168513405731924133
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Backgroundwhite_0: -3431023092614127800
+      Beyond_the_Horizon2_0: 7168513405731924133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
