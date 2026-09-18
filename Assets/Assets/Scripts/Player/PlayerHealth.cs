@@ -8,7 +8,7 @@ namespace Assets.Scripts.Player
     public class PlayerHealth : MonoBehaviour
     {
         [SerializeField] private Sprite normalSprite;
-        [SerializeField] private Sprite shieldSprite;
+        [SerializeField] private GameObject shieldObject;
         private bool isImmune = false;
         public bool IsImmune => isImmune;
         public Slider healthBarSlider;
@@ -31,6 +31,10 @@ namespace Assets.Scripts.Player
             deathScreen.SetActive(false);
             spriteRenderer = GetComponent<SpriteRenderer>();
             originalColor = spriteRenderer.color;
+            if (shieldObject != null)
+            {
+                shieldObject.SetActive(false);
+            }
         }
 
         private void Update()
@@ -42,15 +46,7 @@ namespace Assets.Scripts.Player
         public void SetImmunity(bool value)
         {
             isImmune = value;
-
-            if (value)
-            {
-                spriteRenderer.sprite = shieldSprite;
-            }
-            else
-            {
-                spriteRenderer.sprite = normalSprite;
-            }
+            shieldObject.SetActive(value);
         }
         public void SetDoubleDamage(bool value)
         {
