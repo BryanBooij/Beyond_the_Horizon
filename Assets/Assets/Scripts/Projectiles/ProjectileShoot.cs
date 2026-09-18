@@ -5,6 +5,10 @@ public class ProjectileShoot : MonoBehaviour
 {
     [SerializeField] private GameObject[] projectilePrefab;
     [SerializeField] private GameObject doubleDamageProjectilePrefab;
+    
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip laserSound;
 
     public float fireRate = 0.5f;
     public float nextFireTime = 0f;
@@ -46,6 +50,9 @@ public class ProjectileShoot : MonoBehaviour
 
                 doubleLaser.Damage = normalLaser.Damage * 2f;
             }
+            
+            // Laser sound when it is fired
+            audioSource.PlayOneShot(laserSound);
 
             nextFireTime = Time.time + fireRate;
         }

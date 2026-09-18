@@ -24,6 +24,12 @@ namespace Assets.Scripts.Player
         [SerializeField] private float shakeAmount = 0.1f;
         [SerializeField] private float shakeDuration = 0.1f;
         private Vector3 originalPosition;
+        
+        [Header("Audio")]
+        public AudioSource audioSource;
+        public AudioClip hitSound;
+        public AudioClip shieldHitSound;
+        
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -56,7 +62,16 @@ namespace Assets.Scripts.Player
         public void TakeDamage(int damage)
         {
             if (isImmune)
+            {
+                audioSource.PlayOneShot(shieldHitSound);
                 return;
+            }
+            
+            // Play hit sound
+            if (audioSource != null && hitSound != null)
+            {
+                audioSource.PlayOneShot(hitSound);
+            }
             
             FlashRed();
             StartCoroutine(Shake());
