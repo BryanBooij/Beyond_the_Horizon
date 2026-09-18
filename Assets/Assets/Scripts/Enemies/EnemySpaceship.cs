@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemySpaceship : MonoBehaviour
 {
+    private Powerupdropper powerupDropper;
     public float speed = 200f;
     public float waitTime = 2f;
     public int health = 20;
@@ -17,6 +18,10 @@ public class EnemySpaceship : MonoBehaviour
     private float minY;
     private float maxY;
     
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip hitSound;
+    
     [Header("Explosion")]
     public GameObject explosionPrefab;
 
@@ -24,6 +29,10 @@ public class EnemySpaceship : MonoBehaviour
     {
         CalculateScreenBounds();
         ChooseRandomDestination();
+    }
+    private void Awake()
+    {
+        powerupDropper = GetComponent<Powerupdropper>();
     }
 
     void Update()
@@ -81,6 +90,13 @@ public class EnemySpaceship : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        
+        // Play hit sound
+        if (audioSource != null && hitSound != null)
+        {
+            audioSource.PlayOneShot(hitSound);
+        }
+        
         if (health <= 0)
         {
             ScoreManager.Instance.AddPoints(Points);
@@ -93,6 +109,7 @@ public class EnemySpaceship : MonoBehaviour
                 );
             }
             Destroy(gameObject);
+            // powerupDropper.DropPowerUp();
         }
     }
 }

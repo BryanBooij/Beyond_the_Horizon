@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7038e5339d77f447b1588d97ddd911e, type: 3}
+  m_Name: HealthBuff
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBuff
+  icon: {fileID: -4986403609714620928, guid: ac75debd55c415d428f949ede6afb1c2, type: 3}
+  powerupPrefab: {fileID: 8709019204041469892, guid: ef2f00e9c9eddf8449d4651d1d4678a6, type: 3}
+  amount: 25

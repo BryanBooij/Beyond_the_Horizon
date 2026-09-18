@@ -23,7 +23,6 @@ namespace Assets.Scripts.Projectiles
                 if (playerHealth != null)
                 {
                     playerHealth.TakeDamage(damage);
-                    playerHealth.FlashRed();
                 }
                 
 

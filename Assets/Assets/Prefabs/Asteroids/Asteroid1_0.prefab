@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7149267645294800829}
   - component: {fileID: -3061705294339516638}
   - component: {fileID: 6533459585382105209}
+  - component: {fileID: 657949966569980484}
   m_Layer: 0
   m_Name: Asteroid1_0
   m_TagString: Astroid
@@ -162,7 +163,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.70078087, y: 0.13944244}
+  m_Offset: {x: 0.1927185, y: -0.30732155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -172,7 +173,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 70.50424, y: 70.19946}
+  m_Size: {x: 103.86191, y: 101.17445}
   m_EdgeRadius: 0
 --- !u!50 &6533459585382105209
 Rigidbody2D:
@@ -201,3 +202,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &657949966569980484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764604186118443629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69105e534f78fc5458c34fcc5f11be70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Powerupdropper
+  possiblePowerUps:
+  - {fileID: 11400000, guid: ad2ad0e82b5675e4c8acdabfa9097167, type: 2}
+  - {fileID: 11400000, guid: 7304dd3b174a9ad40b0d6ed11a523607, type: 2}
+  dropChance: 0.2
