@@ -3,7 +3,8 @@ using UnityEngine;
 public class Enemyshoot : MonoBehaviour
 {
     public GameObject laserPrefab;
-    public float fireRate = 2f;
+    public float minFireRate = 4f;
+    public float maxFireRate = 7f;
 
     private float nextFireTime = 0f;
 
@@ -13,7 +14,7 @@ public class Enemyshoot : MonoBehaviour
         {
             Instantiate(laserPrefab, transform.position, Quaternion.identity);
 
-            nextFireTime = Time.time + fireRate;
+            nextFireTime = Time.time + Random.Range(minFireRate, maxFireRate);
         }
     }
 }
