@@ -2082,7 +2082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
   shieldObject: {fileID: 113434294}
-  healthBarSlider: {fileID: 0}
+  healthBarSlider: {fileID: 720603572}
   healthBarValueText: {fileID: 434810903}
   deathScreen: {fileID: 101984607}
   maxHealth: 100
