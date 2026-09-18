@@ -17,6 +17,10 @@ public class EnemySpaceship : MonoBehaviour
     private float minY;
     private float maxY;
     
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip hitSound;
+    
     [Header("Explosion")]
     public GameObject explosionPrefab;
 
@@ -81,6 +85,13 @@ public class EnemySpaceship : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        
+        // Play hit sound
+        if (audioSource != null && hitSound != null)
+        {
+            audioSource.PlayOneShot(hitSound);
+        }
+        
         if (health <= 0)
         {
             ScoreManager.Instance.AddPoints(Points);
