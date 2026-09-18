@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7038e5339d77f447b1588d97ddd911e, type: 3}
   m_Name: HealthBuff
   m_EditorClassIdentifier: Assembly-CSharp::HealthBuff
-  icon: {fileID: -8640719203048335240, guid: c783fae212bb3ff46b953422dd037810, type: 3}
+  icon: {fileID: -4986403609714620928, guid: ac75debd55c415d428f949ede6afb1c2, type: 3}
   powerupPrefab: {fileID: 8709019204041469892, guid: ef2f00e9c9eddf8449d4651d1d4678a6, type: 3}
   amount: 25

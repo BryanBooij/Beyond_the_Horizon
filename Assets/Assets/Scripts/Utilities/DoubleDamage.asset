@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ab976d22ae8c84b809e33d5c543377, type: 3}
   m_Name: DoubleDamage
   m_EditorClassIdentifier: Assembly-CSharp::DoubleDamage
-  icon: {fileID: 5409627313332150205, guid: 5321470412cf75d4ea557776861cd3fd, type: 3}
+  icon: {fileID: -5441682950659285694, guid: 3ef9f19acc0ba3843930ffd697ca3db8, type: 3}
   powerupPrefab: {fileID: 3249191102124292193, guid: e7fdb4b9b3b653b479a4425882a9dbd8, type: 3}
   duration: 5
