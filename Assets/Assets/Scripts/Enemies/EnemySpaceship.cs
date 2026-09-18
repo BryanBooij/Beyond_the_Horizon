@@ -109,7 +109,7 @@ public class EnemySpaceship : MonoBehaviour
                 );
             }
             Destroy(gameObject);
-            powerupDropper.DropPowerUp();
+            // powerupDropper.DropPowerUp();
         }
     }
 }
