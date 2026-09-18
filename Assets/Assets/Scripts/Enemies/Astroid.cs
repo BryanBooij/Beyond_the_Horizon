@@ -4,11 +4,13 @@ using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
+    
     public class Asteroid : MonoBehaviour
     {
+        private Powerupdropper powerupDropper;
         [Header("Astroid HP, speed and Damage")]
-        public float moveSpeed = 300f;
-        public float maxHP = 50;
+        public float moveSpeed = 5f;
+        public float maxHP = 5;
         private float currentHP;
         public float Points = 10f;
         
@@ -27,6 +29,10 @@ namespace Assets.Scripts.Enemies
             {
                 rotationSpeed *= -1f; // spin the other way
             }
+        }
+        private void Awake()
+        {
+            powerupDropper = GetComponent<Powerupdropper>();
         }
         void Update()
         {
@@ -58,6 +64,7 @@ namespace Assets.Scripts.Enemies
                     
                     Destroy(gameObject);
                     Destroy(collision.gameObject);
+                    powerupDropper.DropPowerUp();
                 }
             }
         }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6497673296510761101}
   - component: {fileID: 1575907519463561075}
   - component: {fileID: -2902998734445394129}
+  - component: {fileID: 4456075264470542583}
   m_Layer: 0
   m_Name: Asteroid 2_0
   m_TagString: Astroid
@@ -199,3 +200,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4456075264470542583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961464145137665492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69105e534f78fc5458c34fcc5f11be70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Powerupdropper
+  possiblePowerUps:
+  - {fileID: 11400000, guid: ad2ad0e82b5675e4c8acdabfa9097167, type: 2}
+  - {fileID: 11400000, guid: 7304dd3b174a9ad40b0d6ed11a523607, type: 2}
+  - {fileID: 11400000, guid: 1edd8a7c5f113c7459b4a6db3b6ebc30, type: 2}
+  dropChance: 1

@@ -6,6 +6,7 @@ namespace Assets.Scripts.Enemies
 {
     public class LargeAstroid : MonoBehaviour
     {
+        private Powerupdropper powerupDropper;
         [Header("Astroid HP, speed and Damage")]
         public float moveSpeed = 200f;
         public float maxHP = 10;
@@ -39,6 +40,10 @@ namespace Assets.Scripts.Enemies
             {
                 rotationSpeed *= -1f;
             }
+        }
+        private void Awake()
+        {
+            powerupDropper = GetComponent<Powerupdropper>();
         }
 
         void Update()
@@ -86,6 +91,7 @@ namespace Assets.Scripts.Enemies
                     }
                     
                     Destroy(gameObject);
+                    powerupDropper.DropPowerUp();
                 }
             }
         }

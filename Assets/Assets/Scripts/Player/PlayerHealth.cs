@@ -7,6 +7,10 @@ namespace Assets.Scripts.Player
 {
     public class PlayerHealth : MonoBehaviour
     {
+        [SerializeField] private Sprite normalSprite;
+        [SerializeField] private GameObject shieldObject;
+        private bool isImmune = false;
+        public bool IsImmune => isImmune;
         public Slider healthBarSlider;
         public TextMeshProUGUI healthBarValueText;
         public GameObject deathScreen;
@@ -14,11 +18,8 @@ namespace Assets.Scripts.Player
         public int currentHealth;
         private SpriteRenderer spriteRenderer;
         private Color originalColor;
-        
-        [Header("Audio")]
-        public AudioSource audioSource;
-        public AudioClip hitSound;
-
+        private bool doubleDamage = false;
+        public bool DoubleDamageActive => doubleDamage;
         [SerializeField] private float flashDuration = 0.1f;
         [SerializeField] private float shakeAmount = 0.1f;
         [SerializeField] private float shakeDuration = 0.1f;
@@ -30,6 +31,10 @@ namespace Assets.Scripts.Player
             deathScreen.SetActive(false);
             spriteRenderer = GetComponent<SpriteRenderer>();
             originalColor = spriteRenderer.color;
+            if (shieldObject != null)
+            {
+                shieldObject.SetActive(false);
+            }
         }
 
         private void Update()
@@ -38,12 +43,24 @@ namespace Assets.Scripts.Player
             healthBarSlider.value = currentHealth;
             healthBarSlider.maxValue = maxHealth;
         }
+        public void SetImmunity(bool value)
+        {
+            isImmune = value;
+            shieldObject.SetActive(value);
+        }
+        public void SetDoubleDamage(bool value)
+        {
+            doubleDamage = value;
+        }
 
         public void TakeDamage(int damage)
         {
-            currentHealth -= damage;    
-            // Getting hit sound
-            audioSource.PlayOneShot(hitSound);
+            if (isImmune)
+                return;
+            
+            FlashRed();
+            StartCoroutine(Shake());
+            currentHealth -= damage;
 
             if (currentHealth <= 0)
             {
