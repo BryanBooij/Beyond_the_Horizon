@@ -48,14 +48,9 @@ namespace Assets.Scripts.Enemies
 
         void Update()
         {
-            transform.Translate(
-                Vector2.left * (moveSpeed * Time.deltaTime),
-                Space.World
-            );
+            transform.Translate(Vector2.left * (moveSpeed * DifficultyManager.Instance.astroidSpeedMultiplier * Time.deltaTime), Space.World);
 
-            transform.Rotate(
-                Vector3.forward * (rotationSpeed * Time.deltaTime)
-            );
+            transform.Rotate(Vector3.forward * (rotationSpeed * Time.deltaTime));
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

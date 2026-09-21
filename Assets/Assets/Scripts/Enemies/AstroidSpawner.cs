@@ -1,16 +1,34 @@
 using UnityEngine;
+using Assets.Scripts.Game;
 
 public class AstroidSpawner : MonoBehaviour
 {
     public GameObject[] asteroidPrefabs;
-    public float spawnInterval = 1f;
+    public float spawnInterval = 2f;
+
+    private float spawnTimer;
 
     private float minY;
     private float maxY;
 
-    void Start()
+    void Update()
     {
-        InvokeRepeating(nameof(SpawnAsteroid), 0f, spawnInterval);
+        float spawnMultiplier = 1f;
+
+        if (DifficultyManager.Instance != null)
+        {
+            spawnMultiplier = DifficultyManager.Instance.astroidSpawnSpeedMultiplier;
+        }
+
+        float currentSpawnInterval = spawnInterval / spawnMultiplier;
+
+        spawnTimer += Time.deltaTime;
+
+        if (spawnTimer >= currentSpawnInterval)
+        {
+            spawnTimer = 0f;
+            SpawnAsteroid();
+        }
     }
 
     void SpawnAsteroid()

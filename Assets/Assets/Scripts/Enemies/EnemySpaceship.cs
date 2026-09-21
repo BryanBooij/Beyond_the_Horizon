@@ -50,7 +50,7 @@ public class EnemySpaceship : MonoBehaviour
         transform.position = Vector2.MoveTowards(
             transform.position,
             destination,
-            speed * Time.deltaTime
+            speed * DifficultyManager.Instance.enemySpeedMultiplier * Time.deltaTime
         );
 
         if (Vector2.Distance(transform.position, destination) < 0.1f)

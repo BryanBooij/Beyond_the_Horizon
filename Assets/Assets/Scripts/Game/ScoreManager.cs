@@ -9,6 +9,7 @@ namespace Assets.Scripts.Game
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI finalScoreText;
         private int _score;
+        private int nextDifficultyScore = 500;
 
         private void Awake()
         {
@@ -26,6 +27,12 @@ namespace Assets.Scripts.Game
             _score += (int)amount;
             scoreText.text = "Score: " + _score.ToString();
             finalScoreText.text = "Final Score: " + _score.ToString();
+            
+            if (_score >= nextDifficultyScore)
+            {
+                DifficultyManager.Instance.IncreaseDifficulty();
+                nextDifficultyScore += 500;
+            }
         }
     }
 }

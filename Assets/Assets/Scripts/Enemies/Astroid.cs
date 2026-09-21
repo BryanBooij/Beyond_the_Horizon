@@ -36,7 +36,7 @@ namespace Assets.Scripts.Enemies
         }
         void Update()
         {
-            transform.Translate(Vector2.left * (moveSpeed * Time.deltaTime), Space.World); // projectile goes from spawn position to the left times movementspeed
+            transform.Translate(Vector2.left * (moveSpeed * DifficultyManager.Instance.astroidSpeedMultiplier * Time.deltaTime), Space.World); // projectile goes from spawn position to the left times movementspeed
             transform.Rotate(Vector3.forward * (rotationSpeed * Time.deltaTime)); // rotate png
         }
 
