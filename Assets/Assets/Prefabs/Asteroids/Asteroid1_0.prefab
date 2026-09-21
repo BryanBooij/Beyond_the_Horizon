@@ -217,4 +217,4 @@ MonoBehaviour:
   possiblePowerUps:
   - {fileID: 11400000, guid: ad2ad0e82b5675e4c8acdabfa9097167, type: 2}
   - {fileID: 11400000, guid: 7304dd3b174a9ad40b0d6ed11a523607, type: 2}
-  dropChance: 0.2
+  dropChance: 0.05
