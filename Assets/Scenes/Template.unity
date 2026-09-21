@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &101984608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2023,6 +2023,9 @@ MonoBehaviour:
   flashDuration: 0.1
   shakeAmount: 0.1
   shakeDuration: 0.1
+  audioSource: {fileID: 0}
+  hitSound: {fileID: 0}
+  shieldHitSound: {fileID: 0}
 --- !u!114 &505584678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2038,6 +2041,8 @@ MonoBehaviour:
   projectilePrefab:
   - {fileID: 7224285065701567356, guid: ee50d8ac9c11f9a499461d3fda0c95d9, type: 3}
   doubleDamageProjectilePrefab: {fileID: 0}
+  audioSource: {fileID: 0}
+  laserSound: {fileID: 0}
   fireRate: 0.4
   nextFireTime: 0
 --- !u!1 &510102243
