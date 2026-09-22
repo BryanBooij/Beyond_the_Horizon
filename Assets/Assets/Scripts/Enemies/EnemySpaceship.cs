@@ -50,11 +50,7 @@ public class EnemySpaceship : MonoBehaviour
             }
             return;
         }
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            destination,
-            speed * DifficultyManager.Instance.enemySpeedMultiplier * Time.deltaTime
-        );
+        transform.position = Vector2.MoveTowards(transform.position, destination, speed * DifficultyManager.Instance.enemySpeedMultiplier * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, destination) < 0.1f)
         {
@@ -87,29 +83,24 @@ public class EnemySpaceship : MonoBehaviour
     void ChooseRandomDestination()
     {
         Vector2 newDestination;
-
         do
         {
             float randomX = Random.Range(minX, maxX);
             float randomY = Random.Range(minY, maxY);
-
             newDestination = new Vector2(randomX, randomY);
 
         } while (ShootButtonCollider.Instance != null &&
                  ShootButtonCollider.Instance.OverlapPoint(newDestination));
-
         destination = newDestination;
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
-        
         // Play hit sound
         if (audioSource != null && hitSound != null)
         {
             audioSource.PlayOneShot(hitSound);
         }
-        
         if (health <= 0)
         {
             ScoreManager.Instance.AddPoints(Points);
