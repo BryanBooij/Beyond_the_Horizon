@@ -21,9 +21,6 @@ namespace Assets.Scripts.Game
             astroidSpeedMultiplier += 0.25f;
             astroidSpawnSpeedMultiplier += 0.2f;
             enemySpeedMultiplier += 0.1f;
-            Debug.Log(astroidSpeedMultiplier);
-            Debug.Log(astroidSpawnSpeedMultiplier);
-            Debug.Log(enemySpeedMultiplier);
         }
     }
 }

@@ -1,10 +1,12 @@
 using Assets.Scripts.Game;
 using UnityEngine;
+using Assets.Scripts.Enemies;
 
 public class EnemySpaceship : MonoBehaviour
 {
     private Powerupdropper powerupDropper;
-    public float speed = 200f;
+    private Collider2D myCollider;
+    public float speed = 5f;
     public float waitTime = 2f;
     public int health = 20;
     public float Points = 100f;
@@ -33,6 +35,7 @@ public class EnemySpaceship : MonoBehaviour
     private void Awake()
     {
         powerupDropper = GetComponent<Powerupdropper>();
+        myCollider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -83,9 +86,19 @@ public class EnemySpaceship : MonoBehaviour
     }
     void ChooseRandomDestination()
     {
-        float randomX = Random.Range(minX, maxX);
-        float randomY = Random.Range(minY, maxY);
-        destination = new Vector2(randomX, randomY);
+        Vector2 newDestination;
+
+        do
+        {
+            float randomX = Random.Range(minX, maxX);
+            float randomY = Random.Range(minY, maxY);
+
+            newDestination = new Vector2(randomX, randomY);
+
+        } while (ShootButtonCollider.Instance != null &&
+                 ShootButtonCollider.Instance.OverlapPoint(newDestination));
+
+        destination = newDestination;
     }
     public void TakeDamage(int damage)
     {

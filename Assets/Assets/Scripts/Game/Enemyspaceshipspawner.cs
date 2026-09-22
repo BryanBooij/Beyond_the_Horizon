@@ -1,4 +1,5 @@
 using UnityEngine;
+using Assets.Scripts.Enemies;
 
 public class Enemyspaceshipspawner : MonoBehaviour
 {
@@ -16,13 +17,11 @@ public class Enemyspaceshipspawner : MonoBehaviour
         float cameraHeight = cam.orthographicSize;
         Collider2D enemyCollider = Enemyspaceship.GetComponent<Collider2D>();
         float halfEnemyHeight = 0f;
-
         // ships cant spawn slightly outside the frame
         if (enemyCollider != null)
         {
             halfEnemyHeight = enemyCollider.bounds.extents.y;
         }
-        
         minY = cam.transform.position.y - cameraHeight + halfEnemyHeight;
         maxY = cam.transform.position.y + cameraHeight - halfEnemyHeight;
 
@@ -31,9 +30,15 @@ public class Enemyspaceshipspawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        float randomY = Random.Range(minY, maxY);
-        Vector3 spawnPos = new Vector3(transform.position.x, randomY, 0f);
+        Vector3 spawnPos;
+        do
+        {
+            float randomY = Random.Range(minY, maxY);
+            spawnPos = new Vector3(transform.position.x, randomY);
 
-        Instantiate(Enemyspaceship, spawnPos, Quaternion.identity);
+        } while (ShootButtonCollider.Instance != null && ShootButtonCollider.Instance.OverlapPoint(spawnPos));
+
+        Instantiate(Enemyspaceship,spawnPos, Quaternion.identity
+        );
     }
 }
