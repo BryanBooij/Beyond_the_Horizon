@@ -33,7 +33,7 @@ namespace Assets.Scripts.Game
             finalScoreText.text = "Final Score: " + _score.ToString();
             victoryfinalScoreText.text = "Final Score: " + _score.ToString();
             
-            if (_score >= 100 && victoryscreen != null)
+            if (_score >= 1000 && victoryscreen != null)
             {
                 if (victoryscreen != null)
                 {
