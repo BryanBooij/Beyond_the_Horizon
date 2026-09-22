@@ -11,6 +11,10 @@ public class EnemySpaceship : MonoBehaviour
     public int health = 20;
     public float Points = 100f;
 
+    [Header("Enemy Sprites")]
+    public Sprite DogSprite;
+    public Sprite DogDamagedSprite;
+    
     private Vector2 destination;
     private float waitTimer;
     private bool isWaiting;
@@ -26,11 +30,15 @@ public class EnemySpaceship : MonoBehaviour
     
     [Header("Explosion")]
     public GameObject explosionPrefab;
+    
+    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
         CalculateScreenBounds();
         ChooseRandomDestination();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer.sprite = DogSprite;
     }
     private void Awake()
     {
@@ -101,6 +109,12 @@ public class EnemySpaceship : MonoBehaviour
         {
             audioSource.PlayOneShot(hitSound);
         }
+        
+        if (health <= 10)
+        {
+            _spriteRenderer.sprite = DogDamagedSprite;
+        }
+        
         if (health <= 0)
         {
             ScoreManager.Instance.AddPoints(Points);

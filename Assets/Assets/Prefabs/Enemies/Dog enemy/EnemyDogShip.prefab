@@ -315,6 +315,8 @@ MonoBehaviour:
   waitTime: 2
   health: 20
   Points: 100
+  DogSprite: {fileID: -3372276399850217188, guid: 30eba7ff30d7d7d4faee4a5824efcf52, type: 3}
+  DogDamagedSprite: {fileID: 5654264939757741270, guid: b0b11adb599e6564982b4e00b077fae1, type: 3}
   audioSource: {fileID: 3233493711317042632}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}
