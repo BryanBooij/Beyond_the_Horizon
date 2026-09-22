@@ -23,6 +23,7 @@ namespace Assets.Scripts.Enemies
 
         void Start()
         {
+            
             currentHP = maxHP; // set HP on first iteration
             
             if (randomDirection && UnityEngine.Random.value > 0.5f)
@@ -60,6 +61,12 @@ namespace Assets.Scripts.Enemies
                             transform.position,
                             Quaternion.identity
                         );
+                    }
+                    ChunkController chunkController = FindFirstObjectByType<ChunkController>();
+
+                    if (chunkController != null)
+                    {
+                        chunkController.EnemyDestroyed();
                     }
                     
                     Destroy(gameObject);

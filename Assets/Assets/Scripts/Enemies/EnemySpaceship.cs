@@ -112,8 +112,14 @@ public class EnemySpaceship : MonoBehaviour
                     Quaternion.identity
                 );
             }
+            ChunkController chunkController = FindFirstObjectByType<ChunkController>();
+
+            if (chunkController != null)
+            {
+                chunkController.EnemyDestroyed();
+            }
             Destroy(gameObject);
-            // powerupDropper.DropPowerUp();
+            powerupDropper.DropPowerUp();
         }
     }
 }
