@@ -11,6 +11,8 @@ TagManager:
   - Enemyspaceship
   - Shipboundary
   - Enemybullet
+  - Aura
+  - HealthEffect
   layers:
   - Default
   - TransparentFX
