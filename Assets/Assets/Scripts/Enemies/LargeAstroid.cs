@@ -84,13 +84,6 @@ namespace Assets.Scripts.Enemies
                             Quaternion.identity
                         );
                     }
-                    ChunkController chunkController = FindFirstObjectByType<ChunkController>();
-
-                    if (chunkController != null)
-                    {
-                        chunkController.EnemyDestroyed();
-                    }
-                    
                     Destroy(gameObject);
                     powerupDropper.DropPowerUp();
                 }

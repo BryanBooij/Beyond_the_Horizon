@@ -13,12 +13,9 @@ public class Enemyspaceshipspawner : MonoBehaviour
     public int maxEnemySpaceships = 10;
 
     private int spawnedEnemySpaceships = 0;
-
-    private ChunkController chunkController;
-
+    
     void Start()
     {
-        chunkController = GetComponentInParent<ChunkController>();
 
         // keeps spawn area inside the frame
         Camera cam = Camera.main;
@@ -76,17 +73,5 @@ public class Enemyspaceshipspawner : MonoBehaviour
             spawnPos,
             Quaternion.identity
         );
-
-        spawnedEnemySpaceships++;
-
-        if (chunkController != null)
-        {
-            chunkController.EnemySpawned();
-
-            if (spawnedEnemySpaceships >= maxEnemySpaceships)
-            {
-                chunkController.SpawningFinished();
-            }
-        }
     }
 }

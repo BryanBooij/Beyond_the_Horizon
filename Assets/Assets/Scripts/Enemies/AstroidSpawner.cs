@@ -13,15 +13,6 @@ public class AstroidSpawner : MonoBehaviour
     private float minY;
     private float maxY;
 
-    private ChunkController chunkController;
-
-    void Start()
-    {
-        chunkController = GetComponent<ChunkController>();
-
-        Debug.Log("ChunkController gevonden: " + (chunkController != null));
-    }
-
     void Update()
     {
         if (spawnedAsteroids >= maxAsteroids)
@@ -90,17 +81,5 @@ public class AstroidSpawner : MonoBehaviour
             spawnPos,
             Quaternion.identity
         );
-
-        spawnedAsteroids++;
-
-        if (chunkController != null)
-        {
-            chunkController.EnemySpawned();
-
-            if (spawnedAsteroids >= maxAsteroids)
-            {
-                chunkController.SpawningFinished();
-            }
-        }
     }
 }
