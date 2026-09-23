@@ -1,7 +1,10 @@
-﻿namespace Assets.Scripts.LevelSystem
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "LevelData", menuName = "Game/Level Data")]
+public class LevelData : ScriptableObject
 {
-    public class LevelData
-    {
-        
-    }
+    public string levelName;
+
+    public List<ChunkData> chunks;
 }

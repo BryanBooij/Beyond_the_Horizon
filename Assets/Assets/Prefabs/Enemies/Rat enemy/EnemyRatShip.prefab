@@ -180,10 +180,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5ca28242c7dc4ebbd59ad704cc6b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 200
+  speed: 5
   waitTime: 2
   health: 20
   Points: 10
+  audioSource: {fileID: 0}
+  hitSound: {fileID: 0}
   explosionPrefab: {fileID: 0}
 --- !u!114 &4525080724125226128
 MonoBehaviour:
@@ -198,4 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   laserPrefab: {fileID: 5434020813485827992, guid: e819cf4f50e6f664997fe80bcac7f9e5, type: 3}
-  fireRate: 1
+  minFireRate: 4
+  maxFireRate: 7
+  audioSource: {fileID: 0}
+  laserSound: {fileID: 0}
