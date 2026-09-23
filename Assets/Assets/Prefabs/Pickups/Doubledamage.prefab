@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6572736065222008535}
   - component: {fileID: 3045643765807819215}
   - component: {fileID: 3921225461844123572}
+  - component: {fileID: 3434694658495789812}
   m_Layer: 0
   m_Name: Doubledamage
   m_TagString: Untagged
@@ -208,5 +209,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1186463258496264432, guid: 0f0f22103abd8614d998a3adf3f30428, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3434694658495789812}
   m_SourcePrefab: {fileID: 100100000, guid: 0f0f22103abd8614d998a3adf3f30428, type: 3}
+--- !u!50 &3434694658495789812
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249191102124292193}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
