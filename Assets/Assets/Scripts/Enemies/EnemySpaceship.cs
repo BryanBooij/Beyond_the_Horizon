@@ -1,3 +1,4 @@
+using System.Collections;
 using Assets.Scripts.Game;
 using UnityEngine;
 using Assets.Scripts.Enemies;
@@ -101,6 +102,12 @@ public class EnemySpaceship : MonoBehaviour
                  ShootButtonCollider.Instance.OverlapPoint(newDestination));
         destination = newDestination;
     }
+    private IEnumerator FlashRed()
+    {
+        _spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        _spriteRenderer.color = Color.white;
+    }
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -108,6 +115,7 @@ public class EnemySpaceship : MonoBehaviour
         if (audioSource != null && hitSound != null)
         {
             audioSource.PlayOneShot(hitSound);
+            StartCoroutine(FlashRed());
         }
         
         if (health <= 10)
