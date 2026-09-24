@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/Assets/Graphics/Background/Map_Background.png.meta
 guid: 50ab7bf5e1cb48944acce254af278667
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3588485944401048992
     second: Map_Background_0
-========
-guid: 736081f08c0cb044c8c70953b36ffdb7
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1484171562767161725
-    second: Pause_button_0
->>>>>>>> Stashed changes:Assets/Assets/Graphics/UI/Pause_button.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,22 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< Updated upstream:Assets/Assets/Graphics/Background/Map_Background.png.meta
       name: Map_Background_0
-========
-      name: Pause_button_0
->>>>>>>> Stashed changes:Assets/Assets/Graphics/UI/Pause_button.png.meta
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-<<<<<<<< Updated upstream:Assets/Assets/Graphics/Background/Map_Background.png.meta
         width: 1920
         height: 1080
-========
-        width: 91
-        height: 91
->>>>>>>> Stashed changes:Assets/Assets/Graphics/UI/Pause_button.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,13 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< Updated upstream:Assets/Assets/Graphics/Background/Map_Background.png.meta
       spriteID: 0a5b18d24fcdcc130800000000000000
       internalID: 3588485944401048992
-========
-      spriteID: 386e68fb3d9276be0800000000000000
-      internalID: -1484171562767161725
->>>>>>>> Stashed changes:Assets/Assets/Graphics/UI/Pause_button.png.meta
       vertices: []
       indices: 
       edges: []
@@ -158,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< Updated upstream:Assets/Assets/Graphics/Background/Map_Background.png.meta
       Map_Background_0: 3588485944401048992
-========
-      Pause_button_0: -1484171562767161725
->>>>>>>> Stashed changes:Assets/Assets/Graphics/UI/Pause_button.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
