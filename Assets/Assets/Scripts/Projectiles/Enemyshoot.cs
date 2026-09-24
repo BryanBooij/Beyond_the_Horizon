@@ -11,6 +11,11 @@ public class Enemyshoot : MonoBehaviour
     public AudioClip laserSound;
 
     private float nextFireTime = 0f;
+    
+    void Start()
+    {
+        nextFireTime = Time.time + Random.Range(minFireRate, maxFireRate);
+    }
 
     void Update()
     {
