@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 5f51a7c88c24a4645ad84561a021f144
+=======
+<<<<<<< HEAD:Assets/Assets/UI/heart.png.meta
+guid: e928fcbc63b9c43e588fa65f81b4443b
+=======
+guid: 5f51a7c88c24a4645ad84561a021f144
+>>>>>>> a7c7fb204dddc1bd8c19000f31156f0760474ba2:Assets/Assets/Graphics/UI/Healthbar/heart.png.meta
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -51,7 +59,15 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   spritePixelsToUnits: 0.5
+=======
+<<<<<<< HEAD:Assets/Assets/UI/heart.png.meta
+  spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 0.5
+>>>>>>> a7c7fb204dddc1bd8c19000f31156f0760474ba2:Assets/Assets/Graphics/UI/Healthbar/heart.png.meta
+>>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,6 +112,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD:Assets/Assets/UI/heart.png.meta
+=======
+>>>>>>> Stashed changes
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
@@ -122,6 +143,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
+=======
+>>>>>>> a7c7fb204dddc1bd8c19000f31156f0760474ba2:Assets/Assets/Graphics/UI/Healthbar/heart.png.meta
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
