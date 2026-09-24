@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 43487a4091433724788a81ee9502dc0a
-=======
-<<<<<<< HEAD:Assets/Assets/UI/Heatlhbar_foreground.png.meta
-guid: 7ba4d85c07ee34230be087b78ff3a819
-=======
-guid: 43487a4091433724788a81ee9502dc0a
->>>>>>> a7c7fb204dddc1bd8c19000f31156f0760474ba2:Assets/Assets/Graphics/UI/Healthbar/Heatlhbar_foreground.png.meta
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -104,11 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD:Assets/Assets/UI/Heatlhbar_foreground.png.meta
-=======
->>>>>>> Stashed changes
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
@@ -135,10 +122,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-=======
->>>>>>> a7c7fb204dddc1bd8c19000f31156f0760474ba2:Assets/Assets/Graphics/UI/Healthbar/Heatlhbar_foreground.png.meta
->>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
