@@ -4751,7 +4751,7 @@ MonoBehaviour:
   - {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
   - {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
   - {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
-  spawnInterval: 1
+  spawnInterval: 5
   startDelay: 5
 --- !u!61 &1597761364
 BoxCollider2D:

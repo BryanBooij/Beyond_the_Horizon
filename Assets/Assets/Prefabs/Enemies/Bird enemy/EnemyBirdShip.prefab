@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   laserPrefab: {fileID: 5434020813485827992, guid: 337a8647276b09c4a82d5646b357ed95, type: 3}
-  minFireRate: 2
-  maxFireRate: 5
+  minFireRate: 1
+  maxFireRate: 3
   audioSource: {fileID: 3160870054129933035}
   laserSound: {fileID: 8300000, guid: 3e413fc07864d9b4b97e9c477a5ee083, type: 3}
