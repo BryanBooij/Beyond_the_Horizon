@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6447397966138318822}
-  - component: {fileID: 6811634445515960095}
   - component: {fileID: 2275035166355359949}
+  - component: {fileID: 2515345178888782249}
   - component: {fileID: 7421300046032775429}
   - component: {fileID: 1654862989927246316}
   m_Layer: 0
@@ -30,12 +30,26 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.47, y: 0.11, z: 0}
-  m_LocalScale: {x: 0.015, y: 0.03, z: 1}
+  m_LocalScale: {x: 0.19523206, y: 0.38745108, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6811634445515960095
+--- !u!114 &2275035166355359949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5434020813485827992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d237d1e1e1e0e654ba881bd8d20d6c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Projectiles.EnemyLaser
+  moveSpeed: 10
+  damage: 5
+--- !u!212 &2515345178888782249
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -84,30 +98,16 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5854771608185497034, guid: c8812a50091afde4f8acc61f3e74252d, type: 3}
+  m_Sprite: {fileID: 4641317205071407129, guid: fd57f1949e93f3246a8bae2be43f2654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.436, y: 0.244}
+  m_Size: {x: 5.43, y: 0.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &2275035166355359949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5434020813485827992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d237d1e1e1e0e654ba881bd8d20d6c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Projectiles.EnemyLaser
-  moveSpeed: 10
-  damage: 5
 --- !u!50 &7421300046032775429
 Rigidbody2D:
   serializedVersion: 5
@@ -169,15 +169,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.44405746, y: -0.049497604}
+  m_Offset: {x: 0.010560513, y: -0.0017058998}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 69, y: 7}
-    newSize: {x: 1.436, y: 0.244}
+    oldSize: {x: 5.43, y: 0.37}
+    newSize: {x: 5.43, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 70.438576, y: 9.651392}
+  m_Size: {x: 5.2640104, y: 0.36773798}
   m_EdgeRadius: 0
