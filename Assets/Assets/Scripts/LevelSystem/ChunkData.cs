@@ -11,4 +11,10 @@ public class ChunkData
     [Header("Chunk Completion")]
     public int maxActiveEnemies = 1;
     public float maxDuration = 20f;
+    
+    [Header("Dialogue")]
+    public bool dialogueEnabled = false;
+    [TextArea(2, 5)]
+    public string dialogueText;
+    public float dialogueDuration = 5f;
 }

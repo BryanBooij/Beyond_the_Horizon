@@ -7,7 +7,8 @@ public class LevelManager : MonoBehaviour
 
     [Header("References")]
     public SpawnManager spawnManager;
-
+    public DialogueManager dialogueManager;
+    
     private int currentChunkIndex = -1;
     private int activeEnemies = 0;
 
@@ -88,7 +89,20 @@ public class LevelManager : MonoBehaviour
 
         Debug.Log("Chunk finished!");
 
-        StartNextChunk();
+        ChunkData chunk = levelData.chunks[currentChunkIndex];
+
+        if (chunk.dialogueEnabled)
+        {
+            dialogueManager.ShowDialogue(
+                chunk.dialogueText,
+                chunk.dialogueDuration,
+                StartNextChunk
+            );
+        }
+        else
+        {
+            StartNextChunk();
+        }
     }
 
     public void EnemySpawned()
