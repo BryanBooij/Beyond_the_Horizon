@@ -2451,7 +2451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.84052837, y: 0}
   m_AnchorMax: {x: 1, y: 0.29000002}
-  m_AnchoredPosition: {x: 0.2064209, y: 0.5803833}
+  m_AnchoredPosition: {x: 0.2064209, y: 0.58044434}
   m_SizeDelta: {x: -161.42896, y: -138.232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &525348249
@@ -4747,8 +4747,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b81e8cdd9d782448acba372eb91c0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Enemyspaceship: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
-  spawnInterval: 15
+  Enemyspaceship:
+  - {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
+  - {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
+  - {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+  spawnInterval: 1
   startDelay: 5
 --- !u!61 &1597761364
 BoxCollider2D:

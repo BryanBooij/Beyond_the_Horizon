@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7421300046032775429}
   - component: {fileID: 1654862989927246316}
   m_Layer: 0
-  m_Name: laser_0
+  m_Name: laser_Bird
   m_TagString: Enemybullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5854771608185497034, guid: c8812a50091afde4f8acc61f3e74252d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
