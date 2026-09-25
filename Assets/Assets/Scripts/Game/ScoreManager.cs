@@ -11,7 +11,7 @@ namespace Assets.Scripts.Game
         public TextMeshProUGUI victoryfinalScoreText;
         public GameObject victoryscreen;
         private int _score;
-        private int nextDifficultyScore = 500;
+        private int nextDifficultyScore = 1000;
 
         private void Awake()
         {
@@ -35,20 +35,8 @@ namespace Assets.Scripts.Game
             if (_score >= nextDifficultyScore)
             {
                 DifficultyManager.Instance.IncreaseDifficulty();
-                nextDifficultyScore += 500;
+                nextDifficultyScore += 1000;
             }
-
-            // victoryfinalScoreText.text = "Final Score: " + _score.ToString();
-            
-            // if (_score >= 1000 && victoryscreen != null)
-            // {
-            //     if (victoryscreen != null)
-            //     {
-            //         victoryscreen.SetActive(true);
-            //     }
-            //     Time.timeScale = 0f;
-
-            // }
         }
     }
 }
