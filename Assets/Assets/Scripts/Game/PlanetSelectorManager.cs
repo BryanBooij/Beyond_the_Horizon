@@ -1,41 +1,39 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class PlanetSelectorManager : MonoBehaviour
+public class PlanetSelector : MonoBehaviour
 {
-    [Header("Assign in Inspector")]
-    public GameObject[] planetPanels;   
-    public Button[] planetButtons;      
+    [Header("Assign Scenes on the same spot as Buttons")]
+    public string[] levelSceneNames;
+    public Button[] planetButtons;
+
     public Button continueButton;
 
-    private GameObject selectedLevel;
+    private int selectedIndex = -1;
     private Button selectedButton;
 
     void Start()
     {
         continueButton.interactable = false;
     }
-
     
     public void SelectPlanet(int index)
     {
-        
         if (selectedButton != null)
             selectedButton.OnDeselect(null);
 
-        selectedLevel = planetPanels[index];
+        selectedIndex = index;
         selectedButton = planetButtons[index];
 
         selectedButton.Select();
         continueButton.interactable = true;
     }
-
     
     public void ContinueToLevel()
     {
-        if (selectedLevel == null) return;
+        if (selectedIndex < 0) return;
 
-        gameObject.SetActive(false);   
-        selectedLevel.SetActive(true);
+        SceneManager.LoadScene(levelSceneNames[selectedIndex]);
     }
 }
