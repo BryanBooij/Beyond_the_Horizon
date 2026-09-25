@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlanetSelector : MonoBehaviour
 {
-    [Header("Assign Scenes on the same spot as Buttons")]
+    [Header("Assign Scene names on the same spot as Buttons")]
     public string[] levelSceneNames;
     public Button[] planetButtons;
 
