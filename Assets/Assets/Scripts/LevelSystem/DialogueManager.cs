@@ -9,6 +9,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
 
+    [Header("Typewriter")]
+    [SerializeField] private float textSpeed = 0.05f;
+
     private Coroutine dialogueCoroutine;
 
     public void ShowDialogue(
@@ -32,8 +35,18 @@ public class DialogueManager : MonoBehaviour
         Action onComplete)
     {
         dialoguePanel.SetActive(true);
-        dialogueText.text = text;
 
+        dialogueText.text = "";
+
+        // Typewriter effect
+        foreach (char letter in text)
+        {
+            dialogueText.text += letter;
+
+            yield return new WaitForSeconds(textSpeed);
+        }
+
+        // Wacht nadat de volledige tekst geschreven is
         yield return new WaitForSeconds(duration);
 
         dialoguePanel.SetActive(false);

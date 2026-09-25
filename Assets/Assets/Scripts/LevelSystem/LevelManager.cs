@@ -8,7 +8,8 @@ public class LevelManager : MonoBehaviour
     [Header("References")]
     public SpawnManager spawnManager;
     public DialogueManager dialogueManager;
-    
+    [Header("UI")]
+    public GameObject victoryScreen;
     private int currentChunkIndex = -1;
     private int activeEnemies = 0;
 
@@ -96,13 +97,23 @@ public class LevelManager : MonoBehaviour
             dialogueManager.ShowDialogue(
                 chunk.dialogueText,
                 chunk.dialogueDuration,
-                StartNextChunk
+                ContinueAfterChunk
             );
         }
         else
         {
-            StartNextChunk();
+            ContinueAfterChunk();
         }
+    }
+    private void ContinueAfterChunk()
+    {
+        if (currentChunkIndex >= levelData.chunks.Count - 1)
+        {
+            LevelComplete();
+            return;
+        }
+
+        StartNextChunk();
     }
 
     public void EnemySpawned()
@@ -122,5 +133,10 @@ public class LevelManager : MonoBehaviour
     private void LevelComplete()
     {
         Debug.Log("LEVEL COMPLETE!");
+
+        if (victoryScreen != null)
+        {
+            victoryScreen.SetActive(true);
+        }
     }
 }

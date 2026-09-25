@@ -2521,6 +2521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   dialoguePanel: {fileID: 2741686}
   dialogueText: {fileID: 1514358773}
+  textSpeed: 0.05
 --- !u!4 &544395807
 Transform:
   m_ObjectHideFlags: 0
@@ -2875,6 +2876,7 @@ MonoBehaviour:
   levelData: {fileID: 11400000, guid: c320915430b0df7449f29b676691b4ad, type: 2}
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
+  victoryScreen: {fileID: 1202129349}
 --- !u!4 &742276368
 Transform:
   m_ObjectHideFlags: 0
@@ -4834,9 +4836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hallo
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4869,8 +4869,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4902,7 +4902,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -635.53864, y: -42.369263, z: -637.23315, w: -40.67448}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
