@@ -8,6 +8,8 @@ namespace Assets.Scripts.Player
     public class PlayerHealth : MonoBehaviour
     {
         [SerializeField] private Sprite normalSprite;
+        [SerializeField] private Sprite halfHealthSprite;
+        [SerializeField] private Sprite lowHealthSprite;
         [SerializeField] private GameObject shieldObject;
         private bool isImmune = false;
         public bool IsImmune => isImmune;
@@ -37,6 +39,7 @@ namespace Assets.Scripts.Player
             deathScreen.SetActive(false);
             spriteRenderer = GetComponent<SpriteRenderer>();
             originalColor = spriteRenderer.color;
+            UpdateHealthSprite();
             if (shieldObject != null)
             {
                 shieldObject.SetActive(false);
@@ -76,6 +79,7 @@ namespace Assets.Scripts.Player
             FlashRed();
             StartCoroutine(Shake());
             currentHealth -= damage;
+            UpdateHealthSprite();
 
             if (currentHealth <= 0)
             {
@@ -121,6 +125,22 @@ namespace Assets.Scripts.Player
             }
 
             transform.localPosition = originalPosition;
+        }
+        
+        public void UpdateHealthSprite()
+        {
+            if (currentHealth > maxHealth * 0.5f)
+            {
+                spriteRenderer.sprite = normalSprite;
+            }
+            else if (currentHealth > maxHealth * 0.25f)
+            {
+                spriteRenderer.sprite = halfHealthSprite;
+            }
+            else
+            {
+                spriteRenderer.sprite = lowHealthSprite;
+            }
         }
     }
 }

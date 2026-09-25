@@ -17,6 +17,7 @@ public class HealthBuff : PowerupEffect
             playerHealth.currentHealth + amount,
             playerHealth.maxHealth
         );
+        playerHealth.UpdateHealthSprite();
 
         Transform healthEffect = target.transform.Find("HealthEffect");
 
