@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 23cca6114b8d74997ad4e3b8cb20607c
+guid: ddab7acd2e8934be4b794cb640860cfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3709004318279458445
-    second: Light_Sun_0
+      213: -6839655076958726527
+    second: Nestara_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light_Sun_0
+      name: Nestara_0
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 30
-        width: 843
-        height: 778
+        x: 439
+        y: 151
+        width: 366
+        height: 367
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8edf6db6c7097330800000000000000
-      internalID: 3709004318279458445
+      spriteID: 1869daf02f9a411a0800000000000000
+      internalID: -6839655076958726527
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Light_Sun_0: 3709004318279458445
+      Nestara_0: -6839655076958726527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

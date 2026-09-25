@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 23cca6114b8d74997ad4e3b8cb20607c
+guid: 84989357fac5345e3aafcc72ef586c37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3709004318279458445
-    second: Light_Sun_0
+      213: -7917632735607930643
+    second: Barcuna_0
+  - first:
+      213: 5800842270464039383
+    second: Barcuna_1
+  - first:
+      213: 2970632002717391034
+    second: Barcuna_2
+  - first:
+      213: 6956880539435561358
+    second: Barcuna_3
+  - first:
+      213: 3418905823708217291
+    second: Barcuna_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light_Sun_0
+      name: Barcuna_0
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 30
-        width: 843
-        height: 778
+        x: 35
+        y: 663
+        width: 595
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8edf6db6c7097330800000000000000
-      internalID: 3709004318279458445
+      spriteID: de0c514f9faee1290800000000000000
+      internalID: -7917632735607930643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barcuna_1
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1000
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d954119f4bb08050800000000000000
+      internalID: 5800842270464039383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barcuna_2
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 657
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab89060411ec93920800000000000000
+      internalID: 2970632002717391034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barcuna_3
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 644
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8172e1ddfdcb8060800000000000000
+      internalID: 6956880539435561358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barcuna_4
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 632
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf74a68bb4627f20800000000000000
+      internalID: 3418905823708217291
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Light_Sun_0: 3709004318279458445
+      Barcuna_0: -7917632735607930643
+      Barcuna_1: 5800842270464039383
+      Barcuna_2: 2970632002717391034
+      Barcuna_3: 6956880539435561358
+      Barcuna_4: 3418905823708217291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
