@@ -9,7 +9,10 @@ public class ChunkData
     public List<SpawnInstruction> spawnInstructions;
 
     [Header("Chunk Completion")]
+    public bool useMaxActiveEnemies = true;
     public int maxActiveEnemies = 1;
+
+    public bool useTimer = true;
     public float maxDuration = 20f;
     
     [Header("Dialogue")]

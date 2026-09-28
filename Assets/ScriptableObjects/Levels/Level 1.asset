@@ -21,8 +21,10 @@ MonoBehaviour:
       startDelay: 1
       minInterval: 1
       maxInterval: 1
+    useMaxActiveEnemies: 1
     maxActiveEnemies: 0
-    maxDuration: 30
+    useTimer: 0
+    maxDuration: 5
     dialogueEnabled: 1
     dialogueText: LETS GOOOOO WE DID IT!!!!!
     dialogueDuration: 5
