@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 74a61d0f29a16164db5e3fa08b04ca77
+guid: 30d866dbf69ce4337a5fa9f0b5b73b4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6763739801036390775
-    second: BeyondHorizon_Title_0
+      213: 9042961931408734255
+    second: Verminia_white_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BeyondHorizon_Title_0
+      name: Verminia_white_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 0
-        width: 1631
-        height: 388
+        x: 765
+        y: 441
+        width: 707
+        height: 639
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77102f16381addd50800000000000000
-      internalID: 6763739801036390775
+      spriteID: f287ff607fd0f7d70800000000000000
+      internalID: 9042961931408734255
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BeyondHorizon_Title_0: 6763739801036390775
+      Verminia_white_0: 9042961931408734255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
