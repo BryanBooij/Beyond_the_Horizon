@@ -26,12 +26,14 @@ public class Powerup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerHealth player = collision.GetComponent<PlayerHealth>();
-
-        if (player == null)
-            return;
-
-        powerup.Apply(collision.gameObject);
-        Destroy(gameObject);
+        if (collision.CompareTag("Player"))
+        {
+            powerup.Apply(collision.gameObject);
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("BulletBoundary"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

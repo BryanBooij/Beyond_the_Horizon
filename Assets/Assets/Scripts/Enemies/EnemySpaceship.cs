@@ -1,14 +1,21 @@
+using System.Collections;
 using Assets.Scripts.Game;
 using UnityEngine;
+using Assets.Scripts.Enemies;
 
 public class EnemySpaceship : MonoBehaviour
 {
     private Powerupdropper powerupDropper;
-    public float speed = 200f;
+    private Collider2D myCollider;
+    public float speed = 5f;
     public float waitTime = 2f;
     public int health = 20;
     public float Points = 100f;
 
+    [Header("Enemy Sprites")]
+    public Sprite DogSprite;
+    public Sprite DogDamagedSprite;
+    
     private Vector2 destination;
     private float waitTimer;
     private bool isWaiting;
@@ -24,15 +31,20 @@ public class EnemySpaceship : MonoBehaviour
     
     [Header("Explosion")]
     public GameObject explosionPrefab;
+    
+    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
         CalculateScreenBounds();
         ChooseRandomDestination();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer.sprite = DogSprite;
     }
     private void Awake()
     {
         powerupDropper = GetComponent<Powerupdropper>();
+        myCollider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -47,11 +59,7 @@ public class EnemySpaceship : MonoBehaviour
             }
             return;
         }
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            destination,
-            speed * Time.deltaTime
-        );
+        transform.position = Vector2.MoveTowards(transform.position, destination, speed * DifficultyManager.Instance.enemySpeedMultiplier * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, destination) < 0.1f)
         {
@@ -83,18 +91,36 @@ public class EnemySpaceship : MonoBehaviour
     }
     void ChooseRandomDestination()
     {
-        float randomX = Random.Range(minX, maxX);
-        float randomY = Random.Range(minY, maxY);
-        destination = new Vector2(randomX, randomY);
+        Vector2 newDestination;
+        do
+        {
+            float randomX = Random.Range(minX, maxX);
+            float randomY = Random.Range(minY, maxY);
+            newDestination = new Vector2(randomX, randomY);
+
+        } while (ShootButtonCollider.Instance != null &&
+                 ShootButtonCollider.Instance.OverlapPoint(newDestination));
+        destination = newDestination;
+    }
+    private IEnumerator FlashRed()
+    {
+        _spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        _spriteRenderer.color = Color.white;
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
-        
         // Play hit sound
         if (audioSource != null && hitSound != null)
         {
             audioSource.PlayOneShot(hitSound);
+            StartCoroutine(FlashRed());
+        }
+        
+        if (health <= 10)
+        {
+            _spriteRenderer.sprite = DogDamagedSprite;
         }
         
         if (health <= 0)

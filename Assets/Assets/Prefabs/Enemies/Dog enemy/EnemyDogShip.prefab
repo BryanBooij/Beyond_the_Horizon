@@ -160,7 +160,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 667.93475, y: 277, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8807445134647170587}
@@ -216,7 +216,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9215745473500513641, guid: bec50b9d4038da84db8e010d20a97f53, type: 3}
+  m_Sprite: {fileID: -3372276399850217188, guid: 30eba7ff30d7d7d4faee4a5824efcf52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -260,17 +260,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.1065059}
+  m_Offset: {x: -0.64443016, y: -0.25882554}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.353333, y: 2.1866667}
+    oldSize: {x: 12.53, y: 4.35}
     newSize: {x: 2.69, y: 3.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 2.0888321}
+  m_Size: {x: 7.6480246, y: 3.9635386}
   m_EdgeRadius: 0
 --- !u!50 &3705903670637173348
 Rigidbody2D:
@@ -280,7 +280,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5170386598266105377}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -315,6 +315,8 @@ MonoBehaviour:
   waitTime: 2
   health: 20
   Points: 100
+  DogSprite: {fileID: -3372276399850217188, guid: 30eba7ff30d7d7d4faee4a5824efcf52, type: 3}
+  DogDamagedSprite: {fileID: 5654264939757741270, guid: b0b11adb599e6564982b4e00b077fae1, type: 3}
   audioSource: {fileID: 3233493711317042632}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}
@@ -331,8 +333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   laserPrefab: {fileID: 5434020813485827992, guid: e819cf4f50e6f664997fe80bcac7f9e5, type: 3}
-  minFireRate: 4
-  maxFireRate: 7
+  minFireRate: 3
+  maxFireRate: 5
   audioSource: {fileID: 1988108483376904532}
   laserSound: {fileID: 8300000, guid: 3e413fc07864d9b4b97e9c477a5ee083, type: 3}
 --- !u!1 &6280926436308330519
@@ -379,7 +381,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0

@@ -11,17 +11,28 @@ public class Enemyshoot : MonoBehaviour
     public AudioClip laserSound;
 
     private float nextFireTime = 0f;
+    
+    void Start()
+    {
+        ScheduleNextShot();
+    }
 
     void Update()
     {
-        if (Time.time >= nextFireTime)
-        {
-            Instantiate(laserPrefab, transform.position, Quaternion.identity);
-            
-            // Laser sound when it is fired
-            audioSource.PlayOneShot(laserSound);
+        if (Time.time < nextFireTime) return;
 
-            nextFireTime = Time.time + Random.Range(minFireRate, maxFireRate);
-        }
+        Shoot();
+        ScheduleNextShot();
+    }
+
+    void Shoot()
+    {
+        Instantiate(laserPrefab, transform.position, Quaternion.identity);
+        audioSource.PlayOneShot(laserSound);
+    }
+
+    void ScheduleNextShot()
+    {
+        nextFireTime = Time.time + Random.Range(minFireRate, maxFireRate);
     }
 }

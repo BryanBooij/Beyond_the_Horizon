@@ -14,9 +14,8 @@ public class DoubleDamage : PowerupEffect
     public override void Apply(GameObject target)
     {
         ProjectileShoot projectileShoot = target.GetComponent<ProjectileShoot>();
-        SpriteRenderer spriteRenderer = target.GetComponent<SpriteRenderer>();
 
-        if (projectileShoot == null || spriteRenderer == null)
+        if (projectileShoot == null)
             return;
 
         if (doubleDamageCoroutine != null)
@@ -25,25 +24,49 @@ public class DoubleDamage : PowerupEffect
         }
 
         doubleDamageCoroutine = projectileShoot.StartCoroutine(
-            DoubleDamageCoroutine(projectileShoot, spriteRenderer)
+            DoubleDamageCoroutine(projectileShoot)
         );
     }
 
-    private IEnumerator DoubleDamageCoroutine(
-        ProjectileShoot projectileShoot,
-        SpriteRenderer spriteRenderer)
+    private IEnumerator DoubleDamageCoroutine(ProjectileShoot projectileShoot)
     {
         projectileShoot.SetDoubleDamage(true);
 
-        // Player rood maken
-        spriteRenderer.color = Color.red;
+        Transform aura = projectileShoot.transform.Find("Aura");
 
-        yield return new WaitForSeconds(duration);
+        if (aura != null)
+        {
+            aura.gameObject.SetActive(true);
+
+            SpriteRenderer auraRenderer = aura.GetComponent<SpriteRenderer>();
+
+            float elapsed = 0f;
+
+            while (elapsed < duration)
+            {
+                float alpha = Mathf.Lerp(
+                    0.2f,
+                    1f,
+                    (Mathf.Sin(elapsed * 5f) + 1f) / 2f
+                );
+
+                Color color = auraRenderer.color;
+                color.a = alpha;
+                auraRenderer.color = color;
+
+                elapsed += Time.deltaTime;
+
+                yield return null;
+            }
+
+            aura.gameObject.SetActive(false);
+        }
+        else
+        {
+            yield return new WaitForSeconds(duration);
+        }
 
         projectileShoot.SetDoubleDamage(false);
-
-        // Player weer wit maken
-        spriteRenderer.color = Color.white;
 
         doubleDamageCoroutine = null;
     }

@@ -17,5 +17,21 @@ public class HealthBuff : PowerupEffect
             playerHealth.currentHealth + amount,
             playerHealth.maxHealth
         );
+        playerHealth.UpdateHealthSprite();
+
+        Transform healthEffect = target.transform.Find("HealthEffect");
+
+        if (healthEffect == null)
+            return;
+
+        ParticleSystem particles = healthEffect.GetComponent<ParticleSystem>();
+
+        if (particles == null)
+            return;
+
+        particles.gameObject.SetActive(true);
+        particles.Stop();
+        particles.Clear();
+        particles.Play();
     }
 }

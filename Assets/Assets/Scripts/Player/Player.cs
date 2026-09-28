@@ -50,6 +50,7 @@ namespace Assets.Scripts.Player
             {
                 stickInput = movementJoystick.JoystickVec;
             }
+            stickInput *= 0.7f;
 
             Vector2 combined = keyboardInput + stickInput;
             moveInput = combined.magnitude > 1f ? combined.normalized : combined;
