@@ -5,7 +5,6 @@ using UnityEngine;
 public class ChunkData
 {
     public string chunkName;
-
     public List<SpawnInstruction> spawnInstructions;
 
     [Header("Chunk Completion")]
