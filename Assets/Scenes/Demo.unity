@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &91186118
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2410,9 +2410,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
-  halfHealthSprite: {fileID: 8604071639466636799, guid: 86ac1932d0c02d64c8f3fb61416e19ef, type: 3}
-  lowHealthSprite: {fileID: 8479626923050501196, guid: 3202ccf0d6b6522478bc4005ae9ee39d, type: 3}
+  halfHealthSprite: {fileID: 8604071639466636799, guid: 5312ad5f273d241059217959b3107012, type: 3}
+  lowHealthSprite: {fileID: 8479626923050501196, guid: c0cbaf743064f48e38f190293de32696, type: 3}
   shieldObject: {fileID: 113434294}
+  smokeLeft: {fileID: 0}
+  smokeRight: {fileID: 0}
+  fireLeft: {fileID: 0}
+  fireRight: {fileID: 0}
   healthBarSlider: {fileID: 720603572}
   healthBarValueText: {fileID: 434810903}
   deathScreen: {fileID: 101984607}
@@ -5088,7 +5092,6 @@ MonoBehaviour:
   - {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
   spawnInterval: 15
   startDelay: 5
-  maxEnemySpaceships: 10
 --- !u!61 &1597761364
 BoxCollider2D:
   m_ObjectHideFlags: 0

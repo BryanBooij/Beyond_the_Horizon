@@ -16,8 +16,10 @@ public class Deathscreen : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadSceneAsync("Demo");
         Time.timeScale = 1f;
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 
     public void MainMenu()

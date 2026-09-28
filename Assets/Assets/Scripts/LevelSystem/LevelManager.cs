@@ -27,20 +27,22 @@ public class LevelManager : MonoBehaviour
         if (chunkFinished)
             return;
 
-        chunkTimer += Time.deltaTime;
-
         ChunkData chunk = levelData.chunks[currentChunkIndex];
 
-        // Timer forceert de volgende chunk
-        if (chunkTimer >= chunk.maxDuration)
+        chunkTimer += Time.deltaTime;
+
+        // TIMER
+        if (chunk.useTimer && chunkTimer >= chunk.maxDuration)
         {
             Debug.Log("Chunk timer finished.");
             FinishChunk();
             return;
         }
 
-        // Alleen controleren nadat alle enemies gespawned zijn
-        if (spawningFinished && activeEnemies <= chunk.maxActiveEnemies)
+        // ACTIVE ENEMIES
+        if (chunk.useMaxActiveEnemies &&
+            spawningFinished &&
+            activeEnemies <= chunk.maxActiveEnemies)
         {
             Debug.Log("Enough enemies destroyed.");
             FinishChunk();
@@ -137,6 +139,7 @@ public class LevelManager : MonoBehaviour
         if (victoryScreen != null)
         {
             victoryScreen.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }

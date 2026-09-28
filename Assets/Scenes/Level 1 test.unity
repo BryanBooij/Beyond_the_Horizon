@@ -1285,7 +1285,7 @@ GameObject:
   - component: {fileID: 338477240}
   - component: {fileID: 338477239}
   m_Layer: 0
-  m_Name: Smoke 2
+  m_Name: Smokeleft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1300,7 +1300,7 @@ Transform:
   m_GameObject: {fileID: 338477237}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7660445, y: 0, z: -0.6427876, w: 0}
-  m_LocalPosition: {x: -0.35, y: -0.38, z: 0}
+  m_LocalPosition: {x: -0.35, y: -0.38, z: -1}
   m_LocalScale: {x: 0.7692308, y: 1, z: 0.7692308}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7110,9 +7110,9 @@ Transform:
   m_Children:
   - {fileID: 2051045486}
   - {fileID: 1299379711}
+  - {fileID: 338477238}
   - {fileID: 2008192383}
   - {fileID: 1098883766}
-  - {fileID: 338477238}
   - {fileID: 1934686311}
   - {fileID: 113434295}
   - {fileID: 2121911665}
@@ -7132,9 +7132,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
-  halfHealthSprite: {fileID: 0}
-  lowHealthSprite: {fileID: 0}
+  halfHealthSprite: {fileID: 8604071639466636799, guid: 5312ad5f273d241059217959b3107012, type: 3}
+  lowHealthSprite: {fileID: 8479626923050501196, guid: c0cbaf743064f48e38f190293de32696, type: 3}
   shieldObject: {fileID: 113434294}
+  smokeLeft: {fileID: 338477237}
+  smokeRight: {fileID: 1299379708}
+  fireLeft: {fileID: 1098883765}
+  fireRight: {fileID: 2008192382}
   healthBarSlider: {fileID: 720603572}
   healthBarValueText: {fileID: 434810903}
   deathScreen: {fileID: 101984607}
@@ -8131,12 +8135,12 @@ GameObject:
   - component: {fileID: 1098883768}
   - component: {fileID: 1098883767}
   m_Layer: 0
-  m_Name: Fire 2
+  m_Name: Fireleft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1098883766
 Transform:
   m_ObjectHideFlags: 0
@@ -8146,7 +8150,7 @@ Transform:
   m_GameObject: {fileID: 1098883765}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7660445, y: 0, z: -0.6427876, w: 0}
-  m_LocalPosition: {x: -0.293, y: -0.394, z: 0}
+  m_LocalPosition: {x: -0.293, y: -0.394, z: -1}
   m_LocalScale: {x: 0.7692308, y: 1, z: 0.7692308}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8864,7 +8868,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 30
+    angle: 60
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -13378,7 +13382,7 @@ GameObject:
   - component: {fileID: 1299379710}
   - component: {fileID: 1299379709}
   m_Layer: 0
-  m_Name: Smoke
+  m_Name: Smokeright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18196,7 +18200,7 @@ Transform:
   m_GameObject: {fileID: 1299379708}
   serializedVersion: 2
   m_LocalRotation: {x: -0.54167527, y: 0.45451945, z: 0.45451945, w: 0.54167527}
-  m_LocalPosition: {x: 0.62, y: -0.42, z: 0}
+  m_LocalPosition: {x: 0.62, y: -0.42, z: -1}
   m_LocalScale: {x: 0.7692308, y: 1, z: 0.7692308}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18347,7 +18351,7 @@ GameObject:
   - component: {fileID: 1333941539}
   - component: {fileID: 1333941540}
   m_Layer: 5
-  m_Name: finalscore
+  m_Name: victoryfinalscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20954,12 +20958,12 @@ GameObject:
   - component: {fileID: 2008192385}
   - component: {fileID: 2008192384}
   m_Layer: 0
-  m_Name: Fire
+  m_Name: Fireright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2008192383
 Transform:
   m_ObjectHideFlags: 0
@@ -20969,7 +20973,7 @@ Transform:
   m_GameObject: {fileID: 2008192382}
   serializedVersion: 2
   m_LocalRotation: {x: -0.54167527, y: 0.45451945, z: 0.45451945, w: 0.54167527}
-  m_LocalPosition: {x: 0.7, y: -0.4, z: 0}
+  m_LocalPosition: {x: 0.7, y: -0.4, z: -1}
   m_LocalScale: {x: 0.7692308, y: 1, z: 0.7692308}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21687,7 +21691,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 30
+    angle: 60
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1

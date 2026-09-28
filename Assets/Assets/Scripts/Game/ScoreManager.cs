@@ -32,6 +32,7 @@ namespace Assets.Scripts.Game
             _score += (int)amount;
             scoreText.text = "Score: " + _score.ToString();
             finalScoreText.text = "Final Score: " + _score.ToString();
+            victoryfinalScoreText.text = "Final Score: " + _score.ToString();
             if (_score >= nextDifficultyScore)
             {
                 DifficultyManager.Instance.IncreaseDifficulty();

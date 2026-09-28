@@ -11,6 +11,11 @@ namespace Assets.Scripts.Player
         [SerializeField] private Sprite halfHealthSprite;
         [SerializeField] private Sprite lowHealthSprite;
         [SerializeField] private GameObject shieldObject;
+        [Header("Damage Effects")]
+        [SerializeField] private GameObject smokeLeft;
+        [SerializeField] private GameObject smokeRight;
+        [SerializeField] private GameObject fireLeft;
+        [SerializeField] private GameObject fireRight;
         private bool isImmune = false;
         public bool IsImmune => isImmune;
         public Slider healthBarSlider;
@@ -40,6 +45,17 @@ namespace Assets.Scripts.Player
             spriteRenderer = GetComponent<SpriteRenderer>();
             originalColor = spriteRenderer.color;
             UpdateHealthSprite();
+            if (smokeLeft != null)
+                smokeLeft.SetActive(false);
+
+            if (smokeRight != null)
+                smokeRight.SetActive(false);
+
+            if (fireLeft != null)
+                fireLeft.SetActive(false);
+
+            if (fireRight != null)
+                fireRight.SetActive(false);
             if (shieldObject != null)
             {
                 shieldObject.SetActive(false);
@@ -132,14 +148,52 @@ namespace Assets.Scripts.Player
             if (currentHealth > maxHealth * 0.5f)
             {
                 spriteRenderer.sprite = normalSprite;
+
+                if (smokeLeft != null)
+                    smokeLeft.SetActive(false);
+
+                if (smokeRight != null)
+                    smokeRight.SetActive(false);
+
+                if (fireLeft != null)
+                    fireLeft.SetActive(false);
+
+                if (fireRight != null)
+                    fireRight.SetActive(false);
             }
             else if (currentHealth > maxHealth * 0.25f)
             {
                 spriteRenderer.sprite = halfHealthSprite;
+
+                if (smokeLeft != null)
+                    smokeLeft.SetActive(true);
+
+                if (smokeRight != null)
+                    smokeRight.SetActive(true);
+
+                if (fireLeft != null)
+                    fireLeft.SetActive(false);
+
+                if (fireRight != null)
+                    fireRight.SetActive(false);
             }
             else
             {
                 spriteRenderer.sprite = lowHealthSprite;
+
+                // Smoke uit
+                if (smokeLeft != null)
+                    smokeLeft.SetActive(false);
+
+                if (smokeRight != null)
+                    smokeRight.SetActive(false);
+
+                // Fire aan
+                if (fireLeft != null)
+                    fireLeft.SetActive(true);
+
+                if (fireRight != null)
+                    fireRight.SetActive(true);
             }
         }
     }
