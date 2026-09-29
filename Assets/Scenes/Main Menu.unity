@@ -6190,7 +6190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1578713705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7004,7 +7004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1733914156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7118,14 +7118,34 @@ MonoBehaviour:
   levelSlots:
   - button: {fileID: 1007519968}
     lockIcon: {fileID: 0}
+    stars:
+    - {fileID: 903845175}
+    - {fileID: 95735230}
+    - {fileID: 2009496549}
   - button: {fileID: 619450759}
     lockIcon: {fileID: 1218157607}
+    stars:
+    - {fileID: 1247226141}
+    - {fileID: 76273997}
+    - {fileID: 2107970726}
   - button: {fileID: 1883076070}
     lockIcon: {fileID: 755237421}
+    stars:
+    - {fileID: 1527616638}
+    - {fileID: 854283413}
+    - {fileID: 1761526891}
   - button: {fileID: 159372725}
     lockIcon: {fileID: 1193592981}
+    stars:
+    - {fileID: 1704846764}
+    - {fileID: 746156724}
+    - {fileID: 839037565}
   - button: {fileID: 1808842144}
     lockIcon: {fileID: 1690810774}
+    stars:
+    - {fileID: 400778686}
+    - {fileID: 996105184}
+    - {fileID: 2135847488}
 --- !u!1 &1761526889
 GameObject:
   m_ObjectHideFlags: 0
