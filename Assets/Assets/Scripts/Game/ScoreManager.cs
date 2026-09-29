@@ -35,7 +35,7 @@ namespace Assets.Scripts.Game
         {
             _score += (int)amount;
             scoreText.text = "Score: " + _score.ToString();
-            victoryfinalScoreText.text = "Final Score: " + _score.ToString();
+            victoryfinalScoreText.text = "Score: " + _score.ToString();
             if (_score >= nextDifficultyScore)
             {
                 DifficultyManager.Instance.IncreaseDifficulty();
@@ -45,7 +45,7 @@ namespace Assets.Scripts.Game
         public void HighScoreUpdate()
         {
             SaveManager.Instance.SaveHighScore(_score);
-            finalScoreText.text = "Final Score: " + _score;
+            finalScoreText.text = "Score: " + _score;
             highScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
             VictoryhighScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
             

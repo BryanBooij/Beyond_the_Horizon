@@ -2497,7 +2497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619450760}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &619450760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7231,7 +7243,7 @@ MonoBehaviour:
   - planetName: Nestara
     levelSceneNames:
     - Level 1 test
-    - Level 2
+    - Level 2 test
     - Level 3
     - Level 4
     - Level 5
@@ -7260,19 +7272,19 @@ MonoBehaviour:
   - button: {fileID: 619450759}
     lockIcon: {fileID: 1218157607}
     filledStars: []
-    highscoreText: {fileID: 0}
+    highscoreText: {fileID: 1197810203}
   - button: {fileID: 1883076070}
     lockIcon: {fileID: 755237421}
     filledStars: []
-    highscoreText: {fileID: 0}
+    highscoreText: {fileID: 504397298}
   - button: {fileID: 159372725}
     lockIcon: {fileID: 1193592981}
     filledStars: []
-    highscoreText: {fileID: 0}
+    highscoreText: {fileID: 1562524395}
   - button: {fileID: 1808842144}
     lockIcon: {fileID: 1690810774}
     filledStars: []
-    highscoreText: {fileID: 0}
+    highscoreText: {fileID: 2125911413}
 --- !u!1 &1761526889
 GameObject:
   m_ObjectHideFlags: 0

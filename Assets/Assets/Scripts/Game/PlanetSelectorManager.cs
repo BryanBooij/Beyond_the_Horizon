@@ -107,6 +107,7 @@ public class PlanetSelectorManager : MonoBehaviour
             {
                 levelSlots[i].highscoreText.text = "Highscore:\n" + LevelProgress.GetHighscore(planetName, i + 1);
             }
+            Debug.Log("Highscore " + planetName + " Level " + (i + 1) + ": " + LevelProgress.GetHighscore(planetName, i + 1));
         }
     }
     public void ResetLevelProgress()
