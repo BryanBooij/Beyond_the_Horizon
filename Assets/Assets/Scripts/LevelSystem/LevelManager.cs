@@ -158,7 +158,10 @@ public class LevelManager : MonoBehaviour
     private void LevelComplete()
     {
         Debug.Log("LEVEL COMPLETE!");
-
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.HighScoreUpdate();
+        }
         if (victoryScreen != null)
         {
             int starsEarned = 1;

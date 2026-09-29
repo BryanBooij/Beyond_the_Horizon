@@ -11,6 +11,7 @@ namespace Assets.Scripts.Game
         public TextMeshProUGUI finalScoreText;
         public TextMeshProUGUI victoryfinalScoreText;
         public TextMeshProUGUI highScore;
+        public TextMeshProUGUI VictoryhighScore;
         public GameObject victoryscreen;
         private int _score;
         public int CurrentScore => _score;
@@ -46,6 +47,8 @@ namespace Assets.Scripts.Game
             SaveManager.Instance.SaveHighScore(_score);
             finalScoreText.text = "Final Score: " + _score;
             highScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
+            VictoryhighScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
+            
         }
     }
 }
