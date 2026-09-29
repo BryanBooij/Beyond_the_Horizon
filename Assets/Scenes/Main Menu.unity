@@ -7271,7 +7271,10 @@ MonoBehaviour:
     highscoreText: {fileID: 1823575691}
   - button: {fileID: 619450759}
     lockIcon: {fileID: 1218157607}
-    filledStars: []
+    filledStars:
+    - {fileID: 1247226139}
+    - {fileID: 76273995}
+    - {fileID: 2107970724}
     highscoreText: {fileID: 1197810203}
   - button: {fileID: 1883076070}
     lockIcon: {fileID: 755237421}
