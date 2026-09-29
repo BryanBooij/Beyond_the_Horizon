@@ -17,7 +17,7 @@ MonoBehaviour:
   - chunkName: Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
-      amount: 50
+      amount: 1
       startDelay: 1
       minInterval: 1
       maxInterval: 1

@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Game;
+using Assets.Scripts.LevelSystem;
+using TMPro;
+using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager Instance;
     [Header("Level")]
     public LevelData levelData;
 
@@ -12,14 +16,33 @@ public class LevelManager : MonoBehaviour
     public GameObject victoryScreen;
     private int currentChunkIndex = -1;
     private int activeEnemies = 0;
+    public TextMeshProUGUI scoreText;           
+    public TextMeshProUGUI victoryFinalScoreText;
 
     private float chunkTimer = 0f;
     private bool spawningFinished = false;
     private bool chunkFinished = false;
+    public int score;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+    
     private void Start()
     {
+        if (scoreText != null)
+            scoreText.text = "Score: " + score;
+        
         StartNextChunk();
+    }
+    
+    public void AddScore(int amount)
+    {
+        score += amount;
+
+        if (scoreText != null)
+            scoreText.text = "Score: " + score;
     }
 
     private void Update()
@@ -138,6 +161,16 @@ public class LevelManager : MonoBehaviour
 
         if (victoryScreen != null)
         {
+            int starsEarned = 1;
+            if (score >= 10) starsEarned = 2;
+            if (score >= 50) starsEarned = 3;
+            CurrentLevel.starsEarned = starsEarned;
+
+            LevelProgress.CompleteLevel(CurrentLevel.planet, CurrentLevel.level, CurrentLevel.starsEarned, score);
+            
+            if (victoryFinalScoreText != null)
+                victoryFinalScoreText.text = "FinalScore: " + score;
+            
             victoryScreen.SetActive(true);
             Time.timeScale = 0f;
         }

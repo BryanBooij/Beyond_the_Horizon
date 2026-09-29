@@ -11,6 +11,7 @@ namespace Assets.Scripts.Game
         public TextMeshProUGUI victoryfinalScoreText;
         public GameObject victoryscreen;
         private int _score;
+        public int CurrentScore => _score;
         private int nextDifficultyScore = 1000;
 
         private void Awake()

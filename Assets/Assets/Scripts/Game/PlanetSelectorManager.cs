@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.LevelSystem;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -15,7 +16,8 @@ public class LevelSlot
 {
     public Button button;
     public GameObject lockIcon;
-    public Image[] stars;
+    public GameObject[] filledStars;
+    public TMP_Text highscoreText;
 }
 
 public class PlanetSelectorManager : MonoBehaviour
@@ -69,6 +71,9 @@ public class PlanetSelectorManager : MonoBehaviour
 
     void PlayLevel(int levelIndex)
     {
+        CurrentLevel.planet = planets[selectedIndex].planetName;
+        CurrentLevel.level = levelIndex + 1;
+        
         string sceneName = planets[selectedIndex].levelSceneNames[levelIndex];
         SceneManager.LoadScene(sceneName);
     }
@@ -87,9 +92,28 @@ public class PlanetSelectorManager : MonoBehaviour
             bool unlocked = LevelProgress.IsUnlocked(planetName, i + 1);
 
             levelSlots[i].button.interactable = unlocked;
-            
+
             if (levelSlots[i].lockIcon != null)
                 levelSlots[i].lockIcon.SetActive(!unlocked);
+
+            int earned = LevelProgress.GetStars(planetName, i + 1);
+
+            for (int s = 0; s < levelSlots[i].filledStars.Length; s++)
+            {
+                levelSlots[i].filledStars[s].SetActive(s < earned);
+            }
+
+            if (levelSlots[i].highscoreText != null)
+            {
+                levelSlots[i].highscoreText.text = "Highscore:\n" + LevelProgress.GetHighscore(planetName, i + 1);
+            }
         }
+    }
+    public void ResetLevelProgress()
+    {
+        LevelProgress.ResetAllProgress();
+        
+        if (selectedIndex >= 0)
+            RefreshLevelSlots();
     }
 }
