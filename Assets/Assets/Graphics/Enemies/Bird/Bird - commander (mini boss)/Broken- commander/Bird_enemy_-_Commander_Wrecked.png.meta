@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cc0cfa20adc19be449fd50fbe577d17d
+guid: ed51c1c03a4bf4843bbe39e95b8b5874
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9107819558717482692
-    second: button_quit_0
+      213: -566433608874211503
+    second: Bird_enemy_-_Commander_Wrecked_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_quit_0
+      name: Bird_enemy_-_Commander_Wrecked_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1402
-        height: 245
+        x: 113
+        y: 139
+        width: 1807
+        height: 714
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c391a4cdd568a9180800000000000000
-      internalID: -9107819558717482692
+      spriteID: 157c53242af9328f0800000000000000
+      internalID: -566433608874211503
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_quit_0: -9107819558717482692
+      Bird_enemy_-_Commander_Wrecked_0: -566433608874211503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

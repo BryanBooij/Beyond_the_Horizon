@@ -216,12 +216,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3372276399850217188, guid: 30eba7ff30d7d7d4faee4a5824efcf52, type: 3}
+  m_Sprite: {fileID: -8676058532758058805, guid: 4abc7ae4354e0cb4e85f4723eddb1ce9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.69, y: 3.32}
+  m_Size: {x: 11.74, y: 4.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -264,8 +264,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.53, y: 4.35}
-    newSize: {x: 2.69, y: 3.32}
+    oldSize: {x: 11.74, y: 4.14}
+    newSize: {x: 11.74, y: 4.14}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -315,8 +315,8 @@ MonoBehaviour:
   waitTime: 2
   health: 20
   Points: 100
-  DogSprite: {fileID: -3372276399850217188, guid: 30eba7ff30d7d7d4faee4a5824efcf52, type: 3}
-  DogDamagedSprite: {fileID: 5654264939757741270, guid: b0b11adb599e6564982b4e00b077fae1, type: 3}
+  DogSprite: {fileID: -8676058532758058805, guid: 4abc7ae4354e0cb4e85f4723eddb1ce9, type: 3}
+  DogDamagedSprite: {fileID: 5654264939757741270, guid: f84ee2a07165e9c4ba58dd954f3c6683, type: 3}
   audioSource: {fileID: 3233493711317042632}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}

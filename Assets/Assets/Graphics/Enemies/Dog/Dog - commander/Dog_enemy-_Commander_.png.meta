@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5103038b0f5ed2944960f57defaf8c46
+guid: 4abc7ae4354e0cb4e85f4723eddb1ce9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5697396139626555388
-    second: Lasers_roodgroot_0
+      213: -8676058532758058805
+    second: Dog_enemy-_Commander__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lasers_roodgroot_0
+      name: Dog_enemy-_Commander__0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 865
-        width: 543
-        height: 37
+        x: 319
+        y: 485
+        width: 1174
+        height: 414
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40890e8a568cee0b0800000000000000
-      internalID: -5697396139626555388
+      spriteID: bc885707bb2789780800000000000000
+      internalID: -8676058532758058805
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lasers_roodgroot_0: -5697396139626555388
+      Dog_enemy-_Commander__0: -8676058532758058805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
