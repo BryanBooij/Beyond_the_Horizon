@@ -6,43 +6,32 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
+
     [Header("Level")]
     public LevelData levelData;
 
     [Header("References")]
     public SpawnManager spawnManager;
     public DialogueManager dialogueManager;
+
     [Header("UI")]
     public GameObject victoryScreen;
+
     private int currentChunkIndex = -1;
     private int activeEnemies = 0;
-    public TextMeshProUGUI scoreText;           
-    public TextMeshProUGUI victoryFinalScoreText;
 
     private float chunkTimer = 0f;
     private bool spawningFinished = false;
     private bool chunkFinished = false;
-    public int score;
 
     private void Awake()
     {
         Instance = this;
     }
-    
+
     private void Start()
     {
-        if (scoreText != null)
-            scoreText.text = "Score: " + score;
-        
         StartNextChunk();
-    }
-    
-    public void AddScore(int amount)
-    {
-        score += amount;
-
-        if (scoreText != null)
-            scoreText.text = "Score: " + score;
     }
 
     private void Update()
@@ -89,6 +78,7 @@ public class LevelManager : MonoBehaviour
         chunkTimer = 0f;
         spawningFinished = false;
         chunkFinished = false;
+
         int instructionsRemaining = chunk.spawnInstructions.Count;
 
         foreach (SpawnInstruction instruction in chunk.spawnInstructions)
@@ -130,6 +120,7 @@ public class LevelManager : MonoBehaviour
             ContinueAfterChunk();
         }
     }
+
     private void ContinueAfterChunk()
     {
         if (currentChunkIndex >= levelData.chunks.Count - 1)
@@ -158,22 +149,37 @@ public class LevelManager : MonoBehaviour
     private void LevelComplete()
     {
         Debug.Log("LEVEL COMPLETE!");
+
         if (ScoreManager.Instance != null)
         {
+            // Haal de echte score op uit ScoreManager
+            int currentScore = ScoreManager.Instance.CurrentScore;
+
+            // Update algemene highscore + Victory Screen highscore
             ScoreManager.Instance.HighScoreUpdate();
-        }
-        if (victoryScreen != null)
-        {
+
+            // Sterren berekenen op basis van de echte score
             int starsEarned = 1;
-            if (score >= 10) starsEarned = 2;
-            if (score >= 50) starsEarned = 3;
+
+            if (currentScore >= 10)
+                starsEarned = 2;
+
+            if (currentScore >= 50)
+                starsEarned = 3;
+
             CurrentLevel.starsEarned = starsEarned;
 
-            LevelProgress.CompleteLevel(CurrentLevel.planet, CurrentLevel.level, CurrentLevel.starsEarned, score);
-            
-            if (victoryFinalScoreText != null)
-                victoryFinalScoreText.text = "FinalScore: " + score;
-            
+            // Level-progress + level-highscore opslaan
+            LevelProgress.CompleteLevel(
+                CurrentLevel.planet,
+                CurrentLevel.level,
+                CurrentLevel.starsEarned,
+                currentScore
+            );
+        }
+
+        if (victoryScreen != null)
+        {
             victoryScreen.SetActive(true);
             Time.timeScale = 0f;
         }

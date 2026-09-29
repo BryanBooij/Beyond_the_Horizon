@@ -7769,8 +7769,8 @@ MonoBehaviour:
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
   victoryScreen: {fileID: 1202129349}
-  scoreText: {fileID: 1621570270}
-  victoryFinalScoreText: {fileID: 1333941540}
+  scoreText: {fileID: 0}
+  victoryFinalScoreText: {fileID: 0}
   score: 0
 --- !u!4 &742276368
 Transform:
