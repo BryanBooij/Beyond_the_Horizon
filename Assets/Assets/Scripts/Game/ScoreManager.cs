@@ -1,3 +1,4 @@
+using Assets.Scripts.SaveSystem;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace Assets.Scripts.Game
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI finalScoreText;
         public TextMeshProUGUI victoryfinalScoreText;
+        public TextMeshProUGUI highScore;
         public GameObject victoryscreen;
         private int _score;
         public int CurrentScore => _score;
@@ -32,13 +34,18 @@ namespace Assets.Scripts.Game
         {
             _score += (int)amount;
             scoreText.text = "Score: " + _score.ToString();
-            finalScoreText.text = "Final Score: " + _score.ToString();
             victoryfinalScoreText.text = "Final Score: " + _score.ToString();
             if (_score >= nextDifficultyScore)
             {
                 DifficultyManager.Instance.IncreaseDifficulty();
                 nextDifficultyScore += 1000;
             }
+        }
+        public void HighScoreUpdate()
+        {
+            SaveManager.Instance.SaveHighScore(_score);
+            finalScoreText.text = "Final Score: " + _score;
+            highScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
         }
     }
 }
