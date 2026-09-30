@@ -25,6 +25,7 @@ public class PlanetSelectorManager : MonoBehaviour
     [Header("Planets (same order as the buttons)")]
     public PlanetData[] planets;
     public Button[] planetButtons;
+    public GameObject[] planetLocks;
 
     public Button continueButton;
 
@@ -40,11 +41,24 @@ public class PlanetSelectorManager : MonoBehaviour
     {
         continueButton.interactable = false;
         levelPopup.SetActive(false);
-        
+        RefreshPlanetLocks();
         for (int i = 0; i < levelSlots.Length; i++)
         {
             int levelIndex = i; 
             levelSlots[i].button.onClick.AddListener(() => PlayLevel(levelIndex));
+        }
+    }
+    
+    void RefreshPlanetLocks()
+    {
+        for (int i = 0; i < planets.Length; i++)
+        {
+            bool unlocked = (i == 0) || LevelProgress.IsPlanetCompleted(planets[i - 1].planetName);
+
+            planetButtons[i].interactable = unlocked;
+
+            if (i < planetLocks.Length && planetLocks[i] != null)
+                planetLocks[i].SetActive(!unlocked);
         }
     }
     
@@ -113,7 +127,7 @@ public class PlanetSelectorManager : MonoBehaviour
     public void ResetLevelProgress()
     {
         LevelProgress.ResetAllProgress();
-        
+        RefreshPlanetLocks();
         if (selectedIndex >= 0)
             RefreshLevelSlots();
     }
