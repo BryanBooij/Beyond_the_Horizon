@@ -7887,9 +7887,6 @@ MonoBehaviour:
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
   victoryScreen: {fileID: 1202129349}
-  scoreText: {fileID: 2080084406}
-  victoryFinalScoreText: {fileID: 1333941540}
-  score: 0
 --- !u!4 &742276368
 Transform:
   m_ObjectHideFlags: 0
@@ -8015,10 +8012,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0bafc75b5a452499e12010f374353f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.ScoreManager
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 2080084406}
   finalScoreText: {fileID: 401692950}
   victoryfinalScoreText: {fileID: 1333941540}
   highScore: {fileID: 1663709600}
+  VictoryhighScore: {fileID: 1663709600}
   victoryscreen: {fileID: 1202129349}
 --- !u!4 &842044844
 Transform:
