@@ -17,8 +17,13 @@ public class ProjectileShoot : MonoBehaviour
 
     void Update()
     {
+        // tap to shoot
+        // if (Gamepad.current != null &&
+        //     Gamepad.current.buttonSouth.wasPressedThisFrame &&
+        //     Time.time >= nextFireTime)
+        // hold to shoot
         if (Gamepad.current != null &&
-            Gamepad.current.buttonSouth.wasPressedThisFrame &&
+            Gamepad.current.buttonSouth.isPressed &&
             Time.time >= nextFireTime)
         {
             GameObject prefabToSpawn;
