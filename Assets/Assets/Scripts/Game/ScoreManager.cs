@@ -8,9 +8,9 @@ namespace Assets.Scripts.Game
     {
         public static ScoreManager Instance;
         public TextMeshProUGUI scoreText;
-        public TextMeshProUGUI finalScoreText;
+        public TextMeshProUGUI GameoverFinalscore;
         public TextMeshProUGUI victoryfinalScoreText;
-        public TextMeshProUGUI highScore;
+        public TextMeshProUGUI GameOverHighScore;
         public TextMeshProUGUI VictoryhighScore;
         public GameObject victoryscreen;
         private int _score;
@@ -45,8 +45,8 @@ namespace Assets.Scripts.Game
         public void HighScoreUpdate()
         {
             SaveManager.Instance.SaveHighScore(_score);
-            finalScoreText.text = "Score: " + _score;
-            highScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
+            GameoverFinalscore.text = "Score: " + _score;
+            GameOverHighScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
             VictoryhighScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
             
         }
