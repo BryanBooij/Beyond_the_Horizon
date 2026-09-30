@@ -7887,7 +7887,7 @@ MonoBehaviour:
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
   victoryScreen: {fileID: 1202129349}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 2080084406}
   victoryFinalScoreText: {fileID: 1333941540}
   score: 0
 --- !u!4 &742276368
