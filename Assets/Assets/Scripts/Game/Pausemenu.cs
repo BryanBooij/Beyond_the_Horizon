@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class Pausemenu : MonoBehaviour
 {
     public GameObject pauseMenu;
@@ -11,21 +11,23 @@ public class Pausemenu : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Resume()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
     }
+
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Main Menu");
+        ScreenFader.Instance.FadeToScene("Main Menu");
     }
 
     public void Restart()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Demo");
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        ScreenFader.Instance.FadeToScene(currentScene.name);
     }
 }
