@@ -7,6 +7,10 @@ public class Powerup : MonoBehaviour
     public float moveSpeed = 5f;
     private SpriteRenderer spriteRenderer;
     
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip pickupSound;
+    
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -28,6 +32,9 @@ public class Powerup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            // Play pickup sound
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            
             powerup.Apply(collision.gameObject);
             Destroy(gameObject);
         }

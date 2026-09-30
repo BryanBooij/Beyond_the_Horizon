@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Level 1 Nestara
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 1 Nestara
+  oneStarScore: 0
+  twoStarScore: 0
+  threeStarScore: 0
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -126,8 +129,8 @@ MonoBehaviour:
       maxInterval: 4.5
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 30
+    useTimer: 0
+    maxDuration: 0
     dialogueEnabled: 0
     dialogueText: 
     dialogueDuration: 0
