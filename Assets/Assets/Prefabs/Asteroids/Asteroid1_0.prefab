@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599d59ccfc784aa791fe65588c73d627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.LargeAstroid
-  moveSpeed: 5
+  moveSpeed: 3.5
   maxHP: 10
   Points: 20
   Astroid1: {fileID: -833164383909932804, guid: c9db0fa5ac5a74c4792bca20fa60fa8a, type: 3}

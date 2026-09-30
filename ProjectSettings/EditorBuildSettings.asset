@@ -16,10 +16,40 @@ EditorBuildSettings:
     guid: be564c33809df604d8617a30e9bd4f27
   - enabled: 1
     path: Assets/Scenes/Level 1 test.unity
-    guid: 32f2a72a5116501418eaa025b7294c15
+    guid: 0b90ae185989e2945b1d62bd552c7722
   - enabled: 1
-    path: Assets/Scenes/Level 2 test.unity
-    guid: 1b6c46297d3793e49a249f24757b97d9
+    path: Assets/Scenes/Nestara/Level1_Nestara.unity
+    guid: 54a233e18987cd341b7ba75b1b65b093
+  - enabled: 1
+    path: Assets/Scenes/Nestara/Level2_Nestara.unity
+    guid: d3c4c766c9174d64ebad1374688512b6
+  - enabled: 1
+    path: Assets/Scenes/Nestara/Level3_Nestara.unity
+    guid: fbbbacef7ff4e614a9369cb74b2967d8
+  - enabled: 1
+    path: Assets/Scenes/Nestara/Level4_Nestara.unity
+    guid: 75b1b29ec119084498284897f4b15c02
+  - enabled: 1
+    path: Assets/Scenes/Nestara/Level5_Nestara.unity
+    guid: 8b280add329776f4f88c248abfe1e829
+  - enabled: 0
+    path: Assets/Scenes/Level1_Nestara.unity
+    guid: 46cacb717bebb5a4c8c36d656fe2def2
+  - enabled: 0
+    path: Assets/Scenes/Level2_Nestara.unity
+    guid: 77ab06a9fac2823448c776ada9cfc9b6
+  - enabled: 0
+    path: Assets/Scenes/Level3_Nestara.unity
+    guid: 5fac552aad3ad6c42a7d8038a5adf36a
+  - enabled: 0
+    path: Assets/Scenes/Level4_Nestara.unity
+    guid: b11abe14f2ee42b45af505c32ce68cbf
+  - enabled: 0
+    path: Assets/Scenes/Level5_Nestara.unity
+    guid: ae5028b586bd5604da9befabae7bbb21
+  - enabled: 0
+    path: Assets/Scenes/Level 2_1.unity
+    guid: 3e080096897aebb40b64c03d12ef33af
   - enabled: 0
     path: Assets/Scenes/Test.unity
     guid: f69f9fa193b04544081c75665c22adb3

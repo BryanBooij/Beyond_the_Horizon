@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df6eab4ceda410e9eb54220d13eb896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Enemies.Asteroid
-  moveSpeed: 5
+  moveSpeed: 4.5
   maxHP: 5
   Points: 10
   rotationSpeed: 90
