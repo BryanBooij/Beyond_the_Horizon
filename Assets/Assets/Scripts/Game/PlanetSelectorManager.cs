@@ -95,6 +95,8 @@ public class PlanetSelectorManager : MonoBehaviour
 
             if (levelSlots[i].lockIcon != null)
                 levelSlots[i].lockIcon.SetActive(!unlocked);
+            if (levelSlots[i].highscoreText != null)
+                levelSlots[i].highscoreText.gameObject.SetActive(unlocked);
 
             int earned = LevelProgress.GetStars(planetName, i + 1);
 
