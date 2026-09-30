@@ -1,3 +1,4 @@
+using Assets.Scripts.LevelSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -36,6 +37,8 @@ public class Victoryscreen : MonoBehaviour
 
         if (currentIndex + 1 < SceneManager.sceneCountInBuildSettings)
         {
+            CurrentLevel.level++;
+
             SceneManager.LoadScene(currentIndex + 1);
         }
     }

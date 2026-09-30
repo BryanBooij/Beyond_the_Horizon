@@ -1,8 +1,8 @@
 ﻿using Assets.Scripts.LevelSystem;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class PlanetData
@@ -22,13 +22,12 @@ public class LevelSlot
 
 public class PlanetSelectorManager : MonoBehaviour
 {
-    [Header("Planets (same order as the buttons)")]
+    [Header("Planets")]
     public PlanetData[] planets;
     public Button[] planetButtons;
-
     public Button continueButton;
 
-    [Header("Level popup")]
+    [Header("Level Popup")]
     public GameObject levelPopup;
     public TMP_Text popupTitle;
     public LevelSlot[] levelSlots;
@@ -36,18 +35,18 @@ public class PlanetSelectorManager : MonoBehaviour
     private int selectedIndex = -1;
     private Button selectedButton;
 
-    void Start()
+    private void Start()
     {
         continueButton.interactable = false;
         levelPopup.SetActive(false);
-        
+
         for (int i = 0; i < levelSlots.Length; i++)
         {
-            int levelIndex = i; 
+            int levelIndex = i;
             levelSlots[i].button.onClick.AddListener(() => PlayLevel(levelIndex));
         }
     }
-    
+
     public void SelectPlanet(int index)
     {
         if (selectedButton != null)
@@ -59,63 +58,72 @@ public class PlanetSelectorManager : MonoBehaviour
         selectedButton.Select();
         continueButton.interactable = true;
     }
-    
+
     public void ContinueToLevel()
     {
-        if (selectedIndex < 0) return;
+        if (selectedIndex < 0)
+            return;
 
         popupTitle.text = planets[selectedIndex].planetName;
-        RefreshLevelSlots(); 
+
+        RefreshLevelSlots();
+
         levelPopup.SetActive(true);
     }
 
-    void PlayLevel(int levelIndex)
+    private void PlayLevel(int levelIndex)
     {
         CurrentLevel.planet = planets[selectedIndex].planetName;
         CurrentLevel.level = levelIndex + 1;
-        
+
         string sceneName = planets[selectedIndex].levelSceneNames[levelIndex];
+
         SceneManager.LoadScene(sceneName);
     }
-    
+
     public void ClosePopup()
     {
         levelPopup.SetActive(false);
     }
-    
-    void RefreshLevelSlots()
+
+    private void RefreshLevelSlots()
     {
         string planetName = planets[selectedIndex].planetName;
 
         for (int i = 0; i < levelSlots.Length; i++)
         {
-            bool unlocked = LevelProgress.IsUnlocked(planetName, i + 1);
+            int level = i + 1;
+            LevelSlot slot = levelSlots[i];
 
-            levelSlots[i].button.interactable = unlocked;
+            bool unlocked = LevelProgress.IsUnlocked(planetName, level);
+            int stars = LevelProgress.GetStars(planetName, level);
+            int highscore = LevelProgress.GetHighscore(planetName, level);
 
-            if (levelSlots[i].lockIcon != null)
-                levelSlots[i].lockIcon.SetActive(!unlocked);
-            if (levelSlots[i].highscoreText != null)
-                levelSlots[i].highscoreText.gameObject.SetActive(unlocked);
+            // Lock
+            slot.button.interactable = unlocked;
 
-            int earned = LevelProgress.GetStars(planetName, i + 1);
+            if (slot.lockIcon != null)
+                slot.lockIcon.SetActive(!unlocked);
 
-            for (int s = 0; s < levelSlots[i].filledStars.Length; s++)
+            // Stars
+            for (int s = 0; s < slot.filledStars.Length; s++)
             {
-                levelSlots[i].filledStars[s].SetActive(s < earned);
+                slot.filledStars[s].SetActive(s < stars);
             }
 
-            if (levelSlots[i].highscoreText != null)
+            // Highscore
+            if (slot.highscoreText != null)
             {
-                levelSlots[i].highscoreText.text = "Highscore:\n" + LevelProgress.GetHighscore(planetName, i + 1);
+                slot.highscoreText.gameObject.SetActive(unlocked);
+                slot.highscoreText.text = "Highscore:\n" + highscore;
             }
-            Debug.Log("Highscore " + planetName + " Level " + (i + 1) + ": " + LevelProgress.GetHighscore(planetName, i + 1));
         }
     }
+
     public void ResetLevelProgress()
     {
         LevelProgress.ResetAllProgress();
-        
+
         if (selectedIndex >= 0)
             RefreshLevelSlots();
     }
