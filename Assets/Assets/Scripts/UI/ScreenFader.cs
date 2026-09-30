@@ -7,7 +7,7 @@ public class ScreenFader : MonoBehaviour
     public static ScreenFader Instance { get; private set; }
 
     [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private float fadeDuration = 0.35f;
+    [SerializeField] private float fadeDuration = 0.5f;
 
     private bool isLoading;
 
@@ -17,10 +17,20 @@ public class ScreenFader : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
     }
 
@@ -31,49 +41,65 @@ public class ScreenFader : MonoBehaviour
 
         isLoading = true;
 
-        StartCoroutine(FadeRoutine(sceneName));
+        StartCoroutine(FadeOutAndLoad(sceneName));
     }
 
-    private IEnumerator FadeRoutine(string sceneName)
+    private IEnumerator FadeOutAndLoad(string sceneName)
     {
-        // Input direct blokkeren
         canvasGroup.blocksRaycasts = true;
         canvasGroup.interactable = false;
 
         // Fade naar zwart
-        float t = 0f;
+        yield return Fade(0f, 1f);
 
-        while (t < fadeDuration)
-        {
-            t += Time.unscaledDeltaTime;
-            canvasGroup.alpha = Mathf.Clamp01(t / fadeDuration);
-
-            yield return null;
-        }
-
-        canvasGroup.alpha = 1f;
+        Time.timeScale = 1f;
 
         // Scene laden
-        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
+    }
 
-        // Fade weer terug
-        t = 0f;
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        StartCoroutine(FadeIn());
+    }
 
-        while (t < fadeDuration)
-        {
-            t += Time.unscaledDeltaTime;
-            canvasGroup.alpha = 1f - Mathf.Clamp01(t / fadeDuration);
+    private IEnumerator FadeIn()
+    {
+        // Begin volledig zwart
+        canvasGroup.alpha = 1f;
 
-            yield return null;
-        }
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.interactable = false;
 
-        canvasGroup.alpha = 0f;
+        // Fade van zwart naar de nieuwe scene
+        yield return Fade(1f, 0f);
 
-        // Input weer vrijgeven
         canvasGroup.blocksRaycasts = false;
         canvasGroup.interactable = true;
 
         isLoading = false;
+    }
+
+    private IEnumerator Fade(float from, float to)
+    {
+        float timer = 0f;
+
+        canvasGroup.alpha = from;
+
+        while (timer < fadeDuration)
+        {
+            timer += Time.unscaledDeltaTime;
+
+            float progress = Mathf.Clamp01(timer / fadeDuration);
+
+            // Smooth easing
+            progress = progress * progress * (3f - 2f * progress);
+
+            canvasGroup.alpha = Mathf.Lerp(from, to, progress);
+
+            yield return null;
+        }
+
+        canvasGroup.alpha = to;
     }
 }
