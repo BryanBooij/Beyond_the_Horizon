@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Level 1
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 1
+  oneStarScore: 300
+  twoStarScore: 500
+  threeStarScore: 1000
   chunks:
   - chunkName: Asteroids
     spawnInstructions:

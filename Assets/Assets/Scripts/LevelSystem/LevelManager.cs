@@ -161,11 +161,14 @@ public class LevelManager : MonoBehaviour
             // Sterren berekenen op basis van de echte score
             int starsEarned = 1;
 
-            if (currentScore >= 10)
-                starsEarned = 2;
-
-            if (currentScore >= 50)
+            if (currentScore >= levelData.threeStarScore)
+            {
                 starsEarned = 3;
+            }
+            else if (currentScore >= levelData.twoStarScore)
+            {
+                starsEarned = 2;
+            }
 
             CurrentLevel.starsEarned = starsEarned;
 
