@@ -2955,9 +2955,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.ScoreManager
   scoreText: {fileID: 1621570270}
-  GameoverFinalscore: {fileID: 0}
+  GameoverFinalscore: {fileID: 401692950}
   victoryfinalScoreText: {fileID: 1333941540}
-  GameOverHighScore: {fileID: 0}
+  GameOverHighScore: {fileID: 1073693158}
   VictoryhighScore: {fileID: 575596836}
   victoryscreen: {fileID: 1202129349}
 --- !u!4 &586183772
