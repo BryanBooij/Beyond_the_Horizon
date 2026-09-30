@@ -564,7 +564,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -180.88782, y: -112.655426}
-  m_SizeDelta: {x: 129.2954, y: 122.0251}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &118420847
 MonoBehaviour:
@@ -2409,6 +2409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  scoreManager: {fileID: 0}
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
   halfHealthSprite: {fileID: 8604071639466636799, guid: 5312ad5f273d241059217959b3107012, type: 3}
   lowHealthSprite: {fileID: 8479626923050501196, guid: c0cbaf743064f48e38f190293de32696, type: 3}
@@ -3894,6 +3895,7 @@ MonoBehaviour:
   scoreText: {fileID: 1621570270}
   finalScoreText: {fileID: 401692950}
   victoryfinalScoreText: {fileID: 0}
+  highScore: {fileID: 0}
   victoryscreen: {fileID: 0}
 --- !u!1 &1202129349
 GameObject:
