@@ -7769,7 +7769,7 @@ MonoBehaviour:
   planets:
   - planetName: Nestara
     levelSceneNames:
-    - Level 1 test
+    - Level1_Nestara
     - Level2_Nestara
     - Level3_Nestara
     - Level4_Nestara

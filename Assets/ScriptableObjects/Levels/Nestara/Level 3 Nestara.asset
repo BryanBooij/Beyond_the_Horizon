@@ -13,16 +13,19 @@ MonoBehaviour:
   m_Name: Level 3 Nestara
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 3 Nestara
+  oneStarScore: 2500
+  twoStarScore: 2970
+  threeStarScore: 3960
   chunks:
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
     dialogueText: Level 3
-    dialogueDuration: 3
+    dialogueDuration: 2
   - chunkName: Asteroids + Tanky
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -62,10 +65,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -90,10 +93,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -138,9 +141,9 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: <debug> rest
+    dialogueText: 'Captain Whiskers: Phew... that was a lot'
     dialogueDuration: 3
   - chunkName: Basic + Asteroid
     spawnInstructions:
@@ -181,10 +184,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
