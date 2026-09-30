@@ -20,13 +20,13 @@ public class Victoryscreen : MonoBehaviour
         Time.timeScale = 1f;
 
         Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
+        ScreenFader.Instance.FadeToScene(currentScene.name);
     }
 
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Main Menu");
+        ScreenFader.Instance.FadeToScene("Main Menu");
     }
 
     public void Continue()
@@ -39,7 +39,12 @@ public class Victoryscreen : MonoBehaviour
         {
             CurrentLevel.level++;
 
-            SceneManager.LoadScene(currentIndex + 1);
+            string nextSceneName =
+                SceneUtility.GetScenePathByBuildIndex(currentIndex + 1);
+
+            nextSceneName = System.IO.Path.GetFileNameWithoutExtension(nextSceneName);
+
+            ScreenFader.Instance.FadeToScene(nextSceneName);
         }
     }
 }

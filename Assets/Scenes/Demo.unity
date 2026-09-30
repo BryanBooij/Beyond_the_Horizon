@@ -5887,7 +5887,7 @@ GameObject:
   - component: {fileID: 1835796661}
   - component: {fileID: 1835796660}
   - component: {fileID: 1835796659}
-  - component: {fileID: 1835796658}
+  - component: {fileID: 1835796662}
   m_Layer: 5
   m_Name: Screenfade
   m_TagString: Untagged
@@ -5914,18 +5914,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &1835796658
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835796656}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!114 &1835796659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5938,8 +5926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000b8e11e26947c380182e170f8c8db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenFader
-  canvasGroup: {fileID: 1835796658}
-  fadeDuration: 0.75
+  canvasGroup: {fileID: 1835796662}
+  fadeDuration: 2
 --- !u!114 &1835796660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5953,7 +5941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5978,6 +5966,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835796656}
   m_CullTransparentMesh: 1
+--- !u!225 &1835796662
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835796656}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1858885477
 GameObject:
   m_ObjectHideFlags: 0

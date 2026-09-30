@@ -18,13 +18,12 @@ public class Deathscreen : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
+        Scene currentScene = SceneManager.GetActiveScene(); ScreenFader.Instance.FadeToScene(currentScene.name);
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadSceneAsync("Main Menu");
+        ScreenFader.Instance.FadeToScene("Main Menu");
         Time.timeScale = 1f;
     }
 }

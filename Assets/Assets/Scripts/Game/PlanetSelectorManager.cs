@@ -94,7 +94,7 @@ public class PlanetSelectorManager : MonoBehaviour
 
         string sceneName = planets[selectedIndex].levelSceneNames[levelIndex];
 
-        SceneManager.LoadScene(sceneName);
+        ScreenFader.Instance.FadeToScene(sceneName);
     }
 
     public void ClosePopup()
