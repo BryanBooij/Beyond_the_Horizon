@@ -52,7 +52,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
+    dialogueText: Next Wave
     dialogueDuration: 2
   - chunkName: All
     spawnInstructions:

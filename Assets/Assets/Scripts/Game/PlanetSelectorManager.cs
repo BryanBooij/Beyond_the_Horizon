@@ -136,12 +136,27 @@ public class PlanetSelectorManager : MonoBehaviour
         }
     }
 
-    public void ResetLevelProgress()
+    [Header("Reset Confirmation")]
+    public GameObject resetConfirmPopup;
+    
+    public void ShowResetConfirmation()
+    {
+        resetConfirmPopup.SetActive(true);
+    }
+
+    public void ConfirmReset()
     {
         LevelProgress.ResetAllProgress();
 
         RefreshPlanetLocks();
         if (selectedIndex >= 0)
             RefreshLevelSlots();
+
+        resetConfirmPopup.SetActive(false);
+    }
+    
+    public void CancelReset()
+    {
+        resetConfirmPopup.SetActive(false);
     }
 }

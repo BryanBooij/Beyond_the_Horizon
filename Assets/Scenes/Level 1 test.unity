@@ -7616,7 +7616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.DifficultyManager
   astroidSpeedMultiplier: 1
-  astroidSpawnSpeedMultiplier: 2
+  astroidSpawnSpeedMultiplier: 1
   enemySpeedMultiplier: 1
   allowDifficultyIncrease: 0
 --- !u!4 &684946314
