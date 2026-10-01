@@ -1455,7 +1455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &434908979
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7785,7 +7785,10 @@ MonoBehaviour:
   - {fileID: 2052212960}
   - {fileID: 185571509}
   - {fileID: 1820647486}
-  planetLocks: []
+  planetLocks:
+  - {fileID: 1728449747}
+  - {fileID: 2060216370}
+  - {fileID: 644661988}
   continueButton: {fileID: 1483643402}
   levelPopup: {fileID: 1578713704}
   popupTitle: {fileID: 1067519873}
@@ -7799,20 +7802,32 @@ MonoBehaviour:
     highscoreText: {fileID: 1823575691}
   - button: {fileID: 619450759}
     lockIcon: {fileID: 1218157607}
-    filledStars: []
-    highscoreText: {fileID: 0}
+    filledStars:
+    - {fileID: 1247226139}
+    - {fileID: 76273995}
+    - {fileID: 2107970724}
+    highscoreText: {fileID: 1197810203}
   - button: {fileID: 1883076070}
     lockIcon: {fileID: 755237421}
-    filledStars: []
-    highscoreText: {fileID: 0}
+    filledStars:
+    - {fileID: 1527616636}
+    - {fileID: 854283411}
+    - {fileID: 1761526889}
+    highscoreText: {fileID: 504397298}
   - button: {fileID: 159372725}
     lockIcon: {fileID: 1193592981}
-    filledStars: []
-    highscoreText: {fileID: 0}
+    filledStars:
+    - {fileID: 1704846762}
+    - {fileID: 746156722}
+    - {fileID: 839037563}
+    highscoreText: {fileID: 1562524395}
   - button: {fileID: 1808842144}
     lockIcon: {fileID: 1690810774}
-    filledStars: []
-    highscoreText: {fileID: 0}
+    filledStars:
+    - {fileID: 400778684}
+    - {fileID: 996105182}
+    - {fileID: 2135847486}
+    highscoreText: {fileID: 2125911413}
 --- !u!1 &1761526889
 GameObject:
   m_ObjectHideFlags: 0
