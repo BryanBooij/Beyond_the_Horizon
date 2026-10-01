@@ -26078,6 +26078,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8211639308494865258, guid: 8ab71a71500405f47bfec5db02a2ee57, type: 3}
   m_PrefabInstance: {fileID: 1979014380}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2057663079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057663081}
+  - component: {fileID: 2057663080}
+  m_Layer: 0
+  m_Name: DifficultyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2057663080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057663079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc505d4b9c74819830205853d1da0f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.DifficultyManager
+  astroidSpeedMultiplier: 1
+  astroidSpawnSpeedMultiplier: 2
+  enemySpeedMultiplier: 1
+  allowDifficultyIncrease: 0
+--- !u!4 &2057663081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057663079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.78662, y: 0.81479, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080084404
 GameObject:
   m_ObjectHideFlags: 0
@@ -26683,6 +26731,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 505584676}
+  - {fileID: 2057663081}
   - {fileID: 503321965}
   - {fileID: 2005365037}
   - {fileID: 1858885480}

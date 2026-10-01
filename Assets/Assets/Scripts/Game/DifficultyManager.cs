@@ -9,8 +9,10 @@ namespace Assets.Scripts.Game
         public float astroidSpeedMultiplier = 1f;
         public float astroidSpawnSpeedMultiplier = 2f;
         public float enemySpeedMultiplier = 1f;
-
-
+        
+        [Header("Mode")]
+        public bool allowDifficultyIncrease = true;
+        
         private void Awake()
         {
             Instance = this;
@@ -18,6 +20,8 @@ namespace Assets.Scripts.Game
 
         public void IncreaseDifficulty()
         {
+            if (!allowDifficultyIncrease) return;
+
             astroidSpeedMultiplier += 0.25f;
             astroidSpawnSpeedMultiplier += 0.2f;
             enemySpeedMultiplier += 0.1f;
