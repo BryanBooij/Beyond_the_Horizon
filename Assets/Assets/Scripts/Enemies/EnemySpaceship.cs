@@ -9,8 +9,12 @@ public class EnemySpaceship : MonoBehaviour
     private Collider2D myCollider;
     public float speed = 5f;
     public float waitTime = 2f;
-    public int health = 20;
     public float Points = 100f;
+    
+    [Header("Health Bar")]
+    public int health = 20;
+    public EnemyHealthBar healthBar;
+    private int maxHealth;
 
     [Header("Enemy Sprites")]
     public Sprite DogSprite;
@@ -45,6 +49,7 @@ public class EnemySpaceship : MonoBehaviour
     {
         powerupDropper = GetComponent<Powerupdropper>();
         myCollider = GetComponent<Collider2D>();
+        maxHealth = health;
     }
 
     void Update()
@@ -111,6 +116,9 @@ public class EnemySpaceship : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        
+        if (healthBar != null)
+            healthBar.SetHealth(health, maxHealth);
         // Play hit sound
         if (audioSource != null && hitSound != null)
         {
