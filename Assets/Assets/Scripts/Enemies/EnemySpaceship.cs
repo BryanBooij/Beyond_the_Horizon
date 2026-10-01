@@ -44,6 +44,9 @@ public class EnemySpaceship : MonoBehaviour
         ChooseRandomDestination();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _spriteRenderer.sprite = DogSprite;
+        
+        if (healthBar != null)
+            healthBar.gameObject.SetActive(false);
     }
     private void Awake()
     {
@@ -118,7 +121,10 @@ public class EnemySpaceship : MonoBehaviour
         health -= damage;
         
         if (healthBar != null)
+        {
+            healthBar.gameObject.SetActive(true);
             healthBar.SetHealth(health, maxHealth);
+        }
         // Play hit sound
         if (audioSource != null && hitSound != null)
         {
