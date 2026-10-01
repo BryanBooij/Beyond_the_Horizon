@@ -7618,6 +7618,7 @@ MonoBehaviour:
   astroidSpeedMultiplier: 1
   astroidSpawnSpeedMultiplier: 2
   enemySpeedMultiplier: 1
+  allowDifficultyIncrease: 0
 --- !u!4 &684946314
 Transform:
   m_ObjectHideFlags: 0
