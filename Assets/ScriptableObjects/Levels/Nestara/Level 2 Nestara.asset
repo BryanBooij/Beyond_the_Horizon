@@ -13,16 +13,19 @@ MonoBehaviour:
   m_Name: Level 2 Nestara
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 2 Nestara
+  oneStarScore: 2400
+  twoStarScore: 2820
+  threeStarScore: 3760
   chunks:
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
     dialogueText: Level 2
-    dialogueDuration: 3
+    dialogueDuration: 2
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -62,10 +65,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -90,9 +93,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: <debug> rest
+    dialogueText: 'Captain Whiskers: I have to stay alert, those upcoming ships look
+      sturdier than the others.'
     dialogueDuration: 3
   - chunkName: Tank Ships
     spawnInstructions:
@@ -113,10 +117,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Mix Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -141,10 +145,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}

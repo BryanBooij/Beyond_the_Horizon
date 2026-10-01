@@ -443,7 +443,7 @@ MonoBehaviour:
   speed: 8
   waitTime: 4
   health: 20
-  Points: 200
+  Points: 225
   DogSprite: {fileID: 4028182871465348063, guid: 7111b629dc8cd24478a6f8f05447139d, type: 3}
   DogDamagedSprite: {fileID: 4028182871465348063, guid: 7111b629dc8cd24478a6f8f05447139d, type: 3}
   audioSource: {fileID: 5914371527136118063}

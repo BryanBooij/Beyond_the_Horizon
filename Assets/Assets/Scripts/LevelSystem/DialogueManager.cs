@@ -11,6 +11,10 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Typewriter")]
     [SerializeField] private float textSpeed = 0.05f;
+    
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip typingSound;
 
     private Coroutine dialogueCoroutine;
 
@@ -37,6 +41,14 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         dialogueText.text = "";
+        
+        // Start typing sound
+        if (audioSource != null && typingSound != null)
+        {
+            audioSource.clip = typingSound;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
 
         // Typewriter effect
         foreach (char letter in text)
@@ -44,6 +56,13 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
 
             yield return new WaitForSeconds(textSpeed);
+        }
+        
+        // Stop typing sound
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.loop = false;
         }
 
         // Wacht nadat de volledige tekst geschreven is

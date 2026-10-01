@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Level 1 Nestara
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 1 Nestara
+  oneStarScore: 2000
+  twoStarScore: 2400
+  threeStarScore: 3200
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -42,10 +45,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -65,9 +68,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: <debug> rest
+    dialogueText: 'Captian Whiskers: Uhh.. is that an asteroid belt? Luckily my lasers
+      can handle them.'
     dialogueDuration: 3
   - chunkName: Asteroid Belt
     spawnInstructions:
@@ -93,10 +97,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Basic + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -126,8 +130,8 @@ MonoBehaviour:
       maxInterval: 4.5
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 30
+    useTimer: 0
+    maxDuration: 0
     dialogueEnabled: 0
     dialogueText: 
     dialogueDuration: 0
@@ -136,10 +140,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Basic + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}

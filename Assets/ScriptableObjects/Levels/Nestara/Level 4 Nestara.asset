@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Level 4 Nestara
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 4 Nestara
+  oneStarScore: 3500
+  twoStarScore: 4440
+  threeStarScore: 5920
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -28,12 +31,12 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
       amount: 3
       startDelay: 0.5
-      minInterval: 4.5
-      maxInterval: 5.5
+      minInterval: 4
+      maxInterval: 7
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
       amount: 2
       startDelay: 3
-      minInterval: 4
+      minInterval: 6
       maxInterval: 7
     useMaxActiveEnemies: 1
     maxActiveEnemies: 1
@@ -47,10 +50,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
     dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueDuration: 2
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -95,10 +98,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -123,9 +126,10 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: <debug> rest
+    dialogueText: 'Captain Whiskers: Really, there is more? I thought I cleared that
+      asteroid belt!'
     dialogueDuration: 3
   - chunkName: Asteroid Belt
     spawnInstructions:
@@ -185,16 +189,30 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: <debug> rest
-    dialogueDuration: 3
+    dialogueText: Next Wave
+    dialogueDuration: 2
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
-      amount: 10
+      amount: 5
       startDelay: 1
-      minInterval: 4.5
+      minInterval: 4
+      maxInterval: 7
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 2
+    useTimer: 1
+    maxDuration: 15
+    dialogueEnabled: 0
+    dialogueText: 
+    dialogueDuration: 0
+  - chunkName: Basic Ships
+    spawnInstructions:
+    - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
+      amount: 5
+      startDelay: 1
+      minInterval: 4
       maxInterval: 7
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
