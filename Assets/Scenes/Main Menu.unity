@@ -8570,6 +8570,7 @@ MonoBehaviour:
   - {fileID: 1728449747}
   - {fileID: 2060216370}
   - {fileID: 644661988}
+  availablePlanets: 1
   continueButton: {fileID: 1483643402}
   levelPopup: {fileID: 1578713704}
   popupTitle: {fileID: 1067519873}
@@ -8609,6 +8610,7 @@ MonoBehaviour:
     - {fileID: 996105182}
     - {fileID: 2135847486}
     highscoreText: {fileID: 2125911413}
+  unlockEverything: 0
   resetConfirmPopup: {fileID: 1366975709}
 --- !u!1 &1761526889
 GameObject:

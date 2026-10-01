@@ -26,6 +26,10 @@ public class PlanetSelectorManager : MonoBehaviour
     public PlanetData[] planets;
     public Button[] planetButtons;
     public GameObject[] planetLocks;
+    
+    [Header("Test Release")]
+    // TEST RELEASE Planets beyond planet 1 stay locked for now remove later when levels are finished
+    public int availablePlanets = 1;
 
     public Button continueButton;
 
@@ -33,6 +37,9 @@ public class PlanetSelectorManager : MonoBehaviour
     public GameObject levelPopup;
     public TMP_Text popupTitle;
     public LevelSlot[] levelSlots;
+    
+    [Header("Debug")]
+    public bool unlockEverything = false;
 
     private int selectedIndex = -1;
     private Button selectedButton;
@@ -55,6 +62,12 @@ public class PlanetSelectorManager : MonoBehaviour
         for (int i = 0; i < planets.Length; i++)
         {
             bool unlocked = (i == 0) || LevelProgress.IsPlanetCompleted(planets[i - 1].planetName);
+            
+            // TEST RELEASE Planets beyond planet 1 stay locked for now remove later when levels are finished
+            if (i >= availablePlanets) unlocked = false;
+            
+            // DEBUG: pretend all progress is complete
+            // if (unlockEverything) unlocked = true;
 
             planetButtons[i].interactable = unlocked;
 
@@ -110,7 +123,11 @@ public class PlanetSelectorManager : MonoBehaviour
         {
             int level = i + 1;
             LevelSlot slot = levelSlots[i];
-
+            
+            // DEBUG unlock all levels for testing
+            // bool unlocked = unlockEverything || LevelProgress.IsUnlocked(planetName, level);
+            
+            // let the player unlock the levels
             bool unlocked = LevelProgress.IsUnlocked(planetName, level);
             int stars = LevelProgress.GetStars(planetName, level);
             int highscore = LevelProgress.GetHighscore(planetName, level);
