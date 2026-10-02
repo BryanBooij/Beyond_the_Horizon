@@ -139,7 +139,7 @@ public class EnemySpaceship : MonoBehaviour
         
         if (health <= 0)
         {
-            ScoreManager.Instance.AddPoints(Points);
+            ScoreHelper.AddPoints(Points);
             if (explosionPrefab != null)
             {
                 Instantiate(

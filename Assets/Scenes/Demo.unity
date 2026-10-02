@@ -529,6 +529,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2045737696403926203, guid: c749dbf4e1cb1034e87ae1922a4b0d08, type: 3}
   m_PrefabInstance: {fileID: 1162685097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &119549098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119549100}
+  - component: {fileID: 119549099}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &119549099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119549098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04cd9ee48b346a9a05fa7c9716522ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.SaveSystem.SaveManager
+--- !u!4 &119549100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119549098}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2639.5972, y: 192.1843, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146723873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  scoreManager: {fileID: 586183771}
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
   halfHealthSprite: {fileID: 8604071639466636799, guid: 5312ad5f273d241059217959b3107012, type: 3}
   lowHealthSprite: {fileID: 8479626923050501196, guid: c0cbaf743064f48e38f190293de32696, type: 3}
@@ -2802,7 +2845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 586183772}
-  - component: {fileID: 586183771}
+  - component: {fileID: 586183773}
   m_Layer: 0
   m_Name: ScoreManager
   m_TagString: Untagged
@@ -2810,24 +2853,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &586183771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586183770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e0bafc75b5a452499e12010f374353f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.ScoreManager
-  scoreText: {fileID: 1621570270}
-  GameoverFinalscore: {fileID: 401692950}
-  victoryfinalScoreText: {fileID: 1333941540}
-  GameOverHighScore: {fileID: 1073693158}
-  VictoryhighScore: {fileID: 575596836}
-  victoryscreen: {fileID: 1202129349}
 --- !u!4 &586183772
 Transform:
   m_ObjectHideFlags: 0
@@ -2843,6 +2868,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &586183773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586183770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d192cb9025e4cc48ce21f551f475402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.EndlessScoreManager
+  scoreText: {fileID: 1621570270}
+  finalScoreText: {fileID: 401692950}
+  highScoreText: {fileID: 1073693158}
 --- !u!1 &684946312
 GameObject:
   m_ObjectHideFlags: 0
@@ -7379,3 +7419,4 @@ SceneRoots:
   - {fileID: 191341831}
   - {fileID: 1934593718}
   - {fileID: 586183772}
+  - {fileID: 119549100}

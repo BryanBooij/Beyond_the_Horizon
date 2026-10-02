@@ -93,5 +93,21 @@ namespace Assets.Scripts.SaveSystem
 
             return PlayerPrefs.GetInt(key, 1);
         }
+        
+        public void SaveEndlessHighScore(int score)
+        {
+            int highScore = PlayerPrefs.GetInt("EndlessHighScore", 0);
+
+            if (score > highScore)
+            {
+                PlayerPrefs.SetInt("EndlessHighScore", score);
+                PlayerPrefs.Save();
+            }
+        }
+
+        public int GetEndlessHighScore()
+        {
+            return PlayerPrefs.GetInt("EndlessHighScore", 0);
+        }
     }
 }

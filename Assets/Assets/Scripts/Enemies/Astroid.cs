@@ -52,7 +52,7 @@ namespace Assets.Scripts.Enemies
                 }
                 else // else destroy astroid and lazer
                 {
-                    ScoreManager.Instance.AddPoints(Points);
+                    ScoreHelper.AddPoints(Points);
                     if (explosionPrefab != null)
                     {
                         Instantiate(
