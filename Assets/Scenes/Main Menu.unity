@@ -8586,7 +8586,7 @@ MonoBehaviour:
     - Level5_Verminia
   - planetName: Sun
     levelSceneNames:
-    - Level 1 test
+    - Level_Final_Boss
   planetButtons:
   - {fileID: 1235042420}
   - {fileID: 2052212960}

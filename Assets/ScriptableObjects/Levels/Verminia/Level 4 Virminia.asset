@@ -53,7 +53,7 @@ MonoBehaviour:
     maxDuration: 0
     dialogueEnabled: 1
     dialogueText: Wave 2/6
-    dialogueDuration: 0
+    dialogueDuration: 2
   - chunkName: Mix Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
@@ -120,7 +120,7 @@ MonoBehaviour:
     maxDuration: 20
     dialogueEnabled: 1
     dialogueText: Wave 4/6
-    dialogueDuration: 0
+    dialogueDuration: 3
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
@@ -157,8 +157,8 @@ MonoBehaviour:
     maxActiveEnemies: 2
     useTimer: 1
     maxDuration: 20
-    dialogueEnabled: 1
-    dialogueText: Wave 4/6
+    dialogueEnabled: 0
+    dialogueText: 
     dialogueDuration: 0
   - chunkName: Rest
     spawnInstructions: []
@@ -211,7 +211,7 @@ MonoBehaviour:
     maxDuration: 20
     dialogueEnabled: 1
     dialogueText: Last Wave
-    dialogueDuration: 0
+    dialogueDuration: 2
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 5b609c4d9b012ed42a82a9ec0e7e36e9, type: 3}
