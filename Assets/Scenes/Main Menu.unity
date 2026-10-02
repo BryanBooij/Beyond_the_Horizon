@@ -8555,9 +8555,19 @@ MonoBehaviour:
     - Level4_Nestara
     - Level5_Nestara
   - planetName: Barcune
-    levelSceneNames: []
+    levelSceneNames:
+    - Level1_Barcune
+    - Level2_Barcune
+    - Level3_Barcune
+    - Level4_Barcune
+    - Level5_Barcune
   - planetName: Verminia
-    levelSceneNames: []
+    levelSceneNames:
+    - Level1_Verminia
+    - Level2_Verminia
+    - Level3_Verminia
+    - Level4_Verminia
+    - Level5_Verminia
   - planetName: Sun
     levelSceneNames: []
   planetButtons:
