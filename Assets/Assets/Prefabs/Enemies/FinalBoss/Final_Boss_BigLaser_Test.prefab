@@ -1477,12 +1477,12 @@ MonoBehaviour:
   beamVisual: {fileID: 4579116873134900354}
   beamCollider: {fileID: 4053592969618802378}
   beamRenderer: {fileID: 4535077266414038371}
-  firstDelay: 1
-  cooldown: 1
+  firstDelay: 5
+  cooldown: 10
   chargeTime: 3
   convergeTime: 0.8
   fireTime: 1.5
-  beamLength: 20
+  beamLength: 30
   beamWidth: 8
   orbSize: 1
   audioSource: {fileID: 3945373163060118600}
