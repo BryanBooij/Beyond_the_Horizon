@@ -38,9 +38,6 @@ public class PlanetSelectorManager : MonoBehaviour
     public GameObject levelPopup;
     public TMP_Text popupTitle;
     public LevelSlot[] levelSlots;
-    
-    [Header("Debug")]
-    public bool unlockEverything = false;
 
     private int selectedIndex = -1;
     private Button selectedButton;
@@ -68,7 +65,7 @@ public class PlanetSelectorManager : MonoBehaviour
             if (i >= availablePlanets) unlocked = false;
             
             // DEBUG: pretend all progress is complete
-            if (unlockEverything) unlocked = true;
+            if (CheatActive) unlocked = true;
 
             planetButtons[i].interactable = unlocked;
 
@@ -130,7 +127,7 @@ public class PlanetSelectorManager : MonoBehaviour
             int level = i + 1;
             
             // DEBUG unlock all levels for testing
-            bool unlocked = unlockEverything || LevelProgress.IsUnlocked(planetName, level);
+            bool unlocked = CheatActive || LevelProgress.IsUnlocked(planetName, level);
             
             // let the player unlock the levels
             // bool unlocked = LevelProgress.IsUnlocked(planetName, level);
@@ -157,6 +154,22 @@ public class PlanetSelectorManager : MonoBehaviour
             }
         }
     }
+    
+    [Header("Debug")]
+    public bool unlockEverything = false;
+    
+    private const string CheatKey = "UnlockAllCheat";
+    private bool CheatActive => unlockEverything || PlayerPrefs.GetInt(CheatKey, 0) == 1;
+
+    public void ActivateUnlockAll()
+    {
+        PlayerPrefs.SetInt(CheatKey, 1);
+        PlayerPrefs.Save();
+
+        RefreshPlanetLocks();
+        if (selectedIndex >= 0)
+            RefreshLevelSlots();
+    }
 
     [Header("Reset Confirmation")]
     public GameObject resetConfirmPopup;
@@ -168,6 +181,7 @@ public class PlanetSelectorManager : MonoBehaviour
 
     public void ConfirmReset()
     {
+        PlayerPrefs.DeleteKey(CheatKey);
         LevelProgress.ResetAllProgress();
 
         RefreshPlanetLocks();
