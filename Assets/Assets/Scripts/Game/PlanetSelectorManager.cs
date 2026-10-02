@@ -14,6 +14,7 @@ public class PlanetData
 [System.Serializable]
 public class LevelSlot
 {
+    public GameObject root;
     public Button button;
     public GameObject lockIcon;
     public GameObject[] filledStars;
@@ -67,7 +68,7 @@ public class PlanetSelectorManager : MonoBehaviour
             if (i >= availablePlanets) unlocked = false;
             
             // DEBUG: pretend all progress is complete
-            // if (unlockEverything) unlocked = true;
+            if (unlockEverything) unlocked = true;
 
             planetButtons[i].interactable = unlocked;
 
@@ -118,17 +119,21 @@ public class PlanetSelectorManager : MonoBehaviour
     private void RefreshLevelSlots()
     {
         string planetName = planets[selectedIndex].planetName;
+        int levelCount = planets[selectedIndex].levelSceneNames.Length;
 
         for (int i = 0; i < levelSlots.Length; i++)
         {
-            int level = i + 1;
             LevelSlot slot = levelSlots[i];
+            bool exists = i < levelCount;
+            slot.root.SetActive(exists);
+            if (!exists) continue;
+            int level = i + 1;
             
             // DEBUG unlock all levels for testing
-            // bool unlocked = unlockEverything || LevelProgress.IsUnlocked(planetName, level);
+            bool unlocked = unlockEverything || LevelProgress.IsUnlocked(planetName, level);
             
             // let the player unlock the levels
-            bool unlocked = LevelProgress.IsUnlocked(planetName, level);
+            // bool unlocked = LevelProgress.IsUnlocked(planetName, level);
             int stars = LevelProgress.GetStars(planetName, level);
             int highscore = LevelProgress.GetHighscore(planetName, level);
 

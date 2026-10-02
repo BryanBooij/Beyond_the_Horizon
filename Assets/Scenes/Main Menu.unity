@@ -8569,7 +8569,8 @@ MonoBehaviour:
     - Level4_Verminia
     - Level5_Verminia
   - planetName: Sun
-    levelSceneNames: []
+    levelSceneNames:
+    - Level 1 test
   planetButtons:
   - {fileID: 1235042420}
   - {fileID: 2052212960}
@@ -8585,42 +8586,47 @@ MonoBehaviour:
   levelPopup: {fileID: 1578713704}
   popupTitle: {fileID: 1067519873}
   levelSlots:
-  - button: {fileID: 1007519968}
+  - root: {fileID: 0}
+    button: {fileID: 1007519968}
     lockIcon: {fileID: 0}
     filledStars:
     - {fileID: 903845173}
     - {fileID: 95735228}
     - {fileID: 2009496547}
     highscoreText: {fileID: 1823575691}
-  - button: {fileID: 619450759}
+  - root: {fileID: 0}
+    button: {fileID: 619450759}
     lockIcon: {fileID: 1218157607}
     filledStars:
     - {fileID: 1247226139}
     - {fileID: 76273995}
     - {fileID: 2107970724}
     highscoreText: {fileID: 1197810203}
-  - button: {fileID: 1883076070}
+  - root: {fileID: 0}
+    button: {fileID: 1883076070}
     lockIcon: {fileID: 755237421}
     filledStars:
     - {fileID: 1527616636}
     - {fileID: 854283411}
     - {fileID: 1761526889}
     highscoreText: {fileID: 504397298}
-  - button: {fileID: 159372725}
+  - root: {fileID: 0}
+    button: {fileID: 159372725}
     lockIcon: {fileID: 1193592981}
     filledStars:
     - {fileID: 1704846762}
     - {fileID: 746156722}
     - {fileID: 839037563}
     highscoreText: {fileID: 1562524395}
-  - button: {fileID: 1808842144}
+  - root: {fileID: 1007519964}
+    button: {fileID: 1808842144}
     lockIcon: {fileID: 1690810774}
     filledStars:
     - {fileID: 400778684}
     - {fileID: 996105182}
     - {fileID: 2135847486}
     highscoreText: {fileID: 2125911413}
-  unlockEverything: 0
+  unlockEverything: 1
   resetConfirmPopup: {fileID: 1366975709}
 --- !u!1 &1761526889
 GameObject:
