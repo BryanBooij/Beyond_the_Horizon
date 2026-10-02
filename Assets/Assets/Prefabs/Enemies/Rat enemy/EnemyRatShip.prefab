@@ -702,9 +702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5ca28242c7dc4ebbd59ad704cc6b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 5
-  waitTime: 2
-  Points: 200
+  speed: 7
+  waitTime: 4
+  Points: 150
   health: 30
   healthBar: {fileID: 5151769625755991577}
   DogSprite: {fileID: 5652793919289155530, guid: a4d457270dcb0bd40bee9a6c4df474c8, type: 3}
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   laserPrefab: {fileID: 5434020813485827992, guid: c4917849b2149614198d9fb0bcb3f07c, type: 3}
-  minFireRate: 4
-  maxFireRate: 6
+  minFireRate: 2
+  maxFireRate: 3
   audioSource: {fileID: 1647257364970556683}
   laserSound: {fileID: 8300000, guid: 3e413fc07864d9b4b97e9c477a5ee083, type: 3}

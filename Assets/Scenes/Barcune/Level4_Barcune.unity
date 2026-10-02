@@ -7156,12 +7156,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7211533745211092228, guid: c6807bda63937c44baca576763a99b73, type: 3}
+  m_Sprite: {fileID: 3861233883600779487, guid: b176370d3d0563947a367faeca60f8d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.25, y: 3.5}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7175,8 +7175,8 @@ Transform:
   m_GameObject: {fileID: 503321963}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.59, z: 0}
-  m_LocalScale: {x: 5.6659317, y: 5.525072, z: 1}
+  m_LocalPosition: {x: -0.99, y: -0.74, z: 0}
+  m_LocalScale: {x: 1.747389, y: 1.68735, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8070,7 +8070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb29a06797e44d2ab7530b55b503f681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  levelData: {fileID: 11400000, guid: b41464eb752be3042b434213f7249180, type: 2}
+  levelData: {fileID: 11400000, guid: 4ca8f6b2d69426144a4800e75de6553a, type: 2}
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
   victoryScreen: {fileID: 1202129349}
@@ -8118,7 +8118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc505d4b9c74819830205853d1da0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.DifficultyManager
-  astroidSpeedMultiplier: 1.4
+  astroidSpeedMultiplier: 2
   astroidSpawnSpeedMultiplier: 1
   enemySpeedMultiplier: 1
   allowDifficultyIncrease: 0

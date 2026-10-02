@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b81b5922af194e589e04c89e6a161c76, type: 3}
-  m_Name: Level 1 Nestara
+  m_Name: Level 1 Virminia
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: Level 1 Nestara
+  levelName: Level 1 Virminia
   oneStarScore: 2000
   twoStarScore: 2400
   threeStarScore: 3200
@@ -35,17 +35,31 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueText: Wave 1/5
     dialogueDuration: 3
+  - chunkName: Tanky Ships
+    spawnInstructions:
+    - enemyPrefab: {fileID: 8315917353794438875, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      amount: 3
+      startDelay: 1
+      minInterval: 4
+      maxInterval: 5
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 1
+    useTimer: 1
+    maxDuration: 20
+    dialogueEnabled: 1
+    dialogueText: Wave 2/5
+    dialogueDuration: 0
   - chunkName: Basic Ships
     spawnInstructions:
-    - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
+    - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
       amount: 4
       startDelay: 1
-      minInterval: 4.5
-      maxInterval: 5.5
+      minInterval: 4
+      maxInterval: 5
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 30
+    maxDuration: 20
     dialogueEnabled: 0
     dialogueText: 
     dialogueDuration: 0
@@ -56,22 +70,8 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
+    dialogueText: 'Captain Whiskers: Ughh.. these pesky rats do put up a fight'
     dialogueDuration: 2
-  - chunkName: Basic Ships
-    spawnInstructions:
-    - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
-      amount: 4
-      startDelay: 1
-      minInterval: 4.5
-      maxInterval: 5.5
-    useMaxActiveEnemies: 1
-    maxActiveEnemies: 0
-    useTimer: 0
-    maxDuration: 30
-    dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -81,73 +81,39 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueText: Wave 3/5
     dialogueDuration: 2
-  - chunkName: Rest
-    spawnInstructions: []
-    useMaxActiveEnemies: 0
-    maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 3
-    dialogueEnabled: 1
-    dialogueText: 'Captain Whiskers: Uhh.. is that an asteroid belt? Luckily my lasers
-      can handle them.'
-    dialogueDuration: 3
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 10
+      amount: 12
       startDelay: 0.5
-      minInterval: 1.5
-      maxInterval: 2
+      minInterval: 0.5
+      maxInterval: 1
     - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
-      amount: 5
+      amount: 7
       startDelay: 1
-      minInterval: 2
-      maxInterval: 2.5
+      minInterval: 1
+      maxInterval: 2
     useMaxActiveEnemies: 1
-    maxActiveEnemies: 0
+    maxActiveEnemies: 2
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
-  - chunkName: Rest
-    spawnInstructions: []
-    useMaxActiveEnemies: 0
-    maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 2
     dialogueEnabled: 1
     dialogueText: Wave 4/5
-    dialogueDuration: 2
-  - chunkName: Basic + Asteroids
+    dialogueDuration: 0
+  - chunkName: Asteroid Belt
     spawnInstructions:
-    - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
-      amount: 3
-      startDelay: 1
-      minInterval: 4
-      maxInterval: 5
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 2
+      amount: 12
       startDelay: 0.5
-      minInterval: 4
-      maxInterval: 4.5
+      minInterval: 0.8
+      maxInterval: 1.2
     - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
-      amount: 2
+      amount: 7
       startDelay: 1
-      minInterval: 4
-      maxInterval: 4.5
-    - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 2
-      startDelay: 7.5
-      minInterval: 4
-      maxInterval: 4.5
-    - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
-      amount: 2
-      startDelay: 1
-      minInterval: 4
-      maxInterval: 4.5
+      minInterval: 1.5
+      maxInterval: 2
     useMaxActiveEnemies: 1
-    maxActiveEnemies: 0
+    maxActiveEnemies: 2
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
@@ -162,33 +128,38 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueText: Last Wave
     dialogueDuration: 2
-  - chunkName: Basic + Asteroids
+  - chunkName: All
     spawnInstructions:
-    - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
+    - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
       amount: 3
       startDelay: 1
       minInterval: 4
       maxInterval: 5
+    - enemyPrefab: {fileID: 8315917353794438875, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      amount: 2
+      startDelay: 1.5
+      minInterval: 4
+      maxInterval: 4.5
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
       amount: 2
       startDelay: 0.5
-      minInterval: 4
-      maxInterval: 4.5
+      minInterval: 3.5
+      maxInterval: 4
     - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
       amount: 2
       startDelay: 1
-      minInterval: 4
-      maxInterval: 4.5
+      minInterval: 3.5
+      maxInterval: 4
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
       amount: 2
       startDelay: 7.5
-      minInterval: 4
-      maxInterval: 4.5
+      minInterval: 3
+      maxInterval: 3.5
     - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
       amount: 2
       startDelay: 1
-      minInterval: 4
-      maxInterval: 4.5
+      minInterval: 2
+      maxInterval: 3.5
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
     useTimer: 0
