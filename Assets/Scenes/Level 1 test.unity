@@ -7250,7 +7250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  scoreManager: {fileID: 842044843}
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
   halfHealthSprite: {fileID: 8604071639466636799, guid: 5312ad5f273d241059217959b3107012, type: 3}
   lowHealthSprite: {fileID: 8479626923050501196, guid: c0cbaf743064f48e38f190293de32696, type: 3}
@@ -7887,7 +7886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb29a06797e44d2ab7530b55b503f681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  levelData: {fileID: 11400000, guid: c320915430b0df7449f29b676691b4ad, type: 2}
+  levelData: {fileID: 11400000, guid: 56425e47655ac9a49a2800b72b70313b, type: 2}
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
   victoryScreen: {fileID: 1202129349}
