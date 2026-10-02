@@ -398,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4579116873134900354
 Transform:
   m_ObjectHideFlags: 0
@@ -463,12 +463,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5854771608185497034, guid: 12bc65301600c1045a4c198ea24637a1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 18.69, y: 4.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -521,17 +521,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.010923684, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.10144927}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 6.23, y: 1.6566666}
+    newSize: {x: 18.69, y: 4.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.682281, y: 0.27902204}
+  m_Size: {x: 1, y: 0.25}
   m_EdgeRadius: 0
 --- !u!1 &2372453483123370962
 GameObject:
@@ -617,7 +617,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.60784316, g: 0.1882353, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -770,7 +770,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1046,7 +1046,7 @@ Transform:
   m_GameObject: {fileID: 5463852262409966178}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.35, y: -0.25, z: 0}
+  m_LocalPosition: {x: -8.98, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1074,7 +1074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5113174138885762750
 Transform:
   m_ObjectHideFlags: 0
@@ -1140,7 +1140,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.60784316, g: 0.1882353, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1474,23 +1474,23 @@ MonoBehaviour:
   - {fileID: 5153740945791324145}
   - {fileID: 247745242508518539}
   beamMuzzle: {fileID: 881429670263941473}
-  beamVisual: {fileID: 5113174138885762750}
-  beamCollider: {fileID: 3654378849912821445}
-  beamRenderer: {fileID: 2046456236880446660}
+  beamVisual: {fileID: 4579116873134900354}
+  beamCollider: {fileID: 4053592969618802378}
+  beamRenderer: {fileID: 4535077266414038371}
   firstDelay: 1
   cooldown: 1
   chargeTime: 3
   convergeTime: 0.8
   fireTime: 1.5
-  beamLength: 30
-  beamWidth: 2
+  beamLength: 20
+  beamWidth: 8
   orbSize: 1
   audioSource: {fileID: 3945373163060118600}
   chargeSound: {fileID: 8300000, guid: c78f4648d6b37e449b09efb7c52245ee, type: 3}
   fireSound: {fileID: 8300000, guid: d940a2ac7cb1c6447a93deadf02841d1, type: 3}
-  flickerColorA: {r: 0.61, g: 0.19, b: 1, a: 1}
-  flickerColorB: {r: 0.88, g: 0.67, b: 1, a: 1}
-  flickerSpeed: 25
+  flickerSpriteA: {fileID: -3824869233893227483, guid: b973fbf3254070c4eb0ced159b245cec, type: 3}
+  flickerSpriteB: {fileID: 2043415603003947293, guid: 3888705dc094c9b4e8cfb608687603c1, type: 3}
+  flickerSpeed: 100
 --- !u!1 &7603346103586438048
 GameObject:
   m_ObjectHideFlags: 0

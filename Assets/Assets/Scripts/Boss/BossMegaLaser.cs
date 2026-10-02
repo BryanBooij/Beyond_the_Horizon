@@ -29,9 +29,9 @@ public class BossMegaLaser : MonoBehaviour
     [SerializeField] private AudioClip fireSound;
     
     [Header("Beam Flicker")]
-    [SerializeField] private Color flickerColorA = new Color(0.61f, 0.19f, 1f);   // #9B30FF
-    [SerializeField] private Color flickerColorB = new Color(0.88f, 0.67f, 1f);   // #E0AAFF
-    [SerializeField] private float flickerSpeed = 25f;
+    [SerializeField] private Sprite flickerSpriteA;
+    [SerializeField] private Sprite flickerSpriteB;
+    [SerializeField] private float flickerSpeed = 25f;   // swaps per second
 
     private bool beamFlickering;
 
@@ -144,10 +144,8 @@ public class BossMegaLaser : MonoBehaviour
     private void Update()
     {
         if (!beamFlickering) return;
-
-        float t = Mathf.PerlinNoise(Time.time * flickerSpeed, 0f);
-        Color c = Color.Lerp(flickerColorA, flickerColorB, t);
-        c.a = beamRenderer.color.a;
-        beamRenderer.color = c;
+        
+        bool useA = Mathf.FloorToInt(Time.time * flickerSpeed) % 2 == 0;
+        beamRenderer.sprite = useA ? flickerSpriteA : flickerSpriteB;
     }
 }
