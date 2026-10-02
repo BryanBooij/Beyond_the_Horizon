@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d237d1e1e1e0e654ba881bd8d20d6c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Projectiles.EnemyLaser
-  moveSpeed: 11
+  moveSpeed: 12
   damage: 7
 --- !u!212 &2515345178888782249
 SpriteRenderer:

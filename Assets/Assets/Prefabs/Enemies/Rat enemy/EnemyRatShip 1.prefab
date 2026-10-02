@@ -702,13 +702,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5ca28242c7dc4ebbd59ad704cc6b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 5
-  waitTime: 2
-  Points: 200
-  health: 30
+  speed: 6
+  waitTime: 5
+  Points: 225
+  health: 35
   healthBar: {fileID: 5151769625755991577}
-  DogSprite: {fileID: 5652793919289155530, guid: a4d457270dcb0bd40bee9a6c4df474c8, type: 3}
-  DogDamagedSprite: {fileID: 5652793919289155530, guid: a4d457270dcb0bd40bee9a6c4df474c8, type: 3}
+  DogSprite: {fileID: -4402628197220528117, guid: eebeeb2b34f9924439592b0243f4d6ba, type: 3}
+  DogDamagedSprite: {fileID: -4402628197220528117, guid: eebeeb2b34f9924439592b0243f4d6ba, type: 3}
   audioSource: {fileID: 5296274618781066312}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   laserPrefab: {fileID: 5434020813485827992, guid: c4917849b2149614198d9fb0bcb3f07c, type: 3}
-  minFireRate: 4
-  maxFireRate: 6
+  minFireRate: 3
+  maxFireRate: 4
   audioSource: {fileID: 1647257364970556683}
   laserSound: {fileID: 8300000, guid: 3e413fc07864d9b4b97e9c477a5ee083, type: 3}

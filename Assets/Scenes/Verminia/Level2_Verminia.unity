@@ -8118,7 +8118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc505d4b9c74819830205853d1da0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.DifficultyManager
-  astroidSpeedMultiplier: 1
+  astroidSpeedMultiplier: 2.1
   astroidSpawnSpeedMultiplier: 1
   enemySpeedMultiplier: 1
   allowDifficultyIncrease: 0
