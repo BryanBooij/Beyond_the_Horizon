@@ -23,7 +23,7 @@ public class BossMegaLaser : MonoBehaviour
     [SerializeField] private float beamWidth = 1.5f;
     [SerializeField] private float orbSize = 0.6f;
 
-    [Header("Audio (optional)")]
+    [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip chargeSound;
     [SerializeField] private AudioClip fireSound;
