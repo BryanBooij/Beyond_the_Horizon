@@ -22,9 +22,18 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
     dialogueText: Level 1
+    dialogueDuration: 2
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 3
+    dialogueEnabled: 1
+    dialogueText: Wave 1/5
     dialogueDuration: 3
   - chunkName: Basic Ships
     spawnInstructions:
@@ -47,7 +56,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Wave 2/5
     dialogueDuration: 2
   - chunkName: Basic Ships
     spawnInstructions:
@@ -68,9 +77,18 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 5
+    maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: 'Captian Whiskers: Uhh.. is that an asteroid belt? Luckily my lasers
+    dialogueText: Wave 3/5
+    dialogueDuration: 2
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 3
+    dialogueEnabled: 1
+    dialogueText: 'Captain Whiskers: Uhh.. is that an asteroid belt? Luckily my lasers
       can handle them.'
     dialogueDuration: 3
   - chunkName: Asteroid Belt
@@ -99,7 +117,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Wave 4/5
     dialogueDuration: 2
   - chunkName: Basic + Asteroids
     spawnInstructions:
@@ -142,7 +160,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Last Wave
     dialogueDuration: 2
   - chunkName: Basic + Asteroids
     spawnInstructions:
