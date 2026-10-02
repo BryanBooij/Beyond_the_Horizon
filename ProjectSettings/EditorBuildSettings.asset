@@ -32,6 +32,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nestara/Level5_Nestara.unity
     guid: d56564cd56b458e45a60611d485b4f7f
+  - enabled: 1
+    path: Assets/Scenes/Barcune/Level1_Barcune.unity
+    guid: 3399d0a8a769fe842a03bcdf1dc64550
+  - enabled: 1
+    path: Assets/Scenes/Barcune/Level2_Barcune.unity
+    guid: 41d231e050b960f47b2d7dff17d6d725
+  - enabled: 1
+    path: Assets/Scenes/Barcune/Level3_Barcune.unity
+    guid: 47488b2b9abbdbc4e9bd9f97e140f1b4
+  - enabled: 1
+    path: Assets/Scenes/Barcune/Level4_Barcune.unity
+    guid: 5ec1a5c55636a3b4caa36405ed0e5bf5
+  - enabled: 1
+    path: Assets/Scenes/Barcune/Level5_Barcune.unity
+    guid: 202b9378ba9d35f48a1cc742321cc212
+  - enabled: 1
+    path: Assets/Scenes/Verminia/Level1_Verminia.unity
+    guid: 80fe880ac7469de408d055dba669686a
+  - enabled: 1
+    path: Assets/Scenes/Verminia/Level2_Verminia.unity
+    guid: 4cc23f92a38e97c4c97bc1ef2da795bd
+  - enabled: 1
+    path: Assets/Scenes/Verminia/Level3_Verminia.unity
+    guid: 570416b8e4893cb4d9bf3e8d8fad6a13
+  - enabled: 1
+    path: Assets/Scenes/Verminia/Level4_Verminia.unity
+    guid: 00cfb49acd8d37d48b310a59ba0f056a
+  - enabled: 1
+    path: Assets/Scenes/Verminia/Level5_Verminia.unity
+    guid: 6c62743aec697c645a89cbc153779dd5
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
