@@ -33,5 +33,16 @@ public class Projectile_Lazer : MonoBehaviour
 
             Destroy(gameObject);
         }
+        else if (collision.CompareTag("FinalBoss"))
+        {
+            EnemyBossShip boss = collision.GetComponent<EnemyBossShip>();
+
+            if (boss != null)
+            {
+                boss.TakeDamage((int)Damage);
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
