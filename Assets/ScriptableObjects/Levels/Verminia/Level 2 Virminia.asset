@@ -149,7 +149,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 10
     dialogueEnabled: 1
-    dialogueText: Wave 3/5
+    dialogueText: Wave 4/5
     dialogueDuration: 2
   - chunkName: Tank Ships
     spawnInstructions:

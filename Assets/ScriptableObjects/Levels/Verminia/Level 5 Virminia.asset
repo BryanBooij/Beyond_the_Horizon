@@ -24,7 +24,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 4
+    dialogueText: Level 5
     dialogueDuration: 2
   - chunkName: Rest
     spawnInstructions: []
@@ -73,7 +73,7 @@ MonoBehaviour:
     maxDuration: 30
     dialogueEnabled: 1
     dialogueText: Wave 2/6
-    dialogueDuration: 0
+    dialogueDuration: 2
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
@@ -112,7 +112,7 @@ MonoBehaviour:
     maxDuration: 30
     dialogueEnabled: 1
     dialogueText: Wave 3/6
-    dialogueDuration: 0
+    dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
     maxDuration: 0
     dialogueEnabled: 1
     dialogueText: Wave 4/6
-    dialogueDuration: 0
+    dialogueDuration: 2
   - chunkName: Mix Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
@@ -192,14 +192,49 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 30
     dialogueEnabled: 1
-    dialogueText: Boss Fight
-    dialogueDuration: 0
-  - chunkName: Rest
-    spawnInstructions: []
+    dialogueText: Last Wave
+    dialogueDuration: 2
+  - chunkName: Mini-boss
+    spawnInstructions:
+    - enemyPrefab: {fileID: 2218359299640195871, guid: 5ee2c373e0c29a547a8325c2643b5cf8, type: 3}
+      amount: 1
+      startDelay: 1
+      minInterval: 0
+      maxInterval: 0
+    - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      amount: 3
+      startDelay: 3
+      minInterval: 7
+      maxInterval: 10
+    - enemyPrefab: {fileID: 8315917353794438875, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      amount: 3
+      startDelay: 20
+      minInterval: 7
+      maxInterval: 10
+    - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
+      amount: 8
+      startDelay: 0.5
+      minInterval: 4
+      maxInterval: 6
+    - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
+      amount: 10
+      startDelay: 0.5
+      minInterval: 4
+      maxInterval: 6
+    - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
+      amount: 8
+      startDelay: 1
+      minInterval: 4
+      maxInterval: 6
+    - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
+      amount: 8
+      startDelay: 10
+      minInterval: 4
+      maxInterval: 6
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 2
-    dialogueEnabled: 1
-    dialogueText: This should be the Boss fight :)
-    dialogueDuration: 2
+    useTimer: 0
+    maxDuration: 0
+    dialogueEnabled: 0
+    dialogueText: 
+    dialogueDuration: 0
