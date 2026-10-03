@@ -231,7 +231,7 @@ MonoBehaviour:
       startDelay: 10
       minInterval: 4
       maxInterval: 6
-    useMaxActiveEnemies: 0
+    useMaxActiveEnemies: 1
     maxActiveEnemies: 0
     useTimer: 0
     maxDuration: 0
