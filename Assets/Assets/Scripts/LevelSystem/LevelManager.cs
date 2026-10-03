@@ -156,7 +156,7 @@ public class LevelManager : MonoBehaviour
             int currentScore = ScoreManager.Instance.CurrentScore;
 
             // Update algemene highscore + Victory Screen highscore
-            ScoreManager.Instance.HighScoreUpdate();
+            ScoreHelper.HighScoreUpdate();
 
             // Sterren berekenen op basis van de echte score
             int starsEarned = 1;

@@ -75,7 +75,7 @@ namespace Assets.Scripts.Enemies
                 // Asteroid has 0 HP
                 else
                 {
-                    ScoreManager.Instance.AddPoints(Points);
+                    ScoreHelper.AddPoints(Points);
                     if (explosionPrefab != null)
                     {
                         Instantiate(

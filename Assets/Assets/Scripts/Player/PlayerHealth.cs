@@ -8,7 +8,7 @@ namespace Assets.Scripts.Player
 {
     public class PlayerHealth : MonoBehaviour
     {
-        public ScoreManager scoreManager;
+        // public ScoreManager scoreManager;
         [SerializeField] private Sprite normalSprite;
         [SerializeField] private Sprite halfHealthSprite;
         [SerializeField] private Sprite lowHealthSprite;
@@ -102,7 +102,7 @@ namespace Assets.Scripts.Player
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                scoreManager.HighScoreUpdate();
+                ScoreHelper.HighScoreUpdate();
                 healthBarValueText.text = currentHealth + "/" + maxHealth;
                 healthBarSlider.value = currentHealth;
                 Destroy(gameObject);

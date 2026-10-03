@@ -22,10 +22,19 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 3
+    maxDuration: 2
     dialogueEnabled: 1
     dialogueText: Level 5
-    dialogueDuration: 3
+    dialogueDuration: 2
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 2
+    dialogueEnabled: 1
+    dialogueText: Wave 1/6
+    dialogueDuration: 2
   - chunkName: Tanky Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -47,7 +56,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Wave 5/6
     dialogueDuration: 2
   - chunkName: Mix Ships
     spawnInstructions:
@@ -65,9 +74,9 @@ MonoBehaviour:
     maxActiveEnemies: 1
     useTimer: 1
     maxDuration: 30
-    dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueEnabled: 1
+    dialogueText: Wave 3/6
+    dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -84,9 +93,9 @@ MonoBehaviour:
     maxActiveEnemies: 4
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueEnabled: 1
+    dialogueText: Wave 4/6
+    dialogueDuration: 2
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -108,7 +117,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Wave 5/6
     dialogueDuration: 2
   - chunkName: Tanky Ships
     spawnInstructions:

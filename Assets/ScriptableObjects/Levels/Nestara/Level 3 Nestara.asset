@@ -26,6 +26,15 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueText: Level 3
     dialogueDuration: 2
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 2
+    dialogueEnabled: 1
+    dialogueText: Wave 1/5
+    dialogueDuration: 2
   - chunkName: Asteroids + Tanky
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -67,7 +76,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Wave 2/5
     dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
@@ -95,7 +104,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Wave 3/5
     dialogueDuration: 2
   - chunkName: All
     spawnInstructions:
@@ -145,6 +154,15 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueText: 'Captain Whiskers: Phew... that was a lot'
     dialogueDuration: 3
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 2
+    dialogueEnabled: 1
+    dialogueText: Wave 4/5
+    dialogueDuration: 2
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -186,7 +204,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Next Wave
+    dialogueText: Last Wave
     dialogueDuration: 2
   - chunkName: Asteroid Belt
     spawnInstructions:
