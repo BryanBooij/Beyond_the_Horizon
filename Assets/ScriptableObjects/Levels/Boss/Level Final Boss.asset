@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: Level Final Boss
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level Final Boss
-  oneStarScore: 0
-  twoStarScore: 0
-  threeStarScore: 0
+  oneStarScore: 1000
+  twoStarScore: 1100
+  threeStarScore: 1200
   chunks:
+  - chunkName: Dialog
+    spawnInstructions: []
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 2
+    dialogueEnabled: 1
+    dialogueText: 'Rat King: THIS IS THE END FOR YOU CAPTAIN WHISKERS!!!'
+    dialogueDuration: 2
   - chunkName: Boss
     spawnInstructions:
     - enemyPrefab: {fileID: 7136115367947407979, guid: 5dae87aac722ab44dbf59dbbce961f63, type: 3}

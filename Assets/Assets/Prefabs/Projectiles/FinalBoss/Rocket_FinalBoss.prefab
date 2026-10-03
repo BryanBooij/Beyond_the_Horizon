@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Projectiles.EnemyLaser
   moveSpeed: 15
-  damage: 50
+  damage: 30
 --- !u!212 &4247769542809984342
 SpriteRenderer:
   serializedVersion: 2

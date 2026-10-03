@@ -1490,7 +1490,7 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: d940a2ac7cb1c6447a93deadf02841d1, type: 3}
   flickerSpriteA: {fileID: -3824869233893227483, guid: b973fbf3254070c4eb0ced159b245cec, type: 3}
   flickerSpriteB: {fileID: 2043415603003947293, guid: 3888705dc094c9b4e8cfb608687603c1, type: 3}
-  flickerSpeed: 100
+  flickerSpeed: 50
 --- !u!1 &7603346103586438048
 GameObject:
   m_ObjectHideFlags: 0
