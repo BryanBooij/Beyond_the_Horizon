@@ -2893,6 +2893,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644661988}
   m_CullTransparentMesh: 1
+--- !u!114 &644661992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644661988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd900d3eba74440871b3c0895347960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.LevelSystem.SecretUnlockLevels
+  manager: {fileID: 1733914160}
+  tapsRequired: 10
+  maxTimeBetweenTaps: 1
 --- !u!1 &665715018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,21 +2953,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &644661992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644661988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd900d3eba74440871b3c0895347960, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.LevelSystem.SecretUnlockLevels
-  manager: {fileID: 1733914160}
-  tapsRequired: 10
-  maxTimeBetweenTaps: 1
 --- !u!1 &688430748
 GameObject:
   m_ObjectHideFlags: 0
@@ -8688,7 +8688,7 @@ MonoBehaviour:
     - {fileID: 2135847486}
     highscoreText: {fileID: 2125911413}
   unlockEverything: 0
-  resetConfirmPopup: {fileID: 0}
+  resetConfirmPopup: {fileID: 1366975709}
 --- !u!1 &1761526889
 GameObject:
   m_ObjectHideFlags: 0

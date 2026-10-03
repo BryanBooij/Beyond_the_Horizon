@@ -102,7 +102,7 @@ namespace Assets.Scripts.Player
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                ScoreHelper.HighScoreUpdate();
+                ScoreManager.Instance.LevelHighScoreUpdate();
                 healthBarValueText.text = currentHealth + "/" + maxHealth;
                 healthBarSlider.value = currentHealth;
                 Destroy(gameObject);
