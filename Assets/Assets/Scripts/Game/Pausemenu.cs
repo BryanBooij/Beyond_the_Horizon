@@ -20,6 +20,7 @@ public class Pausemenu : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
+        MusicManager.Instance.PlayGameplayMusic();
         ScreenFader.Instance.FadeToScene("Main Menu");
     }
 

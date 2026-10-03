@@ -104,6 +104,8 @@ public class PlanetSelectorManager : MonoBehaviour
         CurrentLevel.level = levelIndex + 1;
 
         string sceneName = planets[selectedIndex].levelSceneNames[levelIndex];
+        
+        MusicManager.Instance.PlayGameplayMusic();
 
         ScreenFader.Instance.FadeToScene(sceneName);
     }
