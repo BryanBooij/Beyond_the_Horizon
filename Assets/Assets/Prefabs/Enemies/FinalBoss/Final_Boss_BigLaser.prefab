@@ -1483,7 +1483,7 @@ MonoBehaviour:
   convergeTime: 0.8
   fireTime: 1.5
   beamLength: 30
-  beamWidth: 10
+  beamWidth: 15
   orbSize: 1
   audioSource: {fileID: 3945373163060118600}
   chargeSound: {fileID: 8300000, guid: c78f4648d6b37e449b09efb7c52245ee, type: 3}
