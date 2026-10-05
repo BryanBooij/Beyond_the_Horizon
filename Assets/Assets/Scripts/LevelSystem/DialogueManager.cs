@@ -1,77 +1,123 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[Serializable]
+public class DialogueBox
+{
+    public GameObject panel;
+    public TMP_Text text;
+    public AudioClip typingSound;
+    public float textSpeed = 0.05f;
+}
+
 public class DialogueManager : MonoBehaviour
 {
-    [Header("UI")]
-    [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text dialogueText;
+    [Header("Dialogue Boxes")]
+    [SerializeField] private DialogueBox playerBox;
+    [SerializeField] private DialogueBox enemyBox;
+    [SerializeField] private DialogueBox systemBox;
 
-    [Header("Typewriter")]
-    [SerializeField] private float textSpeed = 0.05f;
-    
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip typingSound;
 
     private Coroutine dialogueCoroutine;
+    
+    public void ShowDialogue(DialogueLine line, Action onComplete = null)
+    {
+        StartRoutine(SingleRoutine(line, onComplete));
+    }
+    
+    public void ShowSequence(List<DialogueLine> lines, Action onComplete = null)
+    {
+        StartRoutine(SequenceRoutine(lines, onComplete));
+    }
 
-    public void ShowDialogue(
-        string text,
-        float duration,
-        Action onComplete)
+    private void StartRoutine(IEnumerator routine)
     {
         if (dialogueCoroutine != null)
         {
             StopCoroutine(dialogueCoroutine);
         }
-
-        dialogueCoroutine = StartCoroutine(
-            DialogueRoutine(text, duration, onComplete)
-        );
+        StopTypingSound();
+        HideAll();
+        dialogueCoroutine = StartCoroutine(routine);
     }
 
-    private IEnumerator DialogueRoutine(
-        string text,
-        float duration,
-        Action onComplete)
+    private IEnumerator SingleRoutine(DialogueLine line, Action onComplete)
     {
-        dialoguePanel.SetActive(true);
+        yield return PlayLine(line);
+        dialogueCoroutine = null;
+        onComplete?.Invoke();
+    }
 
-        dialogueText.text = "";
-        
-        // Start typing sound
-        if (audioSource != null && typingSound != null)
+    private IEnumerator SequenceRoutine(List<DialogueLine> lines, Action onComplete)
+    {
+        if (lines != null)
         {
-            audioSource.clip = typingSound;
+            foreach (DialogueLine line in lines)
+            {
+                yield return PlayLine(line);
+            }
+        }
+
+        dialogueCoroutine = null;
+        onComplete?.Invoke();
+    }
+
+    private IEnumerator PlayLine(DialogueLine line)
+    {
+        DialogueBox box = GetBox(line.speaker);
+        HideAll();
+        box.panel.SetActive(true);
+        box.text.text = "";
+
+        // Start typing sound
+        if (audioSource != null && box.typingSound != null)
+        {
+            audioSource.clip = box.typingSound;
             audioSource.loop = true;
             audioSource.Play();
         }
 
         // Typewriter effect
-        foreach (char letter in text)
+        foreach (char letter in line.text)
         {
-            dialogueText.text += letter;
-
-            yield return new WaitForSeconds(textSpeed);
+            box.text.text += letter;
+            yield return new WaitForSeconds(box.textSpeed);
         }
-        
-        // Stop typing sound
+        StopTypingSound();
+        // Keep the full text on screen
+        yield return new WaitForSeconds(line.duration);
+
+        box.panel.SetActive(false);
+    }
+
+    private DialogueBox GetBox(DialogueSpeaker speaker)
+    {
+        switch (speaker)
+        {
+            case DialogueSpeaker.Player: return playerBox;
+            case DialogueSpeaker.Enemy:  return enemyBox;
+            default:                     return systemBox;
+        }
+    }
+
+    private void HideAll()
+    {
+        if (playerBox.panel != null) playerBox.panel.SetActive(false);
+        if (enemyBox.panel != null) enemyBox.panel.SetActive(false);
+        if (systemBox.panel != null) systemBox.panel.SetActive(false);
+    }
+
+    private void StopTypingSound()
+    {
         if (audioSource != null)
         {
             audioSource.Stop();
             audioSource.loop = false;
         }
-
-        // Wacht nadat de volledige tekst geschreven is
-        yield return new WaitForSeconds(duration);
-
-        dialoguePanel.SetActive(false);
-
-        dialogueCoroutine = null;
-
-        onComplete?.Invoke();
     }
 }
