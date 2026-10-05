@@ -10,6 +10,7 @@ public class LevelData : ScriptableObject
     public int oneStarScore;
     public int twoStarScore;
     public int threeStarScore;
-
+    [Header("Enemy Limit")]
+    public int maxActiveSpaceships = 10;
     public List<ChunkData> chunks;
 }

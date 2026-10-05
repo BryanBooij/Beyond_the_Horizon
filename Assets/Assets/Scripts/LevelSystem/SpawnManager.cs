@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
     [Header("Spawn Area")]
     [SerializeField] private float topNoSpawnZone = 1.5f;
     [SerializeField] private float bottomNoSpawnZone = 1.5f;
+
     public void ExecuteSpawnInstruction(
         SpawnInstruction instruction,
         Action onComplete)
@@ -33,6 +34,20 @@ public class SpawnManager : MonoBehaviour
 
         for (int i = 0; i < instruction.amount; i++)
         {
+            // Alleen EnemySpaceship moet wachten op de limiet
+            if (instruction.enemyPrefab.CompareTag("Enemyspaceship"))
+            {
+                LevelManager levelManager = FindFirstObjectByType<LevelManager>();
+
+                if (levelManager != null)
+                {
+                    // Wacht totdat er weer ruimte is
+                    yield return new WaitUntil(
+                        () => levelManager.CanSpawnSpaceship()
+                    );
+                }
+            }
+
             SpawnEnemy(instruction);
 
             // Geen interval nodig na de laatste enemy
@@ -57,6 +72,14 @@ public class SpawnManager : MonoBehaviour
         if (cam == null)
         {
             Debug.LogError("No Main Camera found!");
+            return;
+        }
+
+        LevelManager levelManager = FindFirstObjectByType<LevelManager>();
+
+        if (levelManager == null)
+        {
+            Debug.LogError("No LevelManager found!");
             return;
         }
 
@@ -96,6 +119,12 @@ public class SpawnManager : MonoBehaviour
             Quaternion.identity
         );
 
+        // Alleen EnemySpaceship telt mee voor de limiet
+        if (enemy.CompareTag("Enemyspaceship"))
+        {
+            levelManager.SpaceshipSpawned();
+        }
+
         LevelEnemy levelEnemy = enemy.GetComponent<LevelEnemy>();
 
         if (levelEnemy == null)
@@ -103,6 +132,6 @@ public class SpawnManager : MonoBehaviour
             levelEnemy = enemy.AddComponent<LevelEnemy>();
         }
 
-        levelEnemy.levelManager = FindFirstObjectByType<LevelManager>();
+        levelEnemy.levelManager = levelManager;
     }
 }
