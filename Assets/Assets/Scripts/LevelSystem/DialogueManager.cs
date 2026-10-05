@@ -65,7 +65,7 @@ public class DialogueManager : MonoBehaviour
             audioSource.loop = false;
         }
 
-        // Wacht nadat de volledige tekst geschreven is
+        // Wait until the full text is written
         yield return new WaitForSeconds(duration);
 
         dialoguePanel.SetActive(false);
