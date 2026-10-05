@@ -7325,7 +7325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76fd4ae60e7572498465784af29fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  scoreManager: {fileID: 842044843}
   normalSprite: {fileID: 5570442891997907235, guid: 47cb1dd1dc1c8c34a855480c9abab04f, type: 3}
   halfHealthSprite: {fileID: 8604071639466636799, guid: 5312ad5f273d241059217959b3107012, type: 3}
   lowHealthSprite: {fileID: 8479626923050501196, guid: c0cbaf743064f48e38f190293de32696, type: 3}
@@ -26852,7 +26851,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 505584676}
-  - {fileID: 2057663081}
   - {fileID: 503321965}
   - {fileID: 2005365037}
   - {fileID: 1858885480}
@@ -26866,4 +26864,5 @@ SceneRoots:
   - {fileID: 544395807}
   - {fileID: 842044844}
   - {fileID: 607281075}
+  - {fileID: 2057663081}
   - {fileID: 1770256011}
