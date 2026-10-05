@@ -7935,7 +7935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb29a06797e44d2ab7530b55b503f681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  levelData: {fileID: 11400000, guid: 490a24f40bf7ecc459fa462c919c53dc, type: 2}
+  levelData: {fileID: 11400000, guid: 2f640a6262ac1bf4ea4d64175e4d43fe, type: 2}
   spawnManager: {fileID: 1673459361}
   dialogueManager: {fileID: 544395806}
   victoryScreen: {fileID: 1202129349}
@@ -26102,7 +26102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc505d4b9c74819830205853d1da0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Game.DifficultyManager
-  astroidSpeedMultiplier: 1
+  astroidSpeedMultiplier: 2
   astroidSpawnSpeedMultiplier: 1
   enemySpeedMultiplier: 1
   allowDifficultyIncrease: 0
