@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 695f2807b65aa4c34851b31797068f1c
+guid: 820a78ff7862443ec8eddaf43c7a401d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5064401156898091283
-    second: bird_0
+      213: 6813327810251196570
+    second: Rat_commander_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bird_0
+      name: Rat_commander_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dee030beaf1a7b9b0800000000000000
-      internalID: -5064401156898091283
+      spriteID: a98005c7b8dcd8e50800000000000000
+      internalID: 6813327810251196570
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bird_0: -5064401156898091283
+      Rat_commander_0: 6813327810251196570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
