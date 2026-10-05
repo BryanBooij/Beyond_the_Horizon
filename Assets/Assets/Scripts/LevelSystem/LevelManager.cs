@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
 
     private int currentChunkIndex = -1;
     private int activeEnemies = 0;
+    private int activeSpaceships = 0;
 
     private float chunkTimer = 0f;
     private bool spawningFinished = false;
@@ -143,7 +144,43 @@ public class LevelManager : MonoBehaviour
     {
         activeEnemies--;
 
+        if (activeEnemies < 0)
+            activeEnemies = 0;
+
         Debug.Log("Enemy destroyed. Active enemies: " + activeEnemies);
+    }
+
+    // =========================
+    // SPACESHIP LIMIT
+    // =========================
+
+    public bool CanSpawnSpaceship()
+    {
+        Debug.Log(
+            "CanSpawnSpaceship? Active: " +
+            activeSpaceships +
+            " / Max: " +
+            levelData.maxActiveSpaceships
+        );
+
+        return activeSpaceships < levelData.maxActiveSpaceships;
+    }
+
+    public void SpaceshipSpawned()
+    {
+        activeSpaceships++;
+
+        Debug.Log("SPACESHIP SPAWNED → Active: " + activeSpaceships);
+    }
+
+    public void SpaceshipDestroyed()
+    {
+        activeSpaceships--;
+
+        if (activeSpaceships < 0)
+            activeSpaceships = 0;
+
+        Debug.Log("SPACESHIP DESTROYED → Active: " + activeSpaceships);
     }
 
     private void LevelComplete()
@@ -154,7 +191,7 @@ public class LevelManager : MonoBehaviour
         {
             // Haal de echte score op uit ScoreManager
             int currentScore = ScoreManager.Instance.CurrentScore;
-            
+
             // Update highscore van dit specifieke level
             ScoreManager.Instance.LevelHighScoreUpdate();
 
