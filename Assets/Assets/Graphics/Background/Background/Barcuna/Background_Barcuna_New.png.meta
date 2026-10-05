@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b176370d3d0563947a367faeca60f8d1
+guid: 4def13bc0e2e8c04b9614b2b5cc88b9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3861233883600779487
-    second: Background_Dog_Universe_0
+      213: -8679437939691183850
+    second: Background_Barcuna_New_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background_Dog_Universe_0
+      name: Background_Barcuna_New_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd8f9ba62cbd59530800000000000000
-      internalID: 3861233883600779487
+      spriteID: 611a8a2fd217c8780800000000000000
+      internalID: -8679437939691183850
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background_Dog_Universe_0: 3861233883600779487
+      Background_Barcuna_New_0: -8679437939691183850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
