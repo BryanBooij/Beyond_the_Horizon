@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 38ff246f932bd4c9e9804f52003c7b99
-=======
-guid: 453da2e0e33c52a4096fab290b7f3b0f
->>>>>>> c016218ae28e52b0173e4e878eb8b9ef73e06df2
+guid: e7f1730e690e2194782c7c7ea55b0b8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4402628197220528117
-    second: Rat_bigger_0
+      213: -7012496599097504172
+    second: Cutscene_BaracunaMiniBoss_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rat_bigger_0
+      name: Cutscene_BaracunaMiniBoss_0
       rect:
         serializedVersion: 2
-        x: 604
-        y: 320
-        width: 1272
-        height: 549
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b005d821bf8b6e2c0800000000000000
-      internalID: -4402628197220528117
+      spriteID: 45e88263f7b9eae90800000000000000
+      internalID: -7012496599097504172
       vertices: []
       indices: 
       edges: []
@@ -139,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rat_bigger_0: -4402628197220528117
+      Cutscene_BaracunaMiniBoss_0: -7012496599097504172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

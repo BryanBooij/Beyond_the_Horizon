@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 38ff246f932bd4c9e9804f52003c7b99
-=======
-guid: 453da2e0e33c52a4096fab290b7f3b0f
->>>>>>> c016218ae28e52b0173e4e878eb8b9ef73e06df2
+guid: 695f2807b65aa4c34851b31797068f1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4402628197220528117
-    second: Rat_bigger_0
+      213: -5064401156898091283
+    second: bird_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rat_bigger_0
+      name: bird_0
       rect:
         serializedVersion: 2
-        x: 604
-        y: 320
-        width: 1272
-        height: 549
+        x: 0
+        y: 0
+        width: 1847
+        height: 231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b005d821bf8b6e2c0800000000000000
-      internalID: -4402628197220528117
+      spriteID: dee030beaf1a7b9b0800000000000000
+      internalID: -5064401156898091283
       vertices: []
       indices: 
       edges: []
@@ -139,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rat_bigger_0: -4402628197220528117
+      bird_0: -5064401156898091283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
