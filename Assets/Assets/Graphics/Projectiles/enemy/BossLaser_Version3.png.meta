@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a4d457270dcb0bd40bee9a6c4df474c8
+guid: 23fe909f53fcb5a499253cb4f20c231a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5652793919289155530
-    second: Rat_enemy_newestversion_0
+      213: -8423719444389382120
+    second: BossLaser_Version3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rat_enemy_newestversion_0
+      name: BossLaser_Version3_0
       rect:
         serializedVersion: 2
-        x: 606
-        y: 416
-        width: 1270
-        height: 334
+        x: 24
+        y: 267
+        width: 1869
+        height: 497
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acfd7bbae12c27e40800000000000000
-      internalID: 5652793919289155530
+      spriteID: 818be9dcbcfe81b80800000000000000
+      internalID: -8423719444389382120
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rat_enemy_newestversion_0: 5652793919289155530
+      BossLaser_Version3_0: -8423719444389382120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

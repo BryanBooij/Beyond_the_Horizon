@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 4300082523775866586}
   - component: {fileID: 3805834877704522880}
   m_Layer: 0
-  m_Name: Final_Boss_BigLaser_Test
+  m_Name: Final_Boss_BigLaser
   m_TagString: FinalBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1437,7 +1437,7 @@ MonoBehaviour:
   waitTime: 2
   Points: 1000
   movementPaused: 0
-  health: 500
+  health: 1000
   healthBar: {fileID: 3555490424268873090}
   showHealthBarFromStart: 1
   normalSprite: {fileID: 7079689461113271296, guid: 72cbdb3f09be3c347807920b734dba70, type: 3}
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   convergeTime: 0.8
   fireTime: 1.5
   beamLength: 30
-  beamWidth: 8
+  beamWidth: 15
   orbSize: 1
   audioSource: {fileID: 3945373163060118600}
   chargeSound: {fileID: 8300000, guid: c78f4648d6b37e449b09efb7c52245ee, type: 3}
