@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a508f72ae1503b24688a8504e933fcee
+guid: f5dac5f2000f9a0409827febd0f96a08
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 980530641627930504
-    second: 1Cutscene_Version1_0
+      213: 1999129964827332310
+    second: FirstCutscene_Version2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,24 +109,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1Cutscene_Version1_0
+      name: FirstCutscene_Version2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88f5e996c6b8b9d00800000000000000
-      internalID: 980530641627930504
+      spriteID: 6de4f557c165ebb10800000000000000
+      internalID: 1999129964827332310
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1Cutscene_Version1_0: 980530641627930504
+      FirstCutscene_Version2_0: 1999129964827332310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
