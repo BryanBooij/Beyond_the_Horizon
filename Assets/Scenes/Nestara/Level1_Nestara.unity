@@ -20459,7 +20459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2772172029935401099, guid: c979fddbd0769463787926691ab69a90, type: 3}
+  m_Sprite: {fileID: -2772172029935401099, guid: 2f20846dae0734ca3a36016417c31cb0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27601,10 +27601,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pausemenu
   pauseMenu: {fileID: 2021398545}
-  levelData: {fileID: 0}
-  oneStarScoreText: {fileID: 0}
-  twoStarScoreText: {fileID: 0}
-  threeStarScoreText: {fileID: 0}
+  levelData: {fileID: 11400000, guid: c320915430b0df7449f29b676691b4ad, type: 2}
+  oneStarScoreText: {fileID: 1930602502}
+  twoStarScoreText: {fileID: 734983838}
+  threeStarScoreText: {fileID: 1605699240}
 --- !u!114 &2021398547
 MonoBehaviour:
   m_ObjectHideFlags: 0
