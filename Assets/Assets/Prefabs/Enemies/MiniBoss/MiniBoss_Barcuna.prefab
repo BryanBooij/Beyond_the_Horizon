@@ -485,7 +485,7 @@ MonoBehaviour:
   speed: 5
   waitTime: 1
   Points: 1000
-  health: 200
+  health: 275
   healthBar: {fileID: 4931263843413437110}
   DogSprite: {fileID: 8787665246401545997, guid: 3f3e2d332ac15c649ba0e541f81efd89, type: 3}
   DogDamagedSprite: {fileID: -2407254408285219707, guid: 0fdde612907624a40bcabef65be37989, type: 3}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Level 2 Barcune
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 2 Barcune
-  oneStarScore: 2400
-  twoStarScore: 2820
-  threeStarScore: 3760
+  oneStarScore: 3300
+  twoStarScore: 3650
+  threeStarScore: 4000
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -43,12 +43,12 @@ MonoBehaviour:
       minInterval: 4
       maxInterval: 5
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 2
+      amount: 4
       startDelay: 0.5
       minInterval: 3.5
       maxInterval: 4.5
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 2
+      amount: 4
       startDelay: 7.5
       minInterval: 3.5
       maxInterval: 4.5
@@ -86,7 +86,7 @@ MonoBehaviour:
       minInterval: 2
       maxInterval: 3
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
-      amount: 2
+      amount: 1
       startDelay: 2
       minInterval: 4
       maxInterval: 5
@@ -180,17 +180,17 @@ MonoBehaviour:
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 5b609c4d9b012ed42a82a9ec0e7e36e9, type: 3}
-      amount: 2
+      amount: 4
       startDelay: 1
       minInterval: 4.5
       maxInterval: 5.5
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 2
+      amount: 6
       startDelay: 0.5
       minInterval: 4
       maxInterval: 5
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
-      amount: 2
+      amount: 6
       startDelay: 7.5
       minInterval: 4
       maxInterval: 5
