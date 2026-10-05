@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a8e450b2c06f8343a6ee67e4f436b60
+guid: 9c6e694ddc629094d84f84239be99bfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4025635663341809777
-    second: Cutscene_Bird_0
+      213: -845871679727437972
+    second: Cutscene_NestaraMiniBoss_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,24 +109,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cutscene_Bird_0
+      name: Cutscene_NestaraMiniBoss_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8f0e5361b11228c0800000000000000
-      internalID: -4025635663341809777
+      spriteID: c67784c503cd244f0800000000000000
+      internalID: -845871679727437972
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cutscene_Bird_0: -4025635663341809777
+      Cutscene_NestaraMiniBoss_0: -845871679727437972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

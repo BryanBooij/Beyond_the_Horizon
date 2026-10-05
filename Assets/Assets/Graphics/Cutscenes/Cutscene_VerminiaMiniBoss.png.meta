@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63fbdccd320c99a489431cad9b2ef8f6
+guid: 411a61e3d5b4c924684fabf38c66cd87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6707338957180932032
-    second: Cutscene_Rat_0
+      213: -65886838143311280
+    second: Cutscene_VerminiaMiniBoss_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,24 +109,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cutscene_Rat_0
+      name: Cutscene_VerminiaMiniBoss_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cf88ea9e31451d50800000000000000
-      internalID: 6707338957180932032
+      spriteID: 0522811154ce51ff0800000000000000
+      internalID: -65886838143311280
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cutscene_Rat_0: 6707338957180932032
+      Cutscene_VerminiaMiniBoss_0: -65886838143311280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
