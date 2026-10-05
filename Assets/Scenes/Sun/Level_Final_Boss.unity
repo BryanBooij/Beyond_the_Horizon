@@ -195,6 +195,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2741686}
   m_CullTransparentMesh: 1
+--- !u!1001 &54281521
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.23902
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1812
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673952065238714880, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: DogSprite
+      value: 
+      objectReference: {fileID: 837052573252624350, guid: 863bf7bda02fb8245b6ea5cb9653b1f4, type: 3}
+    - target: {fileID: 6673952065238714880, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: DogDamagedSprite
+      value: 
+      objectReference: {fileID: -338558788201922876, guid: f6f3acf8211672a45bc7f6a1d27266b9, type: 3}
+    - target: {fileID: 8315917353794438875, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
+      propertyPath: m_Name
+      value: EnemyRatShip_Commander
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
 --- !u!1 &101984607
 GameObject:
   m_ObjectHideFlags: 0
@@ -19638,6 +19703,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514358771}
   m_CullTransparentMesh: 1
+--- !u!1001 &1533408965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.23902
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950996434892331967, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316341427969011269, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
+      propertyPath: m_Name
+      value: EnemyRatShip
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
 --- !u!1 &1565293097
 GameObject:
   m_ObjectHideFlags: 0
@@ -26820,3 +26946,5 @@ SceneRoots:
   - {fileID: 544395807}
   - {fileID: 842044844}
   - {fileID: 607281075}
+  - {fileID: 54281521}
+  - {fileID: 1533408965}
