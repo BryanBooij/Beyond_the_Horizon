@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a4d457270dcb0bd40bee9a6c4df474c8
+guid: 3502ada2a5ec347ec865793c508e2eee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5652793919289155530
-    second: Rat_enemy_newestversion_0
+      213: -5462462972552954931
+    second: Rat_enemy_newestversion kopie_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,37 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rat_enemy_newestversion_0
+      name: Rat_enemy_newestversion kopie_0
       rect:
         serializedVersion: 2
         x: 606
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acfd7bbae12c27e40800000000000000
-      internalID: 5652793919289155530
+      spriteID: dcbb14a2ede6134b0800000000000000
+      internalID: -5462462972552954931
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rat_enemy_newestversion_0: 5652793919289155530
+      Rat_enemy_newestversion kopie_0: -5462462972552954931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
