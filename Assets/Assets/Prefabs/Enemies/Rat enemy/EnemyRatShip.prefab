@@ -498,7 +498,7 @@ Transform:
   m_GameObject: {fileID: 7920066266995534521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalPosition: {x: 0, y: -3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -607,12 +607,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5652793919289155530, guid: a4d457270dcb0bd40bee9a6c4df474c8, type: 3}
+  m_Sprite: {fileID: 3113011943974019661, guid: ca60bc3674167684fa67c8a1c66f9a5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.69, y: 3.32}
+  m_Size: {x: 16.24, y: 7.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -655,8 +655,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.7, y: 3.34}
-    newSize: {x: 2.69, y: 3.32}
+    oldSize: {x: 12.82, y: 5.49}
+    newSize: {x: 16.24, y: 7.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -707,8 +707,8 @@ MonoBehaviour:
   Points: 150
   health: 30
   healthBar: {fileID: 5151769625755991577}
-  DogSprite: {fileID: 5652793919289155530, guid: a4d457270dcb0bd40bee9a6c4df474c8, type: 3}
-  DogDamagedSprite: {fileID: 5652793919289155530, guid: a4d457270dcb0bd40bee9a6c4df474c8, type: 3}
+  DogSprite: {fileID: 3113011943974019661, guid: ca60bc3674167684fa67c8a1c66f9a5d, type: 3}
+  DogDamagedSprite: {fileID: 3113011943974019661, guid: ca60bc3674167684fa67c8a1c66f9a5d, type: 3}
   audioSource: {fileID: 5296274618781066312}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}

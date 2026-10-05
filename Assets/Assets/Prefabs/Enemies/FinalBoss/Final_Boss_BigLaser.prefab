@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 4300082523775866586}
   - component: {fileID: 3805834877704522880}
   m_Layer: 0
-  m_Name: Final_Boss_BigLaser_Test
+  m_Name: Final_Boss_BigLaser
   m_TagString: FinalBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1437,7 +1437,7 @@ MonoBehaviour:
   waitTime: 2
   Points: 1000
   movementPaused: 0
-  health: 500
+  health: 1000
   healthBar: {fileID: 3555490424268873090}
   showHealthBarFromStart: 1
   normalSprite: {fileID: 7079689461113271296, guid: 72cbdb3f09be3c347807920b734dba70, type: 3}
@@ -1477,20 +1477,20 @@ MonoBehaviour:
   beamVisual: {fileID: 4579116873134900354}
   beamCollider: {fileID: 4053592969618802378}
   beamRenderer: {fileID: 4535077266414038371}
-  firstDelay: 1
-  cooldown: 1
+  firstDelay: 5
+  cooldown: 10
   chargeTime: 3
   convergeTime: 0.8
   fireTime: 1.5
-  beamLength: 20
-  beamWidth: 8
+  beamLength: 30
+  beamWidth: 15
   orbSize: 1
   audioSource: {fileID: 3945373163060118600}
   chargeSound: {fileID: 8300000, guid: c78f4648d6b37e449b09efb7c52245ee, type: 3}
   fireSound: {fileID: 8300000, guid: d940a2ac7cb1c6447a93deadf02841d1, type: 3}
   flickerSpriteA: {fileID: -3824869233893227483, guid: b973fbf3254070c4eb0ced159b245cec, type: 3}
   flickerSpriteB: {fileID: 2043415603003947293, guid: 3888705dc094c9b4e8cfb608687603c1, type: 3}
-  flickerSpeed: 100
+  flickerSpeed: 50
 --- !u!1 &7603346103586438048
 GameObject:
   m_ObjectHideFlags: 0

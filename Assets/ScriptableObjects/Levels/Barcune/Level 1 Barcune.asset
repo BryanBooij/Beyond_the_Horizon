@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Level 1 Barcune
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 1 Barcune
-  oneStarScore: 2000
-  twoStarScore: 2400
-  threeStarScore: 3200
+  oneStarScore: 2850
+  twoStarScore: 3100
+  threeStarScore: 3400
   chunks:
   - chunkName: Rest
     spawnInstructions: []

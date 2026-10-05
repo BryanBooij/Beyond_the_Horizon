@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 2299684710614619031}
   - component: {fileID: 2028778887681242236}
   m_Layer: 0
-  m_Name: EnemyDogShip 1
+  m_Name: EnemyDogShip_Commander
   m_TagString: Enemyspaceship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +387,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5503658901234056064, guid: 1d36b46c5161322418ec8994f83f7c27, type: 3}
+  m_Sprite: {fileID: -8676058532758058805, guid: 4abc7ae4354e0cb4e85f4723eddb1ce9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -435,7 +435,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.91, y: 3.78}
+    oldSize: {x: 11.74, y: 4.14}
     newSize: {x: 11.74, y: 4.14}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -482,13 +482,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5ca28242c7dc4ebbd59ad704cc6b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 8
+  speed: 6.5
   waitTime: 3
-  Points: 150
-  health: 20
+  Points: 225
+  health: 25
   healthBar: {fileID: 2553786376191317293}
-  DogSprite: {fileID: 5503658901234056064, guid: 1d36b46c5161322418ec8994f83f7c27, type: 3}
-  DogDamagedSprite: {fileID: 5503658901234056064, guid: 1d36b46c5161322418ec8994f83f7c27, type: 3}
+  DogSprite: {fileID: -8676058532758058805, guid: 4abc7ae4354e0cb4e85f4723eddb1ce9, type: 3}
+  DogDamagedSprite: {fileID: 5654264939757741270, guid: f84ee2a07165e9c4ba58dd954f3c6683, type: 3}
   audioSource: {fileID: 3233493711317042632}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 827e48174ca086e48958c0d3cec4dd3e, type: 3}
@@ -505,8 +505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   laserPrefab: {fileID: 5434020813485827992, guid: e819cf4f50e6f664997fe80bcac7f9e5, type: 3}
-  minFireRate: 1
-  maxFireRate: 3
+  minFireRate: 2
+  maxFireRate: 4
   audioSource: {fileID: 1988108483376904532}
   laserSound: {fileID: 8300000, guid: 3e413fc07864d9b4b97e9c477a5ee083, type: 3}
 --- !u!1 &6280926436308330519
