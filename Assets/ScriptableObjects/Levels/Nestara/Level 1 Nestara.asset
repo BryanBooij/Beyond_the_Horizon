@@ -24,8 +24,16 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 1
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Level 1
+      duration: 2
+    - speaker: 0
+      text: Wow this is a quiet Galaxy...
+      duration: 2
+    - speaker: 1
+      text: Are you sure about that?
+      duration: 2
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,8 +41,10 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 3
     dialogueEnabled: 1
-    dialogueText: Wave 1/5
-    dialogueDuration: 3
+    dialogueLines:
+    - speaker: 2
+      text: Wave 1/5
+      duration: 2
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -47,8 +57,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 30
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -56,8 +65,10 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 2/5
+      duration: 2
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -70,8 +81,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 30
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -79,8 +89,10 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 3/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 2
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -88,9 +100,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 3
     dialogueEnabled: 1
-    dialogueText: 'Captain Whiskers: Uhh.. is that an asteroid belt? Luckily my lasers
-      can handle them.'
-    dialogueDuration: 3
+    dialogueLines: []
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -108,8 +118,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -117,8 +126,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 4/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Basic + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -151,8 +159,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -160,8 +167,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Last Wave
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Basic + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -194,5 +200,4 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []

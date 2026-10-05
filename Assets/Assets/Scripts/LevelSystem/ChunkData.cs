@@ -16,7 +16,5 @@ public class ChunkData
     
     [Header("Dialogue")]
     public bool dialogueEnabled = false;
-    [TextArea(2, 5)]
-    public string dialogueText;
-    public float dialogueDuration = 5f;
+    public List<DialogueLine> dialogueLines;
 }

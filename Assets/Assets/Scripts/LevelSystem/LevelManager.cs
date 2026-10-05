@@ -109,9 +109,8 @@ public class LevelManager : MonoBehaviour
 
         if (chunk.dialogueEnabled)
         {
-            dialogueManager.ShowDialogue(
-                chunk.dialogueText,
-                chunk.dialogueDuration,
+            dialogueManager.ShowSequence(
+                chunk.dialogueLines,
                 ContinueAfterChunk
             );
         }
