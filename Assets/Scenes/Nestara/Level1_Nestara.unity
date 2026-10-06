@@ -245,7 +245,7 @@ MonoBehaviour:
   startDialogueLines:
   - speaker: 0
     text: wow a bird
-    duration: 0
+    duration: 1
     waitForInput: 1
   hasEndCutscene: 0
   endDialogueLines: []

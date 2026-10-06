@@ -35,11 +35,34 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 0
-      text: Where did you go?
+      text: There you are...
       duration: 1
+      waitForInput: 0
     - speaker: 1
-      text: Come for yourself and see!
+      text: Captain Whiskers. I was wondering how long it would take you to catch
+        up.
+      duration: 2
+      waitForInput: 0
+    - speaker: 0
+      text: You've been running long enough
       duration: 1
+      waitForInput: 0
+    - speaker: 1
+      text: Running? No, Captain. I've been preparing.
+      duration: 2
+      waitForInput: 0
+    - speaker: 0
+      text: Then let's see what you've been preparing for.
+      duration: 2
+      waitForInput: 0
+    - speaker: 1
+      text: Oh. I think you'll find out soon enough.
+      duration: 2
+      waitForInput: 0
+    - speaker: 1
+      text: Try to keep up.
+      duration: 1
+      waitForInput: 0
   - chunkName: Boss
     spawnInstructions:
     - enemyPrefab: {fileID: 7136115367947407979, guid: 5dae87aac722ab44dbf59dbbce961f63, type: 3}
@@ -71,5 +94,5 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
+    dialogueEnabled: 1
     dialogueLines: []
