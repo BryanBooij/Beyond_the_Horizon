@@ -51,6 +51,12 @@ public class LevelManager : MonoBehaviour
         if (chunkFinished)
             return;
 
+        if (levelData == null || levelData.chunks == null)
+            return;
+
+        if (currentChunkIndex < 0 || currentChunkIndex >= levelData.chunks.Count)
+            return;
+
         ChunkData chunk = levelData.chunks[currentChunkIndex];
 
         chunkTimer += Time.deltaTime;

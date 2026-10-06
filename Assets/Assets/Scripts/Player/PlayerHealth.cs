@@ -1,5 +1,6 @@
 using System.Collections;
 using Assets.Scripts.Game;
+using Assets.Scripts.LevelSystem;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,45 +9,55 @@ namespace Assets.Scripts.Player
 {
     public class PlayerHealth : MonoBehaviour
     {
-        // public ScoreManager scoreManager;
         [SerializeField] private Sprite normalSprite;
         [SerializeField] private Sprite halfHealthSprite;
         [SerializeField] private Sprite lowHealthSprite;
         [SerializeField] private GameObject shieldObject;
+
         [Header("Damage Effects")]
         [SerializeField] private GameObject smokeLeft;
         [SerializeField] private GameObject smokeRight;
         [SerializeField] private GameObject fireLeft;
         [SerializeField] private GameObject fireRight;
+
         private bool isImmune = false;
         public bool IsImmune => isImmune;
+
         public Slider healthBarSlider;
         public TextMeshProUGUI healthBarValueText;
         public GameObject deathScreen;
+
         public int maxHealth = 100;
         public int currentHealth;
+
         private SpriteRenderer spriteRenderer;
         private Color originalColor;
+
         private bool doubleDamage = false;
         public bool DoubleDamageActive => doubleDamage;
+
         [SerializeField] private float flashDuration = 0.1f;
         [SerializeField] private float shakeAmount = 0.1f;
         [SerializeField] private float shakeDuration = 0.1f;
+
         private Vector3 originalPosition;
-        
+
         [Header("Audio")]
         public AudioSource audioSource;
         public AudioClip hitSound;
         public AudioClip shieldHitSound;
-        
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+
         void Start()
         {
             currentHealth = maxHealth;
+
             deathScreen.SetActive(false);
+
             spriteRenderer = GetComponent<SpriteRenderer>();
             originalColor = spriteRenderer.color;
+
             UpdateHealthSprite();
+
             if (smokeLeft != null)
                 smokeLeft.SetActive(false);
 
@@ -58,6 +69,7 @@ namespace Assets.Scripts.Player
 
             if (fireRight != null)
                 fireRight.SetActive(false);
+
             if (shieldObject != null)
             {
                 shieldObject.SetActive(false);
@@ -70,11 +82,15 @@ namespace Assets.Scripts.Player
             healthBarSlider.value = currentHealth;
             healthBarSlider.maxValue = maxHealth;
         }
+
         public void SetImmunity(bool value)
         {
             isImmune = value;
-            shieldObject.SetActive(value);
+
+            if (shieldObject != null)
+                shieldObject.SetActive(value);
         }
+
         public void SetDoubleDamage(bool value)
         {
             doubleDamage = value;
@@ -84,32 +100,50 @@ namespace Assets.Scripts.Player
         {
             if (isImmune)
             {
-                audioSource.PlayOneShot(shieldHitSound);
+                if (audioSource != null && shieldHitSound != null)
+                {
+                    audioSource.PlayOneShot(shieldHitSound);
+                }
+
                 return;
             }
-            
-            // Play hit sound
+
             if (audioSource != null && hitSound != null)
             {
                 audioSource.PlayOneShot(hitSound);
             }
-            
+
             FlashRed();
             StartCoroutine(Shake());
+
             currentHealth -= damage;
+
             UpdateHealthSprite();
 
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                ScoreManager.Instance.LevelHighScoreUpdate();
+
+                if (EndlessScoreManager.Instance != null)
+                {
+                    EndlessScoreManager.Instance.HighScoreUpdate();
+                }
+                else if (ScoreManager.Instance != null)
+                {
+                    ScoreManager.Instance.LevelHighScoreUpdate();
+                }
+
                 healthBarValueText.text = currentHealth + "/" + maxHealth;
                 healthBarSlider.value = currentHealth;
+
                 Destroy(gameObject);
+
                 deathScreen.SetActive(true);
+
                 Time.timeScale = 0f;
             }
         }
+
         public void FlashRed()
         {
             StartCoroutine(FlashRedCoroutine());
@@ -124,6 +158,7 @@ namespace Assets.Scripts.Player
 
             spriteRenderer.color = originalColor;
         }
+
         private IEnumerator Shake()
         {
             originalPosition = transform.localPosition;
@@ -135,7 +170,8 @@ namespace Assets.Scripts.Player
                 float x = Random.Range(-shakeAmount, shakeAmount);
                 float y = Random.Range(-shakeAmount, shakeAmount);
 
-                transform.localPosition = originalPosition + new Vector3(x, y, 0f);
+                transform.localPosition =
+                    originalPosition + new Vector3(x, y, 0f);
 
                 elapsed += Time.deltaTime;
 
@@ -144,7 +180,7 @@ namespace Assets.Scripts.Player
 
             transform.localPosition = originalPosition;
         }
-        
+
         public void UpdateHealthSprite()
         {
             if (currentHealth > maxHealth * 0.5f)
@@ -183,14 +219,12 @@ namespace Assets.Scripts.Player
             {
                 spriteRenderer.sprite = lowHealthSprite;
 
-                // Smoke uit
                 if (smokeLeft != null)
                     smokeLeft.SetActive(false);
 
                 if (smokeRight != null)
                     smokeRight.SetActive(false);
 
-                // Fire aan
                 if (fireLeft != null)
                     fireLeft.SetActive(true);
 
