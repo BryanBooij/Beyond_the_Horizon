@@ -1,12 +1,22 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Pausemenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    
+    [Header("Level Data")]
+    public LevelData levelData;
+
+    [Header("Star Score Text")]
+    public TMP_Text oneStarScoreText;
+    public TMP_Text twoStarScoreText;
+    public TMP_Text threeStarScoreText;
+
     public void Pause()
     {
+        UpdateStarScores();
+
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -30,5 +40,15 @@ public class Pausemenu : MonoBehaviour
 
         Scene currentScene = SceneManager.GetActiveScene();
         ScreenFader.Instance.FadeToScene(currentScene.name);
+    }
+
+    private void UpdateStarScores()
+    {
+        if (levelData == null)
+            return;
+
+        oneStarScoreText.text = levelData.oneStarScore.ToString();
+        twoStarScoreText.text = levelData.twoStarScore.ToString();
+        threeStarScoreText.text = levelData.threeStarScore.ToString();
     }
 }

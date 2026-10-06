@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 449b55694cb11104a813b5e536aac554
+guid: f12cacb9e9821d94a90a22f797a5dc3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1223159752952915507
-    second: Dialogue_DamagedDogCommander_0
+      213: 3779156653416077477
+    second: FirstCutscene_version1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dialogue_DamagedDogCommander_0
+      name: FirstCutscene_version1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1847
-        height: 232
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3362052905989f010800000000000000
-      internalID: 1223159752952915507
+      spriteID: 5a85b6514f2427430800000000000000
+      internalID: 3779156653416077477
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dialogue_DamagedDogCommander_0: 1223159752952915507
+      FirstCutscene_version1_0: 3779156653416077477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
