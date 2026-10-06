@@ -8870,7 +8870,7 @@ MonoBehaviour:
     - Level3_Nestara
     - Level4_Nestara
     - Level5_Nestara
-  - planetName: Barcune
+  - planetName: Barcuna
     levelSceneNames:
     - Level1_Barcune
     - Level2_Barcune
@@ -9251,6 +9251,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 877321051}
+        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10010,7 +10022,7 @@ GameObject:
   - component: {fileID: 2052212961}
   - component: {fileID: 2052212960}
   m_Layer: 5
-  m_Name: Barcune
+  m_Name: Barcuna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
