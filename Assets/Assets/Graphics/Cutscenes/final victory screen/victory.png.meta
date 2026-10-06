@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 278cdeb5fc6a91e47aaecd0ccf6779d1
+guid: eb4383a1d1471483ea06ab1e31426f69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2334544480344877661
-    second: background_deathscreen1_0
+      213: 2266395591118621882
+    second: victory_0
+  - first:
+      213: 2879965807469708391
+    second: victory_1
+  - first:
+      213: 532642931235482788
+    second: victory_2
+  - first:
+      213: -5461545076606609539
+    second: victory_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_deathscreen1_0
+      name: victory_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 465
+        y: 735
+        width: 6
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5a2e4ff5d7f56020800000000000000
-      internalID: 2334544480344877661
+      spriteID: abc032148cad37f10800000000000000
+      internalID: 2266395591118621882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victory_1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 623
+        width: 802
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764c087a4a1b7f720800000000000000
+      internalID: 2879965807469708391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victory_2
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 719
+        width: 92
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ace9648ce3546700800000000000000
+      internalID: 532642931235482788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victory_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 638
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77541870b1b434b0800000000000000
+      internalID: -5461545076606609539
       vertices: []
       indices: 
       edges: []
@@ -148,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_deathscreen1_0: 2334544480344877661
+      victory_0: 2266395591118621882
+      victory_1: 2879965807469708391
+      victory_2: 532642931235482788
+      victory_3: -5461545076606609539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

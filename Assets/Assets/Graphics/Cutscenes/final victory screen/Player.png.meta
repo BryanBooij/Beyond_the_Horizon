@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 278cdeb5fc6a91e47aaecd0ccf6779d1
+guid: c840d9217b04247c0babe6d3bb79744d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2334544480344877661
-    second: background_deathscreen1_0
+      213: -2311659948842064771
+    second: Player_0
+  - first:
+      213: 7364682651488144517
+    second: Player_1
+  - first:
+      213: -6287787046888575383
+    second: Player_2
+  - first:
+      213: -1182821291677670348
+    second: Player_3
+  - first:
+      213: -4709456396536258026
+    second: Player_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_deathscreen1_0
+      name: Player_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 472
+        y: 589
+        width: 18
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5a2e4ff5d7f56020800000000000000
-      internalID: 2334544480344877661
+      spriteID: d7465c336855befd0800000000000000
+      internalID: -2311659948842064771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 549
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cce6d0adb943660800000000000000
+      internalID: 7364682651488144517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 562
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e67e6befa4db8a0800000000000000
+      internalID: -6287787046888575383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 549
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434a8c45d46c59fe0800000000000000
+      internalID: -1182821291677670348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 121
+        width: 927
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612e34feb56a4aeb0800000000000000
+      internalID: -4709456396536258026
       vertices: []
       indices: 
       edges: []
@@ -148,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_deathscreen1_0: 2334544480344877661
+      Player_0: -2311659948842064771
+      Player_1: 7364682651488144517
+      Player_2: -6287787046888575383
+      Player_3: -1182821291677670348
+      Player_4: -4709456396536258026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
