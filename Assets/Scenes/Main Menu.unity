@@ -1192,11 +1192,11 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6284746816290291992, guid: 6c8320c2b43eccb41b226daeb62ab925, type: 3}
+  m_Sprite: {fileID: 5680876330281301099, guid: 20f88be2c860fe94dbe327ec53ae0df5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 1
+  m_DrawMode: 0
   m_Size: {x: 12, y: 12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -1212,7 +1212,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.06302382, w: 0.99801207}
   m_LocalPosition: {x: -4.75, y: -2.41, z: 0}
-  m_LocalScale: {x: 0.7146087, y: 0.22031033, z: 1}
+  m_LocalScale: {x: 3.1536365, y: 3.137255, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5455,7 +5455,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -435867854602644104, guid: 4b66778036f6d204ca00a83d379347ca, type: 3}
+  m_Sprite: {fileID: 8633251133939923342, guid: ab78812239dfab847a53da5bf0e58f55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5475,7 +5475,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1467, y: 0.1074, z: 0}
-  m_LocalScale: {x: 1.0967318, y: 0.94444096, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8870,7 +8870,7 @@ MonoBehaviour:
     - Level3_Nestara
     - Level4_Nestara
     - Level5_Nestara
-  - planetName: Barcune
+  - planetName: Barcuna
     levelSceneNames:
     - Level1_Barcune
     - Level2_Barcune
@@ -9251,6 +9251,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 877321051}
+        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10010,7 +10022,7 @@ GameObject:
   - component: {fileID: 2052212961}
   - component: {fileID: 2052212960}
   m_Layer: 5
-  m_Name: Barcune
+  m_Name: Barcuna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

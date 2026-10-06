@@ -16,7 +16,16 @@ MonoBehaviour:
   oneStarScore: 1000
   twoStarScore: 1300
   threeStarScore: 1600
+  maxActiveSpaceships: 10
   chunks:
+  - chunkName: Wait For VS Screen to Finish
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 4
+    dialogueEnabled: 0
+    dialogueLines: []
   - chunkName: Dialog
     spawnInstructions: []
     useMaxActiveEnemies: 1
@@ -24,8 +33,13 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: 'Rat King: THIS IS THE END FOR YOU CAPTAIN WHISKERS!!!'
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 0
+      text: Where did you go?
+      duration: 1
+    - speaker: 1
+      text: Come for yourself and see!
+      duration: 1
   - chunkName: Boss
     spawnInstructions:
     - enemyPrefab: {fileID: 7136115367947407979, guid: 5dae87aac722ab44dbf59dbbce961f63, type: 3}
@@ -58,5 +72,4 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
