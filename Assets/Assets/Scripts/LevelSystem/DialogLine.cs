@@ -15,4 +15,6 @@ public class DialogueLine
     [TextArea(2, 5)]
     public string text;
     public float duration = 3f;
+    [Header("Cutscene")]
+    public bool waitForInput = false;
 }

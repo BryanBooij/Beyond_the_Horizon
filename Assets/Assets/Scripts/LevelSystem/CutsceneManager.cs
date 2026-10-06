@@ -28,17 +28,18 @@ public class CutsceneManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        if (cutsceneImage != null)
+        {
+            cutsceneImage.SetActive(false);
+        }
     }
 
     private void Start()
     {
-        if (hasStartCutscene && HasDialogue(startDialogueLines))
+        if (HasStartCutscene())
         {
             StartCutscene(startDialogueLines);
-        }
-        else
-        {
-            StartLevel();
         }
     }
 
@@ -104,8 +105,6 @@ public class CutsceneManager : MonoBehaviour
 
     private void OnDialogueLineFinished()
     {
-        // The current dialogue line has finished.
-        // The player can now click the image to continue.
         waitingForClick = true;
     }
 
@@ -117,6 +116,16 @@ public class CutsceneManager : MonoBehaviour
         cutsceneFinished = true;
         waitingForClick = false;
 
+        // Stop and hide all active dialogue boxes.
+        if (dialogueManager != null)
+        {
+            dialogueManager.SendMessage(
+                "HideAll",
+                SendMessageOptions.DontRequireReceiver
+            );
+        }
+
+        // Hide the cutscene image.
         if (cutsceneImage != null)
         {
             cutsceneImage.SetActive(false);
@@ -144,14 +153,13 @@ public class CutsceneManager : MonoBehaviour
 
     public void StartEndCutscene()
     {
-        if (HasEndCutscene())
-        {
-            StartCutscene(endDialogueLines);
-        }
-        else
+        if (!HasEndCutscene())
         {
             FinishLevelAfterCutscene();
+            return;
         }
+
+        StartCutscene(endDialogueLines);
     }
 
     private bool HasDialogue(List<DialogueLine> lines)
