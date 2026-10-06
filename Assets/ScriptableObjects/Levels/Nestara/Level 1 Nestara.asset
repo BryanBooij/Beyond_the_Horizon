@@ -30,7 +30,7 @@ MonoBehaviour:
       text: Level 1
       duration: 2
     - speaker: 0
-      text: Wow this is a quiet Galaxy...
+      text: Wow this must be Nestara. its a quiet Galaxy...
       duration: 2
     - speaker: 1
       text: Are you sure about that?
@@ -57,8 +57,24 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 1
     maxDuration: 30
-    dialogueEnabled: 0
-    dialogueLines: []
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 1
+      text: Stop that ship!
+      duration: 2
+    - speaker: 1
+      text: Alert the others!
+      duration: 1
+    - speaker: 0
+      text: 'I just got here!
+
+        Why does everyone want to shoot me?
+
+'
+      duration: 1
+    - speaker: 0
+      text: "Looks like they\u2019re not going to let me pass."
+      duration: 1
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -101,7 +117,10 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 3
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 0
+      text: "Alright, let\u2019s dance."
+      duration: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}

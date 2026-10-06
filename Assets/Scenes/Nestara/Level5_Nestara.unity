@@ -7910,19 +7910,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   playerBox:
-    panel: {fileID: 0}
-    text: {fileID: 0}
-    typingSound: {fileID: 0}
+    panel: {fileID: 41005264}
+    text: {fileID: 10796287}
+    typingSound: {fileID: 8300000, guid: b0aaa85057c1b0146993278e51cf13cb, type: 3}
     textSpeed: 0.05
   enemyBox:
-    panel: {fileID: 0}
-    text: {fileID: 0}
-    typingSound: {fileID: 0}
+    panel: {fileID: 1272518007}
+    text: {fileID: 1962280693}
+    typingSound: {fileID: 8300000, guid: b0aaa85057c1b0146993278e51cf13cb, type: 3}
     textSpeed: 0.05
   systemBox:
-    panel: {fileID: 0}
-    text: {fileID: 0}
-    typingSound: {fileID: 0}
+    panel: {fileID: 2058925335}
+    text: {fileID: 374081468}
+    typingSound: {fileID: 8300000, guid: b0aaa85057c1b0146993278e51cf13cb, type: 3}
     textSpeed: 0.05
   audioSource: {fileID: 544395808}
 --- !u!4 &544395807

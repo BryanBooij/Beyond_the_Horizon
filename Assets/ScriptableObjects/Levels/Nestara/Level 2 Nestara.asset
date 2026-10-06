@@ -16,6 +16,7 @@ MonoBehaviour:
   oneStarScore: 2400
   twoStarScore: 2820
   threeStarScore: 3760
+  maxActiveSpaceships: 10
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -24,8 +25,16 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 2
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 1
+      text: "You\u2019re way out of your league.\n"
+      duration: 1
+    - speaker: 1
+      text: You think that little ship can stop us?
+      duration: 1
+    - speaker: 0
+      text: "If you\u2019re trying to scare me, you\u2019ll have to do better."
+      duration: 1
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,8 +42,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 1/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -67,8 +75,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -76,8 +83,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -95,8 +101,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -104,8 +109,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 3/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -113,9 +117,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: 'Captain Whiskers: I have to stay alert, those upcoming ships look
-      sturdier than the others.'
-    dialogueDuration: 3
+    dialogueLines: []
   - chunkName: Tank Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -128,8 +130,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -137,8 +138,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 4/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Mix Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -155,9 +155,14 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 1
     maxDuration: 30
-    dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 1
+      text: Run while you still can.
+      duration: 2
+    - speaker: 0
+      text: "Keep talking. I\u2019ll keep shooting."
+      duration: 1
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -165,8 +170,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Last Wave
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -199,5 +203,37 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
+  - chunkName: Basic + Asteroid
+    spawnInstructions:
+    - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
+      amount: 2
+      startDelay: 1
+      minInterval: 4.5
+      maxInterval: 5.5
+    - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
+      amount: 2
+      startDelay: 0.5
+      minInterval: 4
+      maxInterval: 5
+    - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
+      amount: 2
+      startDelay: 7.5
+      minInterval: 4
+      maxInterval: 5
+    - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
+      amount: 3
+      startDelay: 1
+      minInterval: 4
+      maxInterval: 5
+    - enemyPrefab: {fileID: 3764604186118443629, guid: 6a41f2ebc8fa3f949896cb4b2b487353, type: 3}
+      amount: 3
+      startDelay: 8
+      minInterval: 4
+      maxInterval: 5
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 0
+    maxDuration: 0
+    dialogueEnabled: 0
+    dialogueLines: []
