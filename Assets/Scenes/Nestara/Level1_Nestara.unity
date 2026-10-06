@@ -259,10 +259,6 @@ MonoBehaviour:
     text: Let's find that rat
     duration: 0
     waitForInput: 1
-  - speaker: 0
-    text: wow a bird
-    duration: 1
-    waitForInput: 1
   hasEndCutscene: 0
   endDialogueLines: []
 --- !u!1 &83222743
