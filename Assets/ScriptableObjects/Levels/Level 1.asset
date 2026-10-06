@@ -16,6 +16,7 @@ MonoBehaviour:
   oneStarScore: 300
   twoStarScore: 500
   threeStarScore: 1000
+  maxActiveSpaceships: 10
   chunks:
   - chunkName: Asteroids
     spawnInstructions:
@@ -29,5 +30,13 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 10
     dialogueEnabled: 1
-    dialogueText: LETS GOOOOO WE DID IT!!!!!
-    dialogueDuration: 5
+    dialogueLines:
+    - speaker: 2
+      text: LEvel 1
+      duration: 2
+    - speaker: 0
+      text: HELLO
+      duration: 2
+    - speaker: 1
+      text: BYEE
+      duration: 2

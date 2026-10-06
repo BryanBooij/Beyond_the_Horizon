@@ -488,7 +488,7 @@ MonoBehaviour:
   health: 275
   healthBar: {fileID: 4931263843413437110}
   DogSprite: {fileID: 8787665246401545997, guid: 3f3e2d332ac15c649ba0e541f81efd89, type: 3}
-  DogDamagedSprite: {fileID: -2407254408285219707, guid: 0fdde612907624a40bcabef65be37989, type: 3}
+  DogDamagedSprite: {fileID: 6961458593276270323, guid: 0fdde612907624a40bcabef65be37989, type: 3}
   audioSource: {fileID: 2929315029694216074}
   hitSound: {fileID: 8300000, guid: ba65b3408af66c6468627315246e8a05, type: 3}
   explosionPrefab: {fileID: 2824868224874255470, guid: 62ee6261f5d3da24e836d015731285ef, type: 3}

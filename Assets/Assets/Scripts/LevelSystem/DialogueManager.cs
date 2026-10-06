@@ -24,12 +24,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
 
     private Coroutine dialogueCoroutine;
-    
+
     public void ShowDialogue(DialogueLine line, Action onComplete = null)
     {
         StartRoutine(SingleRoutine(line, onComplete));
     }
-    
+
     public void ShowSequence(List<DialogueLine> lines, Action onComplete = null)
     {
         StartRoutine(SequenceRoutine(lines, onComplete));
@@ -41,14 +41,17 @@ public class DialogueManager : MonoBehaviour
         {
             StopCoroutine(dialogueCoroutine);
         }
+
         StopTypingSound();
         HideAll();
+
         dialogueCoroutine = StartCoroutine(routine);
     }
 
     private IEnumerator SingleRoutine(DialogueLine line, Action onComplete)
     {
         yield return PlayLine(line);
+
         dialogueCoroutine = null;
         onComplete?.Invoke();
     }
@@ -70,7 +73,9 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator PlayLine(DialogueLine line)
     {
         DialogueBox box = GetBox(line.speaker);
+
         HideAll();
+
         box.panel.SetActive(true);
         box.text.text = "";
 
@@ -88,28 +93,48 @@ public class DialogueManager : MonoBehaviour
             box.text.text += letter;
             yield return new WaitForSeconds(box.textSpeed);
         }
-        StopTypingSound();
-        // Keep the full text on screen
-        yield return new WaitForSeconds(line.duration);
 
-        box.panel.SetActive(false);
+        StopTypingSound();
+
+        if (line.waitForInput)
+        {
+            // Keep the dialogue visible until external input continues it.
+            yield return null;
+        }
+        else
+        {
+            // Normal dialogue keeps using its duration.
+            yield return new WaitForSeconds(line.duration);
+
+            box.panel.SetActive(false);
+        }
     }
 
     private DialogueBox GetBox(DialogueSpeaker speaker)
     {
         switch (speaker)
         {
-            case DialogueSpeaker.Player: return playerBox;
-            case DialogueSpeaker.Enemy:  return enemyBox;
-            default:                     return systemBox;
+            case DialogueSpeaker.Player:
+                return playerBox;
+
+            case DialogueSpeaker.Enemy:
+                return enemyBox;
+
+            default:
+                return systemBox;
         }
     }
 
     private void HideAll()
     {
-        if (playerBox.panel != null) playerBox.panel.SetActive(false);
-        if (enemyBox.panel != null) enemyBox.panel.SetActive(false);
-        if (systemBox.panel != null) systemBox.panel.SetActive(false);
+        if (playerBox.panel != null)
+            playerBox.panel.SetActive(false);
+
+        if (enemyBox.panel != null)
+            enemyBox.panel.SetActive(false);
+
+        if (systemBox.panel != null)
+            systemBox.panel.SetActive(false);
     }
 
     private void StopTypingSound()
