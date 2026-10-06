@@ -32,6 +32,17 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        if (CutsceneManager.Instance != null &&
+            CutsceneManager.Instance.HasStartCutscene())
+        {
+            return;
+        }
+
+        StartNextChunk();
+    }
+
+    public void StartLevelAfterCutscene()
+    {
         StartNextChunk();
     }
 
@@ -188,13 +199,13 @@ public class LevelManager : MonoBehaviour
 
         if (ScoreManager.Instance != null)
         {
-            // Haal de echte score op uit ScoreManager
+            // Get the actual score from ScoreManager
             int currentScore = ScoreManager.Instance.CurrentScore;
 
-            // Update highscore van dit specifieke level
+            // Update the highscore for this specific level
             ScoreManager.Instance.LevelHighScoreUpdate();
 
-            // Sterren berekenen op basis van de echte score
+            // Calculate stars based on the actual score
             int starsEarned = 1;
 
             if (currentScore >= levelData.threeStarScore)
@@ -208,7 +219,7 @@ public class LevelManager : MonoBehaviour
 
             CurrentLevel.starsEarned = starsEarned;
 
-            // Level-progress + level-highscore opslaan
+            // Save level progress and level highscore
             LevelProgress.CompleteLevel(
                 CurrentLevel.planet,
                 CurrentLevel.level,
@@ -217,6 +228,19 @@ public class LevelManager : MonoBehaviour
             );
         }
 
+        if (CutsceneManager.Instance != null &&
+            CutsceneManager.Instance.HasEndCutscene())
+        {
+            CutsceneManager.Instance.StartEndCutscene();
+        }
+        else
+        {
+            ShowVictoryScreen();
+        }
+    }
+
+    public void ShowVictoryScreen()
+    {
         if (victoryScreen != null)
         {
             victoryScreen.SetActive(true);
