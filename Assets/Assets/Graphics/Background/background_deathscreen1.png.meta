@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cbadf81a810384d4b94ed370d7c2db89
+guid: 278cdeb5fc6a91e47aaecd0ccf6779d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3875407854014120374
-    second: MainMenu_Background_0
+      213: 2334544480344877661
+    second: background_deathscreen1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MainMenu_Background_0
+      name: background_deathscreen1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4ebabde619c73ac0800000000000000
-      internalID: -3875407854014120374
+      spriteID: d5a2e4ff5d7f56020800000000000000
+      internalID: 2334544480344877661
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MainMenu_Background_0: -3875407854014120374
+      background_deathscreen1_0: 2334544480344877661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
