@@ -243,8 +243,20 @@ MonoBehaviour:
   dialogueManager: {fileID: 544395806}
   hasStartCutscene: 1
   startDialogueLines:
+  - speaker: 2
+    text: Something has been moving between the galaxies
+    duration: 0
+    waitForInput: 1
+  - speaker: 2
+    text: An army of rats... following the orders of a mysterious king.
+    duration: 0
+    waitForInput: 1
+  - speaker: 2
+    text: No one knows what the Rat King wants.
+    duration: 0
+    waitForInput: 1
   - speaker: 0
-    text: wow a bird
+    text: Let's find that rat
     duration: 0
     waitForInput: 1
   hasEndCutscene: 0
