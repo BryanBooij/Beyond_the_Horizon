@@ -241,22 +241,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneManager
   cutsceneImage: {fileID: 1115704937}
   dialogueManager: {fileID: 544395806}
-  hasStartCutscene: 0
-  startDialogueLines: []
+  hasStartCutscene: 1
+  startDialogueLines:
+  - speaker: 0
+    text: wow a bird
+    duration: 0
+    waitForInput: 1
   hasEndCutscene: 0
-  endDialogueLines:
-  - speaker: 2
-    text: Whiskers won
-    duration: 0
-    waitForInput: 1
-  - speaker: 2
-    text: He found something special
-    duration: 0
-    waitForInput: 1
-  - speaker: 2
-    text: It points to barcuna
-    duration: 0
-    waitForInput: 1
+  endDialogueLines: []
 --- !u!1 &83222743
 GameObject:
   m_ObjectHideFlags: 0
