@@ -1220,12 +1220,15 @@ MonoBehaviour:
   - speaker: 2
     text: Earth is being attack
     duration: 2
+    waitForInput: 0
   - speaker: 2
     text: Now they have to defend
     duration: 2
+    waitForInput: 0
   - speaker: 2
     text: Will captain Whisker prevail
     duration: 2
+    waitForInput: 0
   hasEndCutscene: 0
   endDialogueLines: []
 --- !u!1 &191341828
@@ -14729,6 +14732,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 839502349}
+  - {fileID: 1359134184}
   - {fileID: 2021398549}
   - {fileID: 101984608}
   - {fileID: 1202129353}
@@ -14736,7 +14740,6 @@ RectTransform:
   - {fileID: 1644095142}
   - {fileID: 158046095}
   - {fileID: 2131252299}
-  - {fileID: 1359134184}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -20127,7 +20130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1359134184
 RectTransform:
   m_ObjectHideFlags: 0
