@@ -16,6 +16,7 @@ MonoBehaviour:
   oneStarScore: 2500
   twoStarScore: 2970
   threeStarScore: 3960
+  maxActiveSpaceships: 10
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -24,8 +25,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 3
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,8 +33,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 1/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Asteroids + Tanky
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -67,8 +66,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 30
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -76,8 +74,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -95,8 +92,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -104,8 +100,13 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 3/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 0
+      text: "I\u2019m still here. That must be frustrating."
+      duration: 1
+    - speaker: 1
+      text: "You\u2019re going to regret coming here."
+      duration: 1
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -143,8 +144,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 30
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -152,8 +152,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: 'Captain Whiskers: Phew... that was a lot'
-    dialogueDuration: 3
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -161,8 +160,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 4/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -195,8 +193,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -204,8 +201,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Last Wave
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -223,5 +219,4 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
