@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         MusicManager.Instance.PlayGameplayMusic();
-        ScreenFader.Instance.FadeToScene("Demo");
+        ScreenFader.Instance.FadeToScene("Endless Mode");
     }
 
     public void PlayLevel1()
