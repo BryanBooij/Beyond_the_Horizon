@@ -8035,19 +8035,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   playerBox:
-    panel: {fileID: 0}
-    text: {fileID: 0}
-    typingSound: {fileID: 0}
+    panel: {fileID: 896043939}
+    text: {fileID: 444516049}
+    typingSound: {fileID: 8300000, guid: b0aaa85057c1b0146993278e51cf13cb, type: 3}
     textSpeed: 0.05
   enemyBox:
-    panel: {fileID: 0}
-    text: {fileID: 0}
-    typingSound: {fileID: 0}
+    panel: {fileID: 1422539504}
+    text: {fileID: 274994156}
+    typingSound: {fileID: 8300000, guid: b0aaa85057c1b0146993278e51cf13cb, type: 3}
     textSpeed: 0.05
   systemBox:
-    panel: {fileID: 0}
-    text: {fileID: 0}
-    typingSound: {fileID: 0}
+    panel: {fileID: 889407300}
+    text: {fileID: 278649900}
+    typingSound: {fileID: 8300000, guid: b0aaa85057c1b0146993278e51cf13cb, type: 3}
     textSpeed: 0.05
   audioSource: {fileID: 544395808}
 --- !u!4 &544395807
