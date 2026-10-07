@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 935342b72bcde402b8ce3537651c9681
+guid: 11517b97bbfc54d428f787d2076f8d86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2882047277959457628
-    second: Box_tutorial_0
+      213: -7443756053782179069
+    second: background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Box_tutorial_0
+      name: background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1283
-        height: 344
+        width: 467
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a4585b3549e008d0800000000000000
-      internalID: -2882047277959457628
+      spriteID: 30356abce4772b890800000000000000
+      internalID: -7443756053782179069
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Box_tutorial_0: -2882047277959457628
+      background_0: -7443756053782179069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
