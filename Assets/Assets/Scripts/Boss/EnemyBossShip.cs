@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Assets.Scripts.Boss;
 using Assets.Scripts.Game;
 using Assets.Scripts.Enemies;
 using UnityEngine;
@@ -12,11 +13,12 @@ public class EnemyBossShip : MonoBehaviour
     public float speed = 3f;
     public float waitTime = 2f;
     public float Points = 1000f;
+    public float healthBarPadding = 0.2f;
     [HideInInspector] public bool movementPaused;
 
     [Header("Health")]
     public int health = 200;
-    public EnemyHealthBar healthBar;
+    public BossHealthBar healthBar; 
     public bool showHealthBarFromStart = true;
     private int maxHealth;
 
@@ -62,6 +64,8 @@ public class EnemyBossShip : MonoBehaviour
 
     private void Start()
     {
+        healthBar = FindFirstObjectByType<BossHealthBar>(FindObjectsInactive.Include);
+        
         CalculateScreenBounds();
         ChooseRandomDestination();
 
@@ -158,6 +162,18 @@ public class EnemyBossShip : MonoBehaviour
         maxX = cam.transform.position.x + cameraWidth - halfWidth;
         minY = cam.transform.position.y - cameraHeight + halfHeight;
         maxY = cam.transform.position.y + cameraHeight - halfHeight;
+        
+        if (healthBar != null)
+        {
+            RectTransform rt = healthBar.GetComponent<RectTransform>();
+            Vector3[] corners = new Vector3[4];
+            rt.GetWorldCorners(corners);
+            
+            float barTopWorldY = cam.ScreenToWorldPoint(new Vector3(0f, corners[1].y, 0f)).y;
+
+            minY = Mathf.Max(minY, barTopWorldY + healthBarPadding + halfHeight);
+        }
+        if (minY > maxY) minY = maxY;
     }
 
     private void ChooseRandomDestination()
@@ -203,7 +219,8 @@ public class EnemyBossShip : MonoBehaviour
 
             if (explosionPrefab != null)
                 Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-
+            
+            healthBar.gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }
