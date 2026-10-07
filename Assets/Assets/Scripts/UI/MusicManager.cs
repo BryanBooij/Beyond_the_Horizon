@@ -9,7 +9,7 @@ public class MusicManager : MonoBehaviour
     [SerializeField] private AudioSource gameplayMusic;
 
     [SerializeField] private float fadeDuration = 1f;
-
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)
