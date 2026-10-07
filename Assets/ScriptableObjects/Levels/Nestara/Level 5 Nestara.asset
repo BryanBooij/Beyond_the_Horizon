@@ -39,7 +39,7 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 2
-      text: Wave 1/3
+      text: Wave 1/5
       duration: 1
       waitForInput: 0
   - chunkName: Tanky Ships
@@ -64,7 +64,7 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 2
-      text: Wave 2/3
+      text: Wave 2/5
       duration: 1
       waitForInput: 0
   - chunkName: Mix Ships
@@ -84,7 +84,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 30
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -102,7 +106,11 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 4/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -125,7 +133,7 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 2
-      text: Wave 3/3
+      text: Wave 5/5
       duration: 1
       waitForInput: 0
   - chunkName: Tanky Ships

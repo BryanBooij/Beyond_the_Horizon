@@ -26,15 +26,10 @@ MonoBehaviour:
     maxDuration: 2
     dialogueEnabled: 1
     dialogueLines:
-    - speaker: 1
-      text: "You\u2019re way out of your league.\n"
+    - speaker: 2
+      text: Level 2
       duration: 1
-    - speaker: 1
-      text: You think that little ship can stop us?
-      duration: 1
-    - speaker: 0
-      text: "If you\u2019re trying to scare me, you\u2019ll have to do better."
-      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -42,7 +37,31 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 1
+      text: "You\u2019re way out of your league.\n"
+      duration: 1
+      waitForInput: 0
+    - speaker: 1
+      text: You think that little ship can stop us?
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: "If you\u2019re trying to scare me, you\u2019ll have to do better."
+      duration: 1
+      waitForInput: 0
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 0
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 2
+      text: Wave 1/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -83,7 +102,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 2/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -117,7 +140,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 5
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Tank Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -138,7 +165,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 4/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Mix Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -160,9 +191,11 @@ MonoBehaviour:
     - speaker: 1
       text: Run while you still can.
       duration: 2
+      waitForInput: 0
     - speaker: 0
       text: "Keep talking. I\u2019ll keep shooting."
       duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -170,7 +203,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 5/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
