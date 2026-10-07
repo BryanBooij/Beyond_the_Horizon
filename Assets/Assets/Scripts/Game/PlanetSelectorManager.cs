@@ -105,8 +105,17 @@ public class PlanetSelectorManager : MonoBehaviour
 
         string sceneName = planets[selectedIndex].levelSceneNames[levelIndex];
         
-        MusicManager.Instance.PlayGameplayMusic();
+        Debug.Log("Planet" + sceneName);
 
+        if (sceneName == "Level_Final_Boss")
+        {
+            MusicManager.Instance.PlayBossMusic();
+        }
+        else
+        {
+            MusicManager.Instance.PlayGameplayMusic();
+        }
+        
         ScreenFader.Instance.FadeToScene(sceneName);
     }
 

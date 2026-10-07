@@ -16,7 +16,7 @@ MonoBehaviour:
   oneStarScore: 3300
   twoStarScore: 3650
   threeStarScore: 4000
-  maxActiveSpaceships: 10
+  maxActiveSpaceships: 4
   chunks:
   - chunkName: Rest
     spawnInstructions: []
