@@ -29,6 +29,7 @@ MonoBehaviour:
     - speaker: 2
       text: Level 5
       duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -40,6 +41,7 @@ MonoBehaviour:
     - speaker: 2
       text: Wave 1/3
       duration: 1
+      waitForInput: 0
   - chunkName: Tanky Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -64,6 +66,7 @@ MonoBehaviour:
     - speaker: 2
       text: Wave 2/3
       duration: 1
+      waitForInput: 0
   - chunkName: Mix Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -122,8 +125,9 @@ MonoBehaviour:
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 2
-      text: Wave 1/3
+      text: Wave 3/3
       duration: 1
+      waitForInput: 0
   - chunkName: Tanky Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -142,22 +146,26 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 20
+    maxDuration: 15
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 1
       text: "You\u2019ve flown too far from your nest, little cat."
       duration: 0
+      waitForInput: 0
     - speaker: 1
       text: "You have no idea what you\u2019re up against.\nYour journey ends here."
       duration: 0
+      waitForInput: 0
     - speaker: 0
-      text: "I\u2019ve come this far. You really think a few threats will make me
-        turn around?"
+      text: "I\u2019ve come this far. \nYou really think a few threats will make
+        me turn around?"
       duration: 0
+      waitForInput: 0
     - speaker: 1
       text: You should have stayed far away from Nestara.
       duration: 0
+      waitForInput: 0
   - chunkName: Mini-boss
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 6d61c2159ac7e0245b3f8fc02cca01c8, type: 3}

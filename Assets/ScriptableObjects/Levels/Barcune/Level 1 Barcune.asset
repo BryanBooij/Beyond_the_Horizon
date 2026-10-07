@@ -16,6 +16,7 @@ MonoBehaviour:
   oneStarScore: 2850
   twoStarScore: 3100
   threeStarScore: 3400
+  maxActiveSpaceships: 10
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -24,8 +25,35 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 1
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Level 1
+      duration: 1
+      waitForInput: 0
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 2
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 1
+      text: That's him! The cat that attacked Nestara!
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: Word travels fast.
+      duration: 1
+      waitForInput: 0
+    - speaker: 1
+      text: You won't get as far here as you did in Nestara.
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: We'll see about that.
+      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,8 +61,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 3
     dialogueEnabled: 1
-    dialogueText: Wave 1/5
-    dialogueDuration: 3
+    dialogueLines:
+    - speaker: 2
+      text: Wave 1/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
@@ -47,8 +78,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 20
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -56,8 +86,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 2/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Tanky Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
@@ -70,8 +103,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 20
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -79,8 +111,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 3/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -98,8 +133,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -107,9 +141,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 5
     dialogueEnabled: 1
-    dialogueText: 'Captian Whiskers: I actually was kind of hoping there were no
-      asteroids in this galaxy'
-    dialogueDuration: 3
+    dialogueLines:
+    - speaker: 2
+      text: Wave 4/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -117,8 +153,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 4/5
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Mixed Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 5b609c4d9b012ed42a82a9ec0e7e36e9, type: 3}
@@ -136,8 +171,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 20
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -145,8 +179,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Last Wave
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 5/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Tanky + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
@@ -179,5 +216,4 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
