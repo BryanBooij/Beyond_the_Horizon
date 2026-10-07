@@ -12,10 +12,17 @@ namespace Assets.Scripts.Game
         public TextMeshProUGUI finalScoreText;
         public TextMeshProUGUI highScoreText;
 
+        [Header("Difficulty")]
+        [SerializeField] private int difficultyScoreStep = 1000;
         private int score;
         public int CurrentScore => score;
+        private int nextDifficultyScore;
 
-        private void Awake() => Instance = this;
+        private void Awake()
+        {
+            Instance = this;
+            nextDifficultyScore = difficultyScoreStep;
+        }
 
         private void Start()
         {
@@ -26,6 +33,14 @@ namespace Assets.Scripts.Game
         {
             score += (int)amount;
             if (scoreText != null) scoreText.text = "Score: " + score;
+            
+            while (score >= nextDifficultyScore)
+            {
+                if (DifficultyManager.Instance != null)
+                    DifficultyManager.Instance.IncreaseDifficulty();
+
+                nextDifficultyScore += difficultyScoreStep;
+            }
         }
 
         public void HighScoreUpdate()
