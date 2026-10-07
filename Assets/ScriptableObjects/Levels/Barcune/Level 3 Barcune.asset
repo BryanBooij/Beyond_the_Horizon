@@ -16,6 +16,7 @@ MonoBehaviour:
   oneStarScore: 3600
   twoStarScore: 4000
   threeStarScore: 4500
+  maxActiveSpaceships: 10
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -24,8 +25,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 3
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Level 3
+      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,8 +37,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 1/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 1/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroids + Tanky
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
@@ -67,8 +74,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 30
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -76,8 +82,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 2/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 5b609c4d9b012ed42a82a9ec0e7e36e9, type: 3}
@@ -90,8 +99,11 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 1
-    dialogueText: Wave 3/5
-    dialogueDuration: 0
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -109,8 +121,31 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 1
-    dialogueText: Wave 4/5
-    dialogueDuration: 0
+    dialogueLines: []
+  - chunkName: All
+    spawnInstructions: []
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 0
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 0
+      text: Come on, who's next?
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: You might want to start worrying.
+      duration: 1
+      waitForInput: 0
+    - speaker: 1
+      text: You should've turned around when you had the chance!
+      duration: 1
+      waitForInput: 0
+    - speaker: 2
+      text: Wave 4/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Tanky Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: ad348eee7925f2044b4e01c513c091f5, type: 3}
@@ -122,9 +157,8 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 1
     maxDuration: 30
-    dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueEnabled: 1
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -132,8 +166,7 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: 'Captain Whiskers: They really don''t like me, do they?'
-    dialogueDuration: 2
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -141,8 +174,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Last Wave
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 5/5
+      duration: 1
+      waitForInput: 0
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 5b609c4d9b012ed42a82a9ec0e7e36e9, type: 3}
@@ -180,5 +216,4 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []

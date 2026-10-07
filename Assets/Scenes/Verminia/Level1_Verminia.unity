@@ -20406,8 +20406,8 @@ MonoBehaviour:
   hasStartCutscene: 1
   startDialogueLines:
   - speaker: 1
-    text: never should have come here
-    duration: 0
+    text: Captain Whiskers, welcome...
+    duration: 1
     waitForInput: 1
   hasEndCutscene: 0
   endDialogueLines: []

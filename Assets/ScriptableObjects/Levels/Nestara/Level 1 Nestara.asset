@@ -29,12 +29,15 @@ MonoBehaviour:
     - speaker: 2
       text: Level 1
       duration: 2
+      waitForInput: 0
     - speaker: 0
-      text: Wow this must be Nestara. its a quiet Galaxy...
+      text: This is a quiet Galaxy...
       duration: 2
+      waitForInput: 0
     - speaker: 1
       text: Are you sure about that?
       duration: 2
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -46,6 +49,7 @@ MonoBehaviour:
     - speaker: 2
       text: Wave 1/5
       duration: 2
+      waitForInput: 0
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -62,9 +66,11 @@ MonoBehaviour:
     - speaker: 1
       text: Stop that ship!
       duration: 2
+      waitForInput: 0
     - speaker: 1
       text: Alert the others!
       duration: 1
+      waitForInput: 0
     - speaker: 0
       text: 'I just got here!
 
@@ -72,9 +78,11 @@ MonoBehaviour:
 
 '
       duration: 1
+      waitForInput: 0
     - speaker: 0
       text: "Looks like they\u2019re not going to let me pass."
       duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -86,6 +94,7 @@ MonoBehaviour:
     - speaker: 2
       text: Wave 2/5
       duration: 2
+      waitForInput: 0
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -110,6 +119,7 @@ MonoBehaviour:
     - speaker: 2
       text: Wave 3/5
       duration: 2
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -121,6 +131,7 @@ MonoBehaviour:
     - speaker: 0
       text: "Alright, let\u2019s dance."
       duration: 0
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -150,6 +161,7 @@ MonoBehaviour:
     - speaker: 2
       text: Wave 4/5
       duration: 2
+      waitForInput: 0
   - chunkName: Basic + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -194,6 +206,7 @@ MonoBehaviour:
     - speaker: 2
       text: Last wave
       duration: 0
+      waitForInput: 0
   - chunkName: Basic + Asteroids
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}

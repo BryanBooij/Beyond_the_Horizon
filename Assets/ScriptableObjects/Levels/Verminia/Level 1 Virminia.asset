@@ -16,6 +16,7 @@ MonoBehaviour:
   oneStarScore: 2000
   twoStarScore: 2400
   threeStarScore: 3200
+  maxActiveSpaceships: 10
   chunks:
   - chunkName: Rest
     spawnInstructions: []
@@ -24,8 +25,31 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Level 1
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Level 1
+      duration: 1
+      waitForInput: 0
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 0
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 1
+      text: We have been expecting you.
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: Oh good. I have fans.
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: Should I sign something?
+      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,8 +57,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 3
     dialogueEnabled: 1
-    dialogueText: Wave 1/5
-    dialogueDuration: 3
+    dialogueLines:
+    - speaker: 2
+      text: Wave 1/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Tanky Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: 9533c2a84db47b94e848e9dcc43238fc, type: 3}
@@ -47,8 +74,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 20
     dialogueEnabled: 1
-    dialogueText: Wave 2/5
-    dialogueDuration: 0
+    dialogueLines:
+    - speaker: 2
+      text: Wave 2/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
@@ -61,8 +91,31 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 20
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 0
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 8
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 1
+      text: You're entering a battlefield designed specifically for you.
+      duration: 2
+      waitForInput: 0
+    - speaker: 1
+      text: Every possible escape route has been accounted for.
+      duration: 2
+      waitForInput: 0
+    - speaker: 0
+      text: 'I love a villain with confidence. '
+      duration: 1
+      waitForInput: 0
+    - speaker: 0
+      text: Makes the disappointment funnier.
+      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -70,17 +123,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: 'Captain Whiskers: Ughh.. these pesky rats do put up a fight'
-    dialogueDuration: 2
-  - chunkName: Rest
-    spawnInstructions: []
-    useMaxActiveEnemies: 0
-    maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 2
-    dialogueEnabled: 1
-    dialogueText: Wave 3/5
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -98,8 +145,11 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 1
-    dialogueText: Wave 4/5
-    dialogueDuration: 0
+    dialogueLines:
+    - speaker: 2
+      text: Wave 4/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -117,8 +167,7 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -126,8 +175,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueText: Last Wave
-    dialogueDuration: 2
+    dialogueLines:
+    - speaker: 2
+      text: Wave 5/5
+      duration: 1
+      waitForInput: 0
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 8315917353794438875, guid: b902f0e662d33144faa79c445fd0aab9, type: 3}
@@ -165,5 +217,4 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 0
-    dialogueText: 
-    dialogueDuration: 0
+    dialogueLines: []

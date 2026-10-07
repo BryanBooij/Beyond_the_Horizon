@@ -25,7 +25,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Level 3
+      duration: 1
+      waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
     useMaxActiveEnemies: 0
@@ -33,7 +37,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 1/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroids + Tanky
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: f37e53fada8abab46a2f1ab6459eb84c, type: 3}
@@ -74,7 +82,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 2/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
@@ -104,9 +116,23 @@ MonoBehaviour:
     - speaker: 0
       text: "I\u2019m still here. That must be frustrating."
       duration: 1
+      waitForInput: 0
     - speaker: 1
       text: "You\u2019re going to regret coming here."
       duration: 1
+      waitForInput: 0
+  - chunkName: Rest
+    spawnInstructions: []
+    useMaxActiveEnemies: 1
+    maxActiveEnemies: 0
+    useTimer: 1
+    maxDuration: 0
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 2
+      text: Wave 3/5
+      duration: 1
+      waitForInput: 0
   - chunkName: All
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -160,7 +186,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 4/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Basic + Asteroid
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 060f89988addf604c92736b848619692, type: 3}
@@ -201,7 +231,11 @@ MonoBehaviour:
     useTimer: 1
     maxDuration: 2
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 2
+      text: Wave 5/5
+      duration: 1
+      waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
     - enemyPrefab: {fileID: 1961464145137665492, guid: 7aac1ed1ad86ab64a91d869246dd8716, type: 3}
