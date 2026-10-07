@@ -16,19 +16,21 @@ public class Pausemenu : MonoBehaviour
     public void Pause()
     {
         UpdateStarScores();
-
+        AudioListener.pause = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void Resume()
     {
+        AudioListener.pause = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void MainMenu()
     {
+        AudioListener.pause = false;
         Time.timeScale = 1f;
         MusicManager.Instance.PlayMenuMusic();
         ScreenFader.Instance.FadeToScene("Main Menu");
@@ -37,7 +39,8 @@ public class Pausemenu : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
-
+        AudioListener.pause = false;
+        MusicManager.Instance.PlayGameplayMusic();
         Scene currentScene = SceneManager.GetActiveScene();
         ScreenFader.Instance.FadeToScene(currentScene.name);
     }
