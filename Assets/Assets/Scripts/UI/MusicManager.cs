@@ -7,6 +7,7 @@ public class MusicManager : MonoBehaviour
 
     [SerializeField] private AudioSource menuMusic;
     [SerializeField] private AudioSource gameplayMusic;
+    [SerializeField] private AudioSource bossMusic;
 
     [SerializeField] private float fadeDuration = 1f;
     
@@ -30,6 +31,22 @@ public class MusicManager : MonoBehaviour
     public void PlayMenuMusic()
     {
         StartCoroutine(CrossFade(gameplayMusic, menuMusic));
+    }
+    
+    public void PlayBossMusic()
+    {
+        if (menuMusic.isPlaying)
+        {
+            StartCoroutine(CrossFade(menuMusic, bossMusic));
+        }
+        else if (gameplayMusic.isPlaying)
+        {
+            StartCoroutine(CrossFade(gameplayMusic, bossMusic));
+        }
+        else
+        {
+            bossMusic.Play();
+        }
     }
 
     private IEnumerator CrossFade(AudioSource from, AudioSource to)
