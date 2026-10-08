@@ -243,8 +243,24 @@ MonoBehaviour:
   dialogueManager: {fileID: 544395806}
   hasStartCutscene: 1
   startDialogueLines:
+  - speaker: 2
+    text: Something has been moving through the galaxies...
+    duration: 1
+    waitForInput: 1
+  - speaker: 2
+    text: An army of rats... following the orders of a mysterious king.
+    duration: 1
+    waitForInput: 1
+  - speaker: 2
+    text: No one knows what the rat king wants.
+    duration: 1
+    waitForInput: 1
+  - speaker: 2
+    text: But Captain Whiskers intends to find out...
+    duration: 1
+    waitForInput: 1
   - speaker: 0
-    text: Wow this must be Nestara!
+    text: Let's find that rat.
     duration: 1
     waitForInput: 1
   hasEndCutscene: 0
