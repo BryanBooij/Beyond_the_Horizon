@@ -9,13 +9,13 @@ public class AppLifeCycleManager : MonoBehaviour
         if (isPaused)
         {
             // App gaat naar de achtergrond
-            AudioListener.pause = true;
+            AudioListener.pause = false;
             Time.timeScale = 0f;
         }
         else
         {
             // App komt terug naar de voorgrond
-            AudioListener.pause = false;
+            AudioListener.pause = true;
 
             Time.timeScale = 0f;
 

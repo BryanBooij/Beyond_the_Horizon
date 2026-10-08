@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
 public class ProjectileShoot : MonoBehaviour
 {
     [SerializeField] private GameObject[] projectilePrefab;
     [SerializeField] private GameObject doubleDamageProjectilePrefab;
     
+    [Header("Shoot Button")]
+    [SerializeField] private Image shootButtonImage;
+    [SerializeField] private Sprite normalShootSprite;
+    [SerializeField] private Sprite doubleDamageShootSprite;
     [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip laserSound;
@@ -66,5 +70,12 @@ public class ProjectileShoot : MonoBehaviour
     public void SetDoubleDamage(bool value)
     {
         doubleDamageActive = value;
+
+        if (shootButtonImage != null)
+        {
+            shootButtonImage.sprite = value
+                ? doubleDamageShootSprite
+                : normalShootSprite;
+        }
     }
 }

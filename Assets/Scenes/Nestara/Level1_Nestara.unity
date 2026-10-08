@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.608154, y: -355}
+  m_AnchoredPosition: {x: 10.608398, y: -354.99988}
   m_SizeDelta: {x: -741.7589, y: -790}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2741688
@@ -7595,6 +7595,9 @@ MonoBehaviour:
   projectilePrefab:
   - {fileID: 7224285065701567356, guid: ee50d8ac9c11f9a499461d3fda0c95d9, type: 3}
   doubleDamageProjectilePrefab: {fileID: 5689603847190956102, guid: 22fca87faadaa494e99c8320f96ee1ab, type: 3}
+  shootButtonImage: {fileID: 2139484708}
+  normalShootSprite: {fileID: 6523292493432642450, guid: c444b504ef4d0a54087187673aa42185, type: 3}
+  doubleDamageShootSprite: {fileID: 1733228524755545053, guid: dd036fa5b06d3314f93fee2a4c841578, type: 3}
   audioSource: {fileID: 2121911664}
   laserSound: {fileID: 8300000, guid: 0255e92af11ddd24f8bc6f40c6389f95, type: 3}
   fireRate: 0.4
@@ -7998,7 +8001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.84052837, y: 0}
   m_AnchorMax: {x: 1, y: 0.29000002}
-  m_AnchoredPosition: {x: 0.20678711, y: 0.58044434}
+  m_AnchoredPosition: {x: 0.20678711, y: 0.58032227}
   m_SizeDelta: {x: -161.42896, y: -138.232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &605043802
@@ -20761,7 +20764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.608154, y: -355}
+  m_AnchoredPosition: {x: 10.608398, y: -354.99988}
   m_SizeDelta: {x: -741.7589, y: -790}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512635359
@@ -28634,7 +28637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.608154, y: -355}
+  m_AnchoredPosition: {x: 10.608398, y: -354.99988}
   m_SizeDelta: {x: -741.7589, y: -790}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134477866
