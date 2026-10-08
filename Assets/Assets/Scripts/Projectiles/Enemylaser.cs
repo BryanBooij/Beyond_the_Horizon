@@ -24,8 +24,6 @@ namespace Assets.Scripts.Projectiles
                 {
                     playerHealth.TakeDamage(damage);
                 }
-                
-
                 Destroy(gameObject);
             }
             else if (collision.CompareTag("BulletBoundary"))

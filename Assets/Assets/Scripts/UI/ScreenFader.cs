@@ -18,7 +18,7 @@ public class ScreenFader : MonoBehaviour
 
     private void Start()
     {
-        // Nieuwe scene begint volledig zwart
+        // new scene starts on blackscreen
         canvasGroup.alpha = 1f;
 
         StartCoroutine(FadeIn());
@@ -38,43 +38,31 @@ public class ScreenFader : MonoBehaviour
     {
         float timer = 0f;
         float startAlpha = canvasGroup.alpha;
-
         while (timer < fadeDuration)
         {
             timer += Time.unscaledDeltaTime;
-
             float progress = Mathf.Clamp01(timer / fadeDuration);
 
-            // Vloeiende overgang
+            // Smooth transition
             progress = progress * progress * (3f - 2f * progress);
-
             canvasGroup.alpha = Mathf.Lerp(startAlpha, 1f, progress);
-
             yield return null;
         }
-
         canvasGroup.alpha = 1f;
-
         Time.timeScale = 1f;
-
         SceneManager.LoadScene(sceneName);
     }
 
     private IEnumerator FadeIn()
     {
         float timer = 0f;
-
         while (timer < fadeDuration)
         {
             timer += Time.unscaledDeltaTime;
-
             float progress = Mathf.Clamp01(timer / fadeDuration);
-
-            // Vloeiende overgang
+            // Smooth transition
             progress = progress * progress * (3f - 2f * progress);
-
             canvasGroup.alpha = Mathf.Lerp(1f, 0f, progress);
-
             yield return null;
         }
 

@@ -55,11 +55,11 @@ namespace Assets.Scripts.Enemies
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            ProjectileLazer lazer = collision.GetComponent<ProjectileLazer>();
+            ProjectileLaser laser = collision.GetComponent<ProjectileLaser>();
 
             if (collision.CompareTag("Bullet"))
             {
-                currentHP -= lazer.Damage;
+                currentHP -= laser.Damage;
 
                 Destroy(collision.gameObject);
 
