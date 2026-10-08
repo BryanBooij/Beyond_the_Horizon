@@ -55,7 +55,7 @@ namespace Assets.Scripts.Enemies
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Projectile_Lazer lazer = collision.GetComponent<Projectile_Lazer>();
+            ProjectileLazer lazer = collision.GetComponent<ProjectileLazer>();
 
             if (collision.CompareTag("Bullet"))
             {

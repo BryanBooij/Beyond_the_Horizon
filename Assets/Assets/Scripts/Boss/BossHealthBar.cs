@@ -8,7 +8,7 @@ namespace Assets.Scripts.Boss
     {
         public Image fillImage;
         public TMP_Text nameLabel;
-        public string bossName = "BOSS";
+        public string bossName = "Rat King";
 
         private void Awake()
         {
@@ -18,12 +18,6 @@ namespace Assets.Scripts.Boss
 
         public void SetHealth(int current, int max)
         {
-            if (fillImage == null)
-            {
-                Debug.LogError("BossHealthBar: Fill Image is NOT assigned on " + name, this);
-                return;
-            }
-
             fillImage.fillAmount = max > 0 ? Mathf.Clamp01((float)current / max) : 0f;
         }
     }

@@ -42,7 +42,7 @@ namespace Assets.Scripts.Enemies
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Projectile_Lazer lazer = collision.GetComponent<Projectile_Lazer>();
+            ProjectileLazer lazer = collision.GetComponent<ProjectileLazer>();
             if (collision.CompareTag("Bullet"))
             {
                 if (currentHP > lazer.Damage) // check if the current hp is higher then the damage a projectile lazer does

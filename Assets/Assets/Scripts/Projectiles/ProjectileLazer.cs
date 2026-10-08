@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Projectile_Lazer : MonoBehaviour
+public class ProjectileLazer : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float Damage = 5f;
