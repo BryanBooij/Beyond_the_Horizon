@@ -78,35 +78,25 @@ public class PlanetSelectorManager : MonoBehaviour
     {
         if (selectedButton != null)
             selectedButton.OnDeselect(null);
-
         selectedIndex = index;
         selectedButton = planetButtons[index];
-
         selectedButton.Select();
         continueButton.interactable = true;
     }
-
     public void ContinueToLevel()
     {
         if (selectedIndex < 0)
             return;
-
         popupTitle.text = planets[selectedIndex].planetName;
-
         RefreshLevelSlots();
-
         levelPopup.SetActive(true);
     }
-
     private void PlayLevel(int levelIndex)
     {
         CurrentLevel.planet = planets[selectedIndex].planetName;
         CurrentLevel.level = levelIndex + 1;
-
         string sceneName = planets[selectedIndex].levelSceneNames[levelIndex];
-        
         Debug.Log("Planet" + sceneName);
-
         if (sceneName == "Level_Final_Boss")
         {
             MusicManager.Instance.PlayBossMusic();
@@ -115,7 +105,6 @@ public class PlanetSelectorManager : MonoBehaviour
         {
             MusicManager.Instance.PlayGameplayMusic();
         }
-        
         ScreenFader.Instance.FadeToScene(sceneName);
     }
 

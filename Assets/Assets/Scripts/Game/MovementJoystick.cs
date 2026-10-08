@@ -35,7 +35,7 @@ public class MovementJoystick : MonoBehaviour
 
         joystickTouchPos = pointerEventData.position;
 
-        // Gebruik screen position voor de eerste plaatsing
+        // Use screen position for first placement
         joystickRect.position = joystickTouchPos;
         joystickBGRect.position = joystickTouchPos;
 
@@ -48,7 +48,7 @@ public class MovementJoystick : MonoBehaviour
 
         Vector2 dragPos = pointerEventData.position;
 
-        // Richting vanaf het punt waar de speler indrukte
+        // Go to location the player pressed
         Vector2 direction = dragPos - joystickTouchPos;
 
         float distance = direction.magnitude;
@@ -62,7 +62,7 @@ public class MovementJoystick : MonoBehaviour
             JoystickVec = Vector2.zero;
         }
 
-        // Stick binnen de joystick houden
+        // Keep stick inside Joystick
         float clampedDistance = Mathf.Min(distance, joystickRadius);
 
         joystickRect.position =

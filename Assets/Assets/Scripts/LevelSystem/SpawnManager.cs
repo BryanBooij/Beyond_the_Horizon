@@ -68,7 +68,6 @@ public class SpawnManager : MonoBehaviour
     private void SpawnEnemy(SpawnInstruction instruction)
     {
         Camera cam = Camera.main;
-
         if (cam == null)
         {
             Debug.LogError("No Main Camera found!");
@@ -76,7 +75,6 @@ public class SpawnManager : MonoBehaviour
         }
 
         LevelManager levelManager = FindFirstObjectByType<LevelManager>();
-
         if (levelManager == null)
         {
             Debug.LogError("No LevelManager found!");
@@ -84,54 +82,43 @@ public class SpawnManager : MonoBehaviour
         }
 
         float cameraHeight = cam.orthographicSize;
-
         Collider2D enemyCollider =
             instruction.enemyPrefab.GetComponent<Collider2D>();
-
         float halfEnemyHeight = 0f;
-
         if (enemyCollider != null)
         {
             halfEnemyHeight = enemyCollider.bounds.extents.y;
         }
-
         float minY = cam.transform.position.y
                      - cameraHeight
                      + halfEnemyHeight
                      + bottomNoSpawnZone;
-
         float maxY = cam.transform.position.y
                      + cameraHeight
                      - halfEnemyHeight
                      - topNoSpawnZone;
-
         float randomY = UnityEngine.Random.Range(minY, maxY);
-
         Vector3 spawnPosition = new Vector3(
             transform.position.x,
             randomY,
             transform.position.z
         );
-
         GameObject enemy = Instantiate(
             instruction.enemyPrefab,
             spawnPosition,
             Quaternion.identity
         );
-
-        // Alleen EnemySpaceship telt mee voor de limiet
+        // Only Enemyspaceships count for the limit
         if (enemy.CompareTag("Enemyspaceship"))
         {
             levelManager.SpaceshipSpawned();
         }
-
         LevelEnemy levelEnemy = enemy.GetComponent<LevelEnemy>();
 
         if (levelEnemy == null)
         {
             levelEnemy = enemy.AddComponent<LevelEnemy>();
         }
-
         levelEnemy.levelManager = levelManager;
     }
 }

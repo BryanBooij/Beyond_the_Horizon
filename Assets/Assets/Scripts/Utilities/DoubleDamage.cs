@@ -31,17 +31,12 @@ public class DoubleDamage : PowerupEffect
     private IEnumerator DoubleDamageCoroutine(ProjectileShoot projectileShoot)
     {
         projectileShoot.SetDoubleDamage(true);
-
         Transform aura = projectileShoot.transform.Find("Aura");
-
         if (aura != null)
         {
             aura.gameObject.SetActive(true);
-
             SpriteRenderer auraRenderer = aura.GetComponent<SpriteRenderer>();
-
             float elapsed = 0f;
-
             while (elapsed < duration)
             {
                 float alpha = Mathf.Lerp(
@@ -49,7 +44,6 @@ public class DoubleDamage : PowerupEffect
                     1f,
                     (Mathf.Sin(elapsed * 5f) + 1f) / 2f
                 );
-
                 Color color = auraRenderer.color;
                 color.a = alpha;
                 auraRenderer.color = color;
@@ -58,16 +52,13 @@ public class DoubleDamage : PowerupEffect
 
                 yield return null;
             }
-
             aura.gameObject.SetActive(false);
         }
         else
         {
             yield return new WaitForSeconds(duration);
         }
-
         projectileShoot.SetDoubleDamage(false);
-
         doubleDamageCoroutine = null;
     }
 }

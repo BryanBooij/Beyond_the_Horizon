@@ -3,9 +3,7 @@
 public class LevelEnemy : MonoBehaviour
 {
     public LevelManager levelManager;
-
     private bool registered = false;
-
     private void Start()
     {
         if (levelManager != null)
@@ -14,13 +12,11 @@ public class LevelEnemy : MonoBehaviour
             registered = true;
         }
     }
-
     private void OnDestroy()
     {
         if (registered && levelManager != null)
         {
             levelManager.EnemyDestroyed();
-
             // Only EnemySpaceships count towards the spaceship limit
             if (CompareTag("Enemyspaceship"))
             {

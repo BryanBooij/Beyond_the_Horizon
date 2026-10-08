@@ -9,9 +9,7 @@ using UnityEngine;
 public class DamageImmunity : PowerupEffect
 {
     public float duration = 5f;
-
     private Coroutine immunityCoroutine;
-
     public override void Apply(GameObject target)
     {
         PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
@@ -28,15 +26,11 @@ public class DamageImmunity : PowerupEffect
             ImmunityCoroutine(playerHealth)
         );
     }
-
     private IEnumerator ImmunityCoroutine(PlayerHealth playerHealth)
     {
         playerHealth.SetImmunity(true);
-
         yield return new WaitForSeconds(duration);
-
         playerHealth.SetImmunity(false);
-
         immunityCoroutine = null;
     }
 }

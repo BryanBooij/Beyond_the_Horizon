@@ -39,28 +39,23 @@ namespace Assets.Scripts.Game
         public void AddPoints(float amount)
         {
             _score += (int)amount;
-
             scoreText.text = "Score: " + _score.ToString();
             victoryfinalScoreText.text = "Score: " + _score.ToString();
             GameoverFinalscore.text = "Score: " + _score.ToString();
-
             if (_score >= nextDifficultyScore)
             {
                 DifficultyManager.Instance.IncreaseDifficulty();
                 nextDifficultyScore += 1000;
             }
         }
-
-        // Algemene highscore - NIETS AAN VERANDERD
+        // General Highscore
         public void HighScoreUpdate()
         {
             SaveManager.Instance.SaveHighScore(_score);
-
             GameOverHighScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
             VictoryhighScore.text = "High Score: " + SaveManager.Instance.GetHighScore();
         }
-
-        // Highscore van het huidige level
+        // Highscore of current level
         public void LevelHighScoreUpdate()
         {
             SaveManager.Instance.SaveLevelHighScore(
@@ -68,12 +63,10 @@ namespace Assets.Scripts.Game
                 CurrentLevel.level,
                 _score
             );
-
             int levelHighScore = SaveManager.Instance.GetLevelHighScore(
                 CurrentLevel.planet,
                 CurrentLevel.level
             );
-
             GameOverHighScore.text = "High Score: " + levelHighScore;
             VictoryhighScore.text = "High Score: " + levelHighScore;
         }
