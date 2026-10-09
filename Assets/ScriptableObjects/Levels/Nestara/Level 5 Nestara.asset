@@ -159,20 +159,20 @@ MonoBehaviour:
     dialogueLines:
     - speaker: 1
       text: "You\u2019ve flown too far from your nest, little cat."
-      duration: 0
+      duration: 1
       waitForInput: 0
     - speaker: 1
       text: "You have no idea what you\u2019re up against.\nYour journey ends here."
-      duration: 0
+      duration: 1
       waitForInput: 0
     - speaker: 0
       text: "I\u2019ve come this far. \nYou really think a few threats will make
         me turn around?"
-      duration: 0
+      duration: 1
       waitForInput: 0
     - speaker: 1
       text: You should have stayed far away from Nestara.
-      duration: 0
+      duration: 1
       waitForInput: 0
   - chunkName: Mini-boss
     spawnInstructions:
@@ -210,5 +210,9 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
-    dialogueLines: []
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 2
+      text: Level Completed!!!
+      duration: 4
+      waitForInput: 0

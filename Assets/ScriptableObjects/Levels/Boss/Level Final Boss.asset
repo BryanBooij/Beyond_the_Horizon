@@ -95,4 +95,16 @@ MonoBehaviour:
     useTimer: 0
     maxDuration: 0
     dialogueEnabled: 1
-    dialogueLines: []
+    dialogueLines:
+    - speaker: 1
+      text: Curse you! My genius was TOO GREAT for this universe!
+      duration: 2
+      waitForInput: 0
+    - speaker: 0
+      text: "Or maybe your plan was just\u2026 really bad."
+      duration: 2
+      waitForInput: 0
+    - speaker: 2
+      text: Level Completed!!!
+      duration: 2
+      waitForInput: 0

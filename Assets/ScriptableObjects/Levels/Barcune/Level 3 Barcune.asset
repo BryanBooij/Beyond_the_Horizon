@@ -157,7 +157,7 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 1
     maxDuration: 30
-    dialogueEnabled: 1
+    dialogueEnabled: 0
     dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
@@ -165,7 +165,7 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 1
     maxDuration: 2
-    dialogueEnabled: 1
+    dialogueEnabled: 0
     dialogueLines: []
   - chunkName: Rest
     spawnInstructions: []
@@ -215,5 +215,9 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
-    dialogueLines: []
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 2
+      text: Level Completed!!!
+      duration: 4
+      waitForInput: 0
