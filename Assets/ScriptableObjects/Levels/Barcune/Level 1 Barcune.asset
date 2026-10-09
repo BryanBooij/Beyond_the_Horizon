@@ -75,8 +75,8 @@ MonoBehaviour:
       maxInterval: 5
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 20
+    useTimer: 0
+    maxDuration: 0
     dialogueEnabled: 0
     dialogueLines: []
   - chunkName: Rest
@@ -101,7 +101,7 @@ MonoBehaviour:
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
     useTimer: 0
-    maxDuration: 20
+    maxDuration: 0
     dialogueEnabled: 0
     dialogueLines: []
   - chunkName: Rest
@@ -139,21 +139,13 @@ MonoBehaviour:
     useMaxActiveEnemies: 0
     maxActiveEnemies: 0
     useTimer: 1
-    maxDuration: 5
+    maxDuration: 2
     dialogueEnabled: 1
     dialogueLines:
     - speaker: 2
       text: Wave 4/5
       duration: 1
       waitForInput: 0
-  - chunkName: Rest
-    spawnInstructions: []
-    useMaxActiveEnemies: 0
-    maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 2
-    dialogueEnabled: 1
-    dialogueLines: []
   - chunkName: Mixed Ships
     spawnInstructions:
     - enemyPrefab: {fileID: 5170386598266105377, guid: 5b609c4d9b012ed42a82a9ec0e7e36e9, type: 3}
@@ -168,8 +160,8 @@ MonoBehaviour:
       maxInterval: 4.5
     useMaxActiveEnemies: 1
     maxActiveEnemies: 0
-    useTimer: 1
-    maxDuration: 20
+    useTimer: 0
+    maxDuration: 0
     dialogueEnabled: 0
     dialogueLines: []
   - chunkName: Rest
