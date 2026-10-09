@@ -77,11 +77,11 @@ MonoBehaviour:
         Why does everyone want to shoot me?
 
 '
-      duration: 1
+      duration: 2
       waitForInput: 0
     - speaker: 0
       text: "Looks like they\u2019re not going to let me pass."
-      duration: 1
+      duration: 2
       waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
@@ -130,7 +130,7 @@ MonoBehaviour:
     dialogueLines:
     - speaker: 0
       text: "Alright, let\u2019s dance."
-      duration: 0
+      duration: 2
       waitForInput: 0
   - chunkName: Asteroid Belt
     spawnInstructions:
@@ -205,7 +205,7 @@ MonoBehaviour:
     dialogueLines:
     - speaker: 2
       text: Last wave
-      duration: 0
+      duration: 2
       waitForInput: 0
   - chunkName: Basic + Asteroids
     spawnInstructions:
@@ -238,5 +238,9 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
-    dialogueLines: []
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 2
+      text: Level Completed!!!!
+      duration: 4
+      waitForInput: 0

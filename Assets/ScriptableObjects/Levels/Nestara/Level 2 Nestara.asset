@@ -28,7 +28,7 @@ MonoBehaviour:
     dialogueLines:
     - speaker: 2
       text: Level 2
-      duration: 1
+      duration: 2
       waitForInput: 0
   - chunkName: Rest
     spawnInstructions: []
@@ -272,5 +272,9 @@ MonoBehaviour:
     maxActiveEnemies: 0
     useTimer: 0
     maxDuration: 0
-    dialogueEnabled: 0
-    dialogueLines: []
+    dialogueEnabled: 1
+    dialogueLines:
+    - speaker: 2
+      text: Level Completed!!!
+      duration: 4
+      waitForInput: 0
