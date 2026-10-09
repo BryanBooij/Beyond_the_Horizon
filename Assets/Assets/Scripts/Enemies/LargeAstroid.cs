@@ -60,9 +60,7 @@ namespace Assets.Scripts.Enemies
             if (collision.CompareTag("Bullet"))
             {
                 currentHP -= laser.Damage;
-
                 Destroy(collision.gameObject);
-
                 // Asteroid still has HP left
                 if (currentHP > 0)
                 {

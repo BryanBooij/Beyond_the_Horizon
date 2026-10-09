@@ -8,7 +8,6 @@ public class BoomScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip explosionSound;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Play explosion sound
