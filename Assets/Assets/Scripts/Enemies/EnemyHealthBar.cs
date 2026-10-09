@@ -4,7 +4,7 @@ namespace Assets.Scripts.Enemies
 {
     public class EnemyHealthBar : MonoBehaviour
     {
-        public Transform fillPivot; // the FillPivot object
+        public Transform fillPivot;
 
         private float fullWidth;
 

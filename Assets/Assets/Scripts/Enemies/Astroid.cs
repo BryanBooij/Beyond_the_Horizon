@@ -42,12 +42,12 @@ namespace Assets.Scripts.Enemies
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Projectile_Lazer lazer = collision.GetComponent<Projectile_Lazer>();
+            ProjectileLaser laser = collision.GetComponent<ProjectileLaser>();
             if (collision.CompareTag("Bullet"))
             {
-                if (currentHP > lazer.Damage) // check if the current hp is higher then the damage a projectile lazer does
+                if (currentHP > laser.Damage) // check if the current hp is higher then the damage a projectile lazer does
                 {
-                    currentHP -= lazer.Damage;
+                    currentHP -= laser.Damage;
                     Destroy(collision.gameObject);
                 }
                 else // else destroy astroid and lazer

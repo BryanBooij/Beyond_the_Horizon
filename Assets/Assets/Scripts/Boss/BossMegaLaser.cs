@@ -5,7 +5,7 @@ public class BossMegaLaser : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private EnemyBossShip boss;
-    [SerializeField] private Transform[] chargeOrbs;      // the 3 orbs
+    [SerializeField] private Transform[] chargeOrbs;
     [SerializeField] private Transform beamMuzzle;
     [SerializeField] private Transform beamVisual;
     [SerializeField] private Collider2D beamCollider;

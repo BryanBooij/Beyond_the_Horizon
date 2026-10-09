@@ -51,11 +51,11 @@ public class ProjectileShoot : MonoBehaviour
 
             if (doubleDamageActive)
             {
-                Projectile_Lazer normalLaser =
-                    projectilePrefab[0].GetComponent<Projectile_Lazer>();
+                ProjectileLaser normalLaser =
+                    projectilePrefab[0].GetComponent<ProjectileLaser>();
 
-                Projectile_Lazer doubleLaser =
-                    laser.GetComponent<Projectile_Lazer>();
+                ProjectileLaser doubleLaser =
+                    laser.GetComponent<ProjectileLaser>();
 
                 doubleLaser.Damage = normalLaser.Damage * 2f;
             }

@@ -45,36 +45,23 @@ public class AstroidSpawner : MonoBehaviour
         {
             return;
         }
-
-        GameObject prefabToSpawn =
-            asteroidPrefabs[Random.Range(0, asteroidPrefabs.Length)];
+        GameObject prefabToSpawn = asteroidPrefabs[Random.Range(0, asteroidPrefabs.Length)];
 
         Camera cam = Camera.main;
-
         float cameraHeight = cam.orthographicSize;
-
-        Collider2D asteroidCollider =
-            prefabToSpawn.GetComponent<Collider2D>();
-
+        Collider2D asteroidCollider = prefabToSpawn.GetComponent<Collider2D>();
         float halfAsteroidHeight = 0f;
-
         if (asteroidCollider != null)
         {
             halfAsteroidHeight = asteroidCollider.bounds.extents.y;
         }
 
-        minY = cam.transform.position.y
-             - cameraHeight
-             + halfAsteroidHeight;
-
-        maxY = cam.transform.position.y
-             + cameraHeight
-             - halfAsteroidHeight;
+        minY = cam.transform.position.y - cameraHeight + halfAsteroidHeight;
+        maxY = cam.transform.position.y + cameraHeight - halfAsteroidHeight;
 
         float randomY = Random.Range(minY, maxY);
 
-        Vector3 spawnPos =
-            new Vector3(transform.position.x, randomY, 0f);
+        Vector3 spawnPos = new Vector3(transform.position.x, randomY, 0f);
 
         Instantiate(
             prefabToSpawn,

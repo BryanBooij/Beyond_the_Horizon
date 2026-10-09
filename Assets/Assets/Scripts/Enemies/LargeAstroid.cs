@@ -55,14 +55,12 @@ namespace Assets.Scripts.Enemies
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Projectile_Lazer lazer = collision.GetComponent<Projectile_Lazer>();
+            ProjectileLaser laser = collision.GetComponent<ProjectileLaser>();
 
             if (collision.CompareTag("Bullet"))
             {
-                currentHP -= lazer.Damage;
-
+                currentHP -= laser.Damage;
                 Destroy(collision.gameObject);
-
                 // Asteroid still has HP left
                 if (currentHP > 0)
                 {
