@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Assets/Graphics/UI/Gears/filled_in.png.meta
 guid: d8c9997588ad0415f945f887e83bc666
+========
+guid: bebbddae1d73de248bbaeeb747b74efd
+>>>>>>>> origin/bossMusic:Assets/Assets/Graphics/UI/Health bar enemy/Health bar Rat boss/background.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7822330101987938002
-    second: filled_in_0
+      213: -7443756053782179069
+    second: background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: filled_in_0
+      name: background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 913
-        height: 913
+        width: 467
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e21f92b7730817390800000000000000
-      internalID: -7822330101987938002
+      spriteID: 30356abce4772b890800000000000000
+      internalID: -7443756053782179069
       vertices: []
       indices: 
       edges: []
@@ -135,7 +139,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      filled_in_0: -7822330101987938002
+      background_0: -7443756053782179069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

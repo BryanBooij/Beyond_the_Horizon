@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81b5922af194e589e04c89e6a161c76, type: 3}
   m_Name: Level 5 Virminia
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: Level 4 Virminia
-  oneStarScore: 3500
-  twoStarScore: 4440
-  threeStarScore: 5920
-  maxActiveSpaceships: 10
+  levelName: Level 5 Virminia
+  oneStarScore: 7300
+  twoStarScore: 8500
+  threeStarScore: 10000
+  maxActiveSpaceships: 5
   chunks:
   - chunkName: Rest
     spawnInstructions: []

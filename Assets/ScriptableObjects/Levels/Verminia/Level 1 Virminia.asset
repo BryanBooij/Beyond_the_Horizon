@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Level 1 Virminia
   oneStarScore: 2000
-  twoStarScore: 2400
-  threeStarScore: 3200
-  maxActiveSpaceships: 10
+  twoStarScore: 2700
+  threeStarScore: 3300
+  maxActiveSpaceships: 5
   chunks:
   - chunkName: Rest
     spawnInstructions: []
